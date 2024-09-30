@@ -8,7 +8,7 @@
     --brown-4: #A18B6E;
     --brown-5: #927B60;
     --brown-6: #7D6551;
-    --brown-7: #614C40;
+    --primary: #614C40;
     --brown-8: #57443C;
     --brown-9: #57443C;
     --brown-10: #2B201D;
@@ -26,5 +26,8 @@
     --gray-11: #1f1f1f;
     --gray-12: #141414;
     --gray-13: #000000;
+
+    --cream-1: #FFFCFA;
+    --cream-2: #F6F4F0;
 }
 
