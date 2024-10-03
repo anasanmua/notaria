@@ -1,0 +1,11 @@
+.root {
+  padding: 100px;
+}
+
+.cream1 {
+  background-color: var(--cream-1);
+}
+
+.cream2 {
+  background-color: var(--cream-2);
+}

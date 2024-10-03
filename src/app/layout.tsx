@@ -1,6 +1,6 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import type { Metadata } from "next";
-import "./globals.css";
+import "../styles/globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { ConfigProvider } from "antd";
 import { color } from "@/styles/colors";

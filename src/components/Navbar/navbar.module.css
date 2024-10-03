@@ -5,5 +5,5 @@
     background-color: var(--cream-2);
     padding: 10px;
     margin-bottom: 20px;
-    bounds: 15px
+    z-index: 1
 }

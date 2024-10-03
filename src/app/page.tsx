@@ -1,17 +1,10 @@
+"use client";
+import Intro from "@/app/sections/Intro/Intro";
+
 export default function Home() {
   return (
     <div>
-      <div
-        id="part-1"
-        style={{
-          width: "100vw",
-          height: "100vh",
-          textAlign: "center",
-          paddingTop: "80px",
-        }}
-      >
-        hellooooo1
-      </div>
+      <Intro />
       <div
         id="part-2"
         style={{
