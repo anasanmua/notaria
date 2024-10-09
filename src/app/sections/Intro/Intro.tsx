@@ -36,6 +36,7 @@ const Intro = (): JSX.Element => {
         </Col>
         <Col>
           <Image src={contract} width={600} />
+          {/* sort responsiveness*/}
         </Col>
       </Row>
     </BasicSection>
