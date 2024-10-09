@@ -4,14 +4,10 @@ import BasicSection from "@/components/BasicSection/BasicSection";
 import Image from "next/image";
 import contract from "@/../public/images/contract.jpg";
 
-interface IntroProps {
-  id: string;
-}
-
-const Intro = ({ id }: IntroProps): JSX.Element => {
+const Intro = (): JSX.Element => {
   return (
-    <BasicSection backgroundColor="cream1">
-      <Row id={id} justify="space-between">
+    <BasicSection backgroundColor="cream1" id="part-1">
+      <Row justify="space-between">
         <Col xs={12}>
           <Row gutter={[0, 10]}>
             <Col>

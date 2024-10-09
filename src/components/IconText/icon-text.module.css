@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+
+}
+
+.icon {
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 4px;
+}
