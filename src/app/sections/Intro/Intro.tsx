@@ -6,7 +6,7 @@ import contract from "@/../public/images/contract.jpg";
 
 const Intro = (): JSX.Element => {
   return (
-    <BasicSection backgroundColor="cream1" id="part-1">
+    <BasicSection backgroundColor="cream1">
       <Row justify="space-between">
         <Col xs={12}>
           <Row gutter={[0, 10]}>

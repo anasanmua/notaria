@@ -1,0 +1,13 @@
+.icon {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: var(--primary);
+}
+
+.description {
+  text-align: justify;
+}
+
+.button {
+  margin-top: 16px;
+}

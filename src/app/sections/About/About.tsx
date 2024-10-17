@@ -7,7 +7,7 @@ import IconText from "@/components/IconText/IconText";
 
 const About = () => {
   return (
-    <BasicSection backgroundColor="cream2" id="part-2">
+    <BasicSection backgroundColor="cream2" id="part-1">
       <Row>
         <Col xs={24}>
           <Image
