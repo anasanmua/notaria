@@ -1,6 +1,8 @@
+"use client";
 import { Anchor, Typography, Row, Col, Button } from "antd";
 import { SquareSquare } from "lucide-react";
 import styles from "./navbar.module.css";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBar: React.FC = () => (
   <Row justify="space-around" align="middle" className={styles.root}>
@@ -39,7 +41,9 @@ const NavBar: React.FC = () => (
       />
     </Col>
     <Col>
-      <Button type="primary">Contacto</Button>
+      <ScrollLink to="part-4" smooth={true} duration={500}>
+        <Button type="primary">Contacto</Button>
+      </ScrollLink>
     </Col>
   </Row>
 );
