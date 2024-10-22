@@ -4,6 +4,8 @@ import { Col, Row, Typography } from "antd";
 import { useEffect } from "react";
 
 const Contact = () => {
+  const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
   useEffect(() => {
     const initMap = () => {
       const location = { lat: 40.470164, lng: -3.642483 };
@@ -37,7 +39,7 @@ const Contact = () => {
 
     // Add the Google Maps script with your API key
     loadScript(
-      `https://maps.googleapis.com/maps/api/js?key=AIzaSyDsHfV7nGpr3Q0F5eDBe39ChE42Z03QCHs&callback=initMap`,
+      `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&callback=initMap`,
     );
   }, []); // Empty de
 
