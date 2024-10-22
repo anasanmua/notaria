@@ -1,10 +1,11 @@
 import { Typography } from "antd";
 import styles from "./icon-text.module.css";
 import classNames from "classnames";
+import { ReactNode } from "react";
 
 interface IconTextProps {
   icon: React.FC;
-  text: string;
+  text: string | ReactNode;
   type: "primary" | "secondary";
 }
 

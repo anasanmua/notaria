@@ -2,26 +2,28 @@
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { Col, Row, Typography } from "antd";
 import { useEffect } from "react";
+import IconText from "@/components/IconText/IconText";
+import { Mail, Phone, Map, Clock } from "lucide-react";
 
 const Contact = () => {
   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
   useEffect(() => {
     const initMap = () => {
-      const location = { lat: 40.470164, lng: -3.642483 };
+      const location = {lat: 40.470164, lng: -3.642483};
 
       const map = new google.maps.Map(document.getElementById("map"), {
         center: location,
         zoom: 12,
       });
 
-      // Optionally, add a marker to the map
-      new google.maps.Marker({
+      // Create an Advanced Marker
+      new google.maps.marker.AdvancedMarkerElement({
         position: location,
         map: map,
         title: "We are here!",
       });
-    };
+    }
 
     // Load the Google Maps script dynamically
     const loadScript = (url: string) => {
@@ -32,25 +34,71 @@ const Contact = () => {
       document.head.appendChild(script);
 
       script.onload = () => {
-        // Initialize the map after the script loads
         initMap();
       };
     };
 
-    // Add the Google Maps script with your API key
     loadScript(
       `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}&callback=initMap`,
     );
-  }, []); // Empty de
+  }, []);
 
   return (
     <BasicSection id="part-4" backgroundColor="cream1">
-      <Row>
+      <Row gutter={64}>
         <Col xs={24}>
           <Typography.Title>Contacto</Typography.Title>
         </Col>
-        <Col xs={24}>
-          <div id="map" style={{ height: "400px", width: "50%" }}></div>
+        <Col xs={12}>
+          <div id="map" style={{ height: "400px", width: "100%" }}></div>
+        </Col>
+        <Col xs={12}>
+          <Row gutter={[16, 16]}>
+            <Col xs={24}>
+              <Typography.Title level={3}>Contacto</Typography.Title>
+            </Col>
+            <Col xs={24}>
+              <IconText
+                icon={Mail}
+                text={"+34 911 23 23 23"}
+                type={"secondary"}
+              ></IconText>
+            </Col>
+            <Col xs={24}>
+              <IconText
+                icon={Phone}
+                text={"notaria@gmail.com"}
+                type={"secondary"}
+              ></IconText>
+            </Col>
+          </Row>
+          <Row gutter={[16, 16]}>
+            <Col xs={24}>
+              <Typography.Title level={3}>Dónde estamos</Typography.Title>
+            </Col>
+            <Col xs={24}>
+              <IconText
+                icon={Map}
+                text={
+                  <>
+                    Calle de Alcalá, 123 <br /> 28009 <br /> Madrid España
+                  </>
+                }
+                type={"secondary"}
+              ></IconText>
+            </Col>
+            <Col xs={24}>
+              <IconText
+                icon={Clock}
+                text={
+                  <>
+                    Lunes a viernes <br /> 09:00 a 14:30F
+                  </>
+                }
+                type={"secondary"}
+              ></IconText>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </BasicSection>
