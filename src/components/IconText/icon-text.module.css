@@ -18,3 +18,19 @@
     padding: 10px;
     border-radius: 8px;
 }
+
+.link {
+    color: var(--brown-6);
+}
+
+.link:hover {
+    color: var(--brown-8);
+    text-decoration: underline;
+
+}
+
+.link:active {
+    color: var(--brown-10);
+    text-decoration: underline;
+
+}

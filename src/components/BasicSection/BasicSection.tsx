@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 interface BasicSectionProps {
   children: React.ReactNode;
-  id: string;
+  id?: string;
   backgroundColor?: "cream1" | "cream2";
 }
 

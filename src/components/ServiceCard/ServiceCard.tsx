@@ -1,13 +1,20 @@
 import { Button, Col, Row, Typography } from "antd";
 import styles from "./service-card.module.css";
+import Link from "next/link";
 
 interface ServiceCardProps {
   icon: React.FC;
   title: string;
   description: string;
+  href: string;
 }
 
-const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
+const ServiceCard = ({
+  icon: Icon,
+  title,
+  description,
+  href,
+}: ServiceCardProps) => {
   return (
     <Row>
       <Col className={styles.icon}>
@@ -22,7 +29,7 @@ const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
         </Typography.Text>
       </Col>
       <Col className={styles.button}>
-        <Button>Más información</Button>
+        <Link href={`servicios/${href}`}>Más información</Link>
       </Col>
     </Row>
   );

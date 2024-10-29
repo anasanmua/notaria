@@ -11,10 +11,9 @@ const About = () => {
       <Row>
         <Col xs={24}>
           <Image
-            priority
             src={contract}
             width={600}
-            style="responsive"
+            layout="responsive"
             alt="Description of contract"
           />
         </Col>
