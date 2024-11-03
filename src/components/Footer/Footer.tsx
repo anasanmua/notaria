@@ -2,6 +2,7 @@
 import { Col, Row, Typography } from "antd";
 import styles from "./footer.module.css";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -11,15 +12,23 @@ const Footer = () => {
           <Col>
             <Typography.Paragraph>Notario 2024</Typography.Paragraph>
           </Col>
-          <Col>
-            <Typography.Paragraph>Política de Privacidad</Typography.Paragraph>
-          </Col>
-          <Col>
-            <Typography.Paragraph>Términos y condiciones</Typography.Paragraph>
-          </Col>
-          <Col>
-            <Typography.Paragraph>Aviso Legal</Typography.Paragraph>
-          </Col>
+          <Link href="/cookies">
+            <Col>
+              <Typography.Paragraph>Cookies</Typography.Paragraph>
+            </Col>
+          </Link>
+          <Link href="/politica-privacidad">
+            <Col>
+              <Typography.Paragraph>
+                Términos y condiciones
+              </Typography.Paragraph>
+            </Col>
+          </Link>
+          <Link href="/aviso-legal">
+            <Col>
+              <Typography.Paragraph>Aviso Legal</Typography.Paragraph>
+            </Col>
+          </Link>
         </Row>
       </Col>
       <Col xs={12}>

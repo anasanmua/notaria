@@ -9,9 +9,7 @@ import Link from "next/link";
 const NavBar: React.FC = () => {
   const pathname = usePathname();
 
-  const anchorHidden = !pathname.includes("servicios")
-    ? ""
-    : styles.anchorHidden;
+  const anchorHidden = pathname === "/" ? "" : styles.anchorHidden;
 
   return (
     <Row justify="space-around" align="middle" className={styles.root}>
