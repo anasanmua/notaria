@@ -4,6 +4,8 @@ import "../styles/globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { ConfigProvider } from "antd";
 import { color } from "@/styles/colors";
+import Footer from "@/components/Footer/Footer";
+import Contact from "@/app/sections/Contact/Contact";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "400", "600", "800"],
@@ -34,6 +36,8 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Contact />
+          <Footer />
         </ConfigProvider>
       </body>
     </html>

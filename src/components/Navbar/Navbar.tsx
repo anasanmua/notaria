@@ -1,4 +1,5 @@
 "use client";
+import { usePathname } from "next/navigation";
 import { Anchor, Typography, Row, Col, Button } from "antd";
 import { SquareSquare } from "lucide-react";
 import styles from "./navbar.module.css";
@@ -6,13 +7,19 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 
 const NavBar: React.FC = () => {
+  const pathname = usePathname();
+
+  const anchorHidden = !pathname.includes("servicios")
+    ? ""
+    : styles.anchorHidden;
+
   return (
     <Row justify="space-around" align="middle" className={styles.root}>
       <Col>
         <Row gutter="8">
           <Col>
             <Link href="/" aria-label="Home">
-              <SquareSquare />
+              <SquareSquare color="var(--primary)" />
             </Link>
           </Col>
           <Col>
@@ -22,26 +29,26 @@ const NavBar: React.FC = () => {
           </Col>
         </Row>
       </Col>
-      <Col>
-        {/*add some spacing between anchor elements*/}
+
+      <Col className={anchorHidden}>
         <Anchor
           bounds={25}
           direction="horizontal"
           items={[
             {
               key: "part-1",
-              href: "#part-1",
-              title: "Part 1",
+              href: "#sobre",
+              title: "About",
             },
             {
               key: "part-2",
-              href: "#part-2",
-              title: "Part 2",
+              href: "#equipo",
+              title: "Team",
             },
             {
               key: "part-3",
-              href: "#part-3",
-              title: "Part 3",
+              href: "#servicios",
+              title: "Services",
             },
           ]}
         />

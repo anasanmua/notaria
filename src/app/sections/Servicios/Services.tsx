@@ -90,7 +90,7 @@ const dataServicesTest = [
 
 const Services = () => {
   return (
-    <BasicSection id="part-3">
+    <BasicSection id="servicios">
       <Typography.Title className={styles.title}>Servicios</Typography.Title>
       <Row gutter={[15, 100]}>
         {dataServicesTest.map((element) => (

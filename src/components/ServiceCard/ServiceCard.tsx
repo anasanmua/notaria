@@ -29,7 +29,9 @@ const ServiceCard = ({
         </Typography.Text>
       </Col>
       <Col className={styles.button}>
-        <Link href={`servicios/${href}`}>Más información</Link>
+        <Link href={`servicios/${href}`}>
+          <Button>Más información</Button>
+        </Link>
       </Col>
     </Row>
   );

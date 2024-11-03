@@ -5,6 +5,8 @@
     list-style-type: none;
     justify-content: space-evenly;
     border-top: 1px #d9d9d9 solid;
+    bottom: 0;
+    width: 100%;
 }
 
 .icon {

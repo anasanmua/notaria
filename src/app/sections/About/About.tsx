@@ -7,13 +7,13 @@ import IconText from "@/components/IconText/IconText";
 
 const About = () => {
   return (
-    <BasicSection backgroundColor="cream2" id="part-1">
+    <BasicSection backgroundColor="cream2" id="sobre">
       <Row>
         <Col xs={24}>
           <Image
+            priority
             src={contract}
             width={600}
-            layout="responsive"
             alt="Description of contract"
           />
         </Col>

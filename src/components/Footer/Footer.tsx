@@ -1,3 +1,4 @@
+"use client";
 import { Col, Row, Typography } from "antd";
 import styles from "./footer.module.css";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
