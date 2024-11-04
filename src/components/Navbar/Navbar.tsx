@@ -8,8 +8,11 @@ import Link from "next/link";
 
 const NavBar: React.FC = () => {
   const pathname = usePathname();
-
   const anchorHidden = pathname === "/" ? "" : styles.anchorHidden;
+
+  const handleAnchorClick = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <Row justify="space-around" align="middle" className={styles.root}>
@@ -30,6 +33,7 @@ const NavBar: React.FC = () => {
 
       <Col className={anchorHidden}>
         <Anchor
+          onClick={handleAnchorClick}
           bounds={25}
           direction="horizontal"
           items={[
