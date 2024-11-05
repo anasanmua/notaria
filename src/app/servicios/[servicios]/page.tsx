@@ -3,12 +3,13 @@ import { Button, Col, Row, Typography } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import contract from "@/../public/images/contract.jpg";
 import Image from "next/image";
+import styles from "./servicios.module.css";
 
 const Service = () => {
   return (
     <>
       <BasicSection backgroundColor="cream1">
-        <Row justify="space-between">
+        <Row justify="space-between" className={styles.root}>
           <Col>
             <Image src={contract} width={600} alt="contract image" priority />
           </Col>

@@ -3,11 +3,12 @@ import { Button, Col, Row, Typography } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import Image from "next/image";
 import contract from "@/../public/images/contract.jpg";
+import styles from "./intro.module.css";
 
 const Intro = (): JSX.Element => {
   return (
     <BasicSection backgroundColor="cream1">
-      <Row justify="space-between">
+      <Row justify="space-between" className={styles.root}>
         <Col xs={12}>
           <Row gutter={[0, 10]}>
             <Col>
