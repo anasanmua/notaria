@@ -9,7 +9,7 @@ const Intro = (): JSX.Element => {
   return (
     <BasicSection backgroundColor="cream1">
       <Row justify="space-between" className={styles.root}>
-        <Col xs={12}>
+        <Col xs={24} sm={12}>
           <Row gutter={[0, 10]}>
             <Col>
               <Typography.Title>
@@ -35,9 +35,8 @@ const Intro = (): JSX.Element => {
             </Col>
           </Row>
         </Col>
-        <Col>
+        <Col xs={0} sm={12}>
           <Image src={contract} width={600} alt="contract image" priority />
-          {/* sort responsiveness*/}
         </Col>
       </Row>
     </BasicSection>

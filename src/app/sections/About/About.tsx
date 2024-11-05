@@ -9,7 +9,7 @@ const About = () => {
   return (
     <BasicSection backgroundColor="cream2" id="sobre">
       <Row>
-        <Col xs={24}>
+        <Col xs={0} sm={24}>
           <Image
             priority
             src={contract}
