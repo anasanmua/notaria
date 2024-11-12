@@ -45,14 +45,14 @@ const Contact = () => {
 
   return (
     <BasicSection id="part-4" backgroundColor="cream1">
-      <Row gutter={64}>
+      <Row gutter={[{ sm: 64 }, { xs: 32 }]}>
         <Col xs={24}>
           <Typography.Title>Contacto</Typography.Title>
         </Col>
-        <Col xs={12}>
+        <Col xs={24} sm={12}>
           <div id="map" style={{ height: "400px", width: "100%" }}></div>
         </Col>
-        <Col xs={12}>
+        <Col xs={24} sm={12}>
           <Row gutter={[16, 16]}>
             <Col xs={24}>
               <Typography.Title

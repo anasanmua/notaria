@@ -63,9 +63,9 @@ const Team = () => {
   return (
     <BasicSection backgroundColor="cream1" id="equipo">
       <Typography.Title>Equipo</Typography.Title>
-      <Row gutter={[0, 100]}>
+      <Row gutter={[{ sm: 32 }, { xs: 32, sm: 100 }]}>
         {dataTeamTest.map((worker) => (
-          <Col key={worker.mail} xs={8}>
+          <Col key={worker.mail} xs={24} sm={12} md={8}>
             <WorkerCard
               mail={worker.mail}
               name={worker.name}

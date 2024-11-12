@@ -9,11 +9,23 @@ const Service = () => {
   return (
     <>
       <BasicSection backgroundColor="cream1">
-        <Row justify="space-between" className={styles.root}>
-          <Col>
-            <Image src={contract} width={600} alt="contract image" priority />
+        <Row
+          justify="space-between"
+          className={styles.root}
+          gutter={{ xs: 10, sm: 50, md: 75, lg: 100 }}
+        >
+          <Col xs={0} sm={6} md={8} lg={10} xl={12}>
+            <Image
+              src={contract}
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+              alt="contract image"
+              priority
+            />
           </Col>
-          <Col xs={12}>
+          <Col xs={24} sm={12}>
             <Row gutter={[0, 10]}>
               <Col>
                 <Typography.Title>Poder notarial</Typography.Title>
@@ -46,10 +58,10 @@ const Service = () => {
       </BasicSection>
       <BasicSection backgroundColor="cream2">
         <Row>
-          <Col xs={12}>
-            <Typography.Title>Documentación</Typography.Title>
+          <Col xs={24} sm={12}>
+            <Typography.Title>Documentos</Typography.Title>
           </Col>
-          <Col xs={12}>
+          <Col xs={24} sm={12}>
             <Row gutter={[0, 10]}>
               <Col>
                 <Typography.Title>Poder notarial</Typography.Title>
@@ -82,10 +94,10 @@ const Service = () => {
       </BasicSection>
       <BasicSection backgroundColor="cream1">
         <Row>
-          <Col xs={12}>
+          <Col xs={24} sm={12}>
             <Typography.Title>Proceso</Typography.Title>
           </Col>
-          <Col xs={12}>
+          <Col xs={24} sm={12}>
             <Row gutter={[0, 10]}>
               <Col>
                 <Typography.Title>Poder notarial</Typography.Title>

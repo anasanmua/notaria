@@ -9,17 +9,21 @@ const About = () => {
   return (
     <BasicSection backgroundColor="cream2" id="sobre">
       <Row>
-        <Col xs={0} sm={24}>
+        <Col xs={0} sm={6} md={8} lg={10} xl={12}>
           <Image
             priority
             src={contract}
-            width={600}
             alt="Description of contract"
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
           />
         </Col>
         <Col>
-          <Row>
-            <Col xs={12}>
+          <Row gutter={50}>
+            <Col xs={24} sm={12}>
               <Typography.Title>Sobre</Typography.Title>
               <Typography.Paragraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
@@ -31,7 +35,7 @@ const About = () => {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </Typography.Paragraph>
             </Col>
-            <Col xs={12}>
+            <Col xs={24} sm={12}>
               <Row gutter={[0, 16]}>
                 <Col xs={24} style={{ paddingTop: "25px" }}>
                   <Typography.Text>

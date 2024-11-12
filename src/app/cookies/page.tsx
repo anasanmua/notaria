@@ -10,7 +10,7 @@ const Cookies = () => {
           <Col xs={24} style={{ textAlign: "center" }}>
             <Typography.Title>Cookies</Typography.Title>
           </Col>
-          <Col xs={12}>
+          <Col xs={24} sm={12}>
             <p>
               GRUPO ÁTICO34, con CIF B87186177, dirección Paseo de la
               Castellana, 95, 15º, 28046 (Madrid) e inscrita en el Registro

@@ -8,7 +8,7 @@ import styles from "./intro.module.css";
 const Intro = (): JSX.Element => {
   return (
     <BasicSection backgroundColor="cream1">
-      <Row justify="space-between" className={styles.root}>
+      <Row justify="space-evenly" className={styles.root}>
         <Col xs={24} sm={12}>
           <Row gutter={[0, 10]}>
             <Col>
@@ -35,8 +35,17 @@ const Intro = (): JSX.Element => {
             </Col>
           </Row>
         </Col>
-        <Col xs={0} sm={12}>
-          <Image src={contract} width={600} alt="contract image" priority />
+        <Col xs={0} sm={6} md={8} lg={10} xl={12}>
+          <Image
+            src={contract}
+            alt="contract image"
+            priority
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
         </Col>
       </Row>
     </BasicSection>

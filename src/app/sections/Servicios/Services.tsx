@@ -92,9 +92,9 @@ const Services = () => {
   return (
     <BasicSection id="servicios">
       <Typography.Title className={styles.title}>Servicios</Typography.Title>
-      <Row gutter={[15, 100]}>
+      <Row gutter={[{ sm: 32 }, { xs: 32, sm: 100 }]}>
         {dataServicesTest.map((element) => (
-          <Col key={element.title} xs={8}>
+          <Col key={element.title} xs={24} sm={12} md={8}>
             <ServiceCard
               icon={element.icon}
               title={element.title}

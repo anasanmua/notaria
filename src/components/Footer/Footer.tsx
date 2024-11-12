@@ -6,32 +6,32 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <Row className={styles.root} align="bottom">
-      <Col xs={12}>
-        <Row justify="space-evenly">
+    <Row className={styles.root} align="bottom" gutter={[0, 20]}>
+      <Col xs={24} sm={12}>
+        <Row justify="space-evenly" className={styles.stackCols}>
           <Col>
             <Typography.Paragraph>Notario 2024</Typography.Paragraph>
           </Col>
-          <Link href="/cookies">
-            <Col>
+          <Col>
+            <Link href="/cookies">
               <Typography.Paragraph>Cookies</Typography.Paragraph>
-            </Col>
-          </Link>
-          <Link href="/politica-privacidad">
-            <Col>
+            </Link>
+          </Col>
+          <Col>
+            <Link href="/politica-privacidad">
               <Typography.Paragraph>
                 Términos y condiciones
               </Typography.Paragraph>
-            </Col>
-          </Link>
-          <Link href="/aviso-legal">
-            <Col>
+            </Link>
+          </Col>
+          <Col>
+            <Link href="/aviso-legal">
               <Typography.Paragraph>Aviso Legal</Typography.Paragraph>
-            </Col>
-          </Link>
+            </Link>
+          </Col>
         </Row>
       </Col>
-      <Col xs={12}>
+      <Col xs={24} sm={12}>
         <Row justify="center" gutter={[15, 0]}>
           <Col className={styles.icon}>
             <Instagram />

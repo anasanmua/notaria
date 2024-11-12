@@ -79,7 +79,7 @@ const NavBar: React.FC = () => {
         title="Menu"
         placement="right"
         onClose={toggleDrawer}
-        visible={isDrawerVisible}
+        open={isDrawerVisible}
       >
         <Anchor
           onClick={handleAnchorClick}
