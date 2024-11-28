@@ -1,11 +1,11 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
 import type { Metadata } from "next";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { ConfigProvider } from "antd";
 import { color } from "@/styles/colors";
 import Footer from "@/components/Footer/Footer";
-import Contact from "@/app/sections/Contact/Contact";
+import Contact from "@/app/[locale]/sections/Contact/Contact";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "400", "600", "800"],

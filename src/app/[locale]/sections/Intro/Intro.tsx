@@ -2,7 +2,7 @@ import { JSX } from "react";
 import { Button, Col, Row, Typography } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import Image from "next/image";
-import contract from "@/../public/images/contract.jpg";
+import contract from "../../../../../public/images/contract.jpg";
 import styles from "./intro.module.css";
 
 const Intro = (): JSX.Element => {

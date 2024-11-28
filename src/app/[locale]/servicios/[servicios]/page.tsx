@@ -1,7 +1,7 @@
 "use client";
 import { Button, Col, Row, Typography } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
-import contract from "@/../public/images/contract.jpg";
+import contract from "../../../../../public/images/contract.jpg";
 import Image from "next/image";
 import styles from "./servicios.module.css";
 

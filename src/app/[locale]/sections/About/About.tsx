@@ -1,7 +1,7 @@
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
-import contract from "@/../public/images/contract.jpg";
+import contract from "../../../../../public/images/contract.jpg";
 import { Trophy, BadgeCheck, Archive } from "lucide-react";
 import IconText from "@/components/IconText/IconText";
 

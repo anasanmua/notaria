@@ -2,7 +2,7 @@
 import Link from "next/link";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import Image from "next/image";
-import tv from "../../public/images/tv.jpg";
+import tv from "../../../public/images/tv.jpg";
 import { Button, Col, Divider, Row, Typography } from "antd";
 
 export default function NotFound() {
@@ -23,7 +23,7 @@ export default function NotFound() {
                 </Typography.Title>
               </Col>
               <Col xs={24}>
-                <Link href="/">
+                <Link href="/Users/ana.san.modo/Desktop/PersonalProjects/notaria/public">
                   <Button type="primary">Volver al inicio</Button>
                 </Link>
               </Col>
