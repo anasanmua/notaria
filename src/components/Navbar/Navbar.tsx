@@ -7,6 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { useState } from "react";
 import classNames from "classnames";
+import LanguageChanger from "@/components/LanguageChanger";
 
 const NavBar: React.FC = () => {
   const [isDrawerVisible, setDrawerVisible] = useState(false);
@@ -61,12 +62,13 @@ const NavBar: React.FC = () => {
           ]}
         />
       </Col>
-      <Col>
+      <Col className={styles.contactDropdownArea}>
         <ScrollLink to="part-4" smooth={true} duration={500}>
           <Button type="primary" className={styles.contactButton}>
             Contacto
           </Button>
         </ScrollLink>
+        <LanguageChanger />
       </Col>
       <Col className={styles.burgerIcon}>
         <Menu

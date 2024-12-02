@@ -1,41 +1,48 @@
 .root {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background-color: var(--cream-2);
-    margin-bottom: 20px;
-    z-index: 1;
-    padding: 10px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--cream-2);
+  margin-bottom: 20px;
+  z-index: 1;
+  padding: 10px 50px;
 }
 
 .anchorHidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-
-
 .burgerIcon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    align-self: center;
-    top:3px;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  align-self: center;
+  top: 3px;
+}
+
+.es {
+  background-position: 0px -120px;
+}
+
+.contactDropdownArea {
+  display: flex;
+  gap: 5px;
 }
 
 @media (max-width: 768px) {
-    .anchorMenu {
-        display: none;
-    }
+  .anchorMenu {
+    display: none;
+  }
 
-    .burgerIcon {
-        display: block;
-    }
+  .burgerIcon {
+    display: block;
+  }
 
-    .contactButton {
-        left: 30px;
-    }
+  .contactButton {
+    left: 30px;
+  }
 
-    .logoButton {
-        top: 3px;
-    }
+  .logoButton {
+    top: 3px;
+  }
 }

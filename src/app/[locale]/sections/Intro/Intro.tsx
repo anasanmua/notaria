@@ -5,17 +5,18 @@ import BasicSection from "@/components/BasicSection/BasicSection";
 import Image from "next/image";
 import contract from "../../../../../public/images/contract.jpg";
 import styles from "./intro.module.css";
+import { useTranslation } from "react-i18next";
 
 const Intro = (): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <BasicSection backgroundColor="cream1">
       <Row justify="space-evenly" className={styles.root}>
         <Col xs={24} sm={12}>
           <Row gutter={[0, 10]}>
             <Col>
-              <Typography.Title>
-                Al servicio de su tranquilidad jurídica
-              </Typography.Title>
+              <Typography.Title>{t("introHeader")}</Typography.Title>
             </Col>
             <Col>
               <Typography.Text>
