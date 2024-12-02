@@ -1,3 +1,4 @@
+"use client";
 import { JSX } from "react";
 import { Button, Col, Row, Typography } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";

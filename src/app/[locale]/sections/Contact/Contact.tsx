@@ -1,9 +1,9 @@
 "use client";
-import BasicSection from "@/components/BasicSection/BasicSection";
 import { Col, Row, Typography } from "antd";
 import { useEffect } from "react";
-import IconText from "@/components/IconText/IconText";
 import { Mail, Phone, Map, Clock, MapPin } from "lucide-react";
+import BasicSection from "@/components/BasicSection/BasicSection";
+import IconText from "@/components/IconText/IconText";
 
 const Contact = () => {
   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;

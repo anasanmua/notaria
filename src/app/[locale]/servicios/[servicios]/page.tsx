@@ -59,15 +59,19 @@ const Service = () => {
       <BasicSection backgroundColor="cream2">
         <Row>
           <Col xs={24} sm={12}>
+            {/*
             <Typography.Title>Documentos</Typography.Title>
+*/}
           </Col>
           <Col xs={24} sm={12}>
             <Row gutter={[0, 10]}>
               <Col>
+                {/*
                 <Typography.Title>Poder notarial</Typography.Title>
+*/}
               </Col>
               <Col>
-                <Typography.Paragraph>
+                {/* <Typography.Paragraph>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -76,7 +80,7 @@ const Service = () => {
                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
-                </Typography.Paragraph>
+                </Typography.Paragraph>*/}
               </Col>
               <Col>
                 <Row gutter={10}>

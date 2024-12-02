@@ -1,3 +1,4 @@
+"use client";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
