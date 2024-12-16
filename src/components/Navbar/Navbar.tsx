@@ -7,7 +7,6 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { useState } from "react";
 import classNames from "classnames";
-import LanguageChanger from "@/components/LanguageChanger";
 
 const NavBar: React.FC = () => {
   const [isDrawerVisible, setDrawerVisible] = useState(false);
@@ -68,7 +67,6 @@ const NavBar: React.FC = () => {
             Contacto
           </Button>
         </ScrollLink>
-        <LanguageChanger />
       </Col>
       <Col className={styles.burgerIcon}>
         <Menu

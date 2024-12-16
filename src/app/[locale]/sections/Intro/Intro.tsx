@@ -5,10 +5,10 @@ import BasicSection from "@/components/BasicSection/BasicSection";
 import Image from "next/image";
 import contract from "../../../../../public/images/contract.jpg";
 import styles from "./intro.module.css";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 const Intro = (): JSX.Element => {
-  const { t } = useTranslation();
+  const t = useTranslations("Intro");
 
   return (
     <BasicSection backgroundColor="cream1">
@@ -16,7 +16,7 @@ const Intro = (): JSX.Element => {
         <Col xs={24} sm={12}>
           <Row gutter={[0, 10]}>
             <Col>
-              <Typography.Title>{t("introHeader")}</Typography.Title>
+              <Typography.Title>{t("description")}</Typography.Title>
             </Col>
             <Col>
               <Typography.Text>
