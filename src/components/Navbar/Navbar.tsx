@@ -11,7 +11,8 @@ import classNames from "classnames";
 const NavBar: React.FC = () => {
   const [isDrawerVisible, setDrawerVisible] = useState(false);
   const pathname = usePathname();
-  const anchorHidden = pathname === "/" ? "" : styles.anchorHidden;
+  const anchorHidden =
+    pathname === "/en" || pathname === "/es" ? "" : styles.anchorHidden;
 
   const handleAnchorClick = (e) => {
     e.preventDefault();
