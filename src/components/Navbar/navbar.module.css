@@ -45,4 +45,12 @@
   .logoButton {
     top: 3px;
   }
+
+  .languageSelector {
+    display: none;
+  }
+
+  .marginBottom {
+    margin-bottom: 20px;
+  }
 }

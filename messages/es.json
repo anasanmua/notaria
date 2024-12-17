@@ -1,5 +1,9 @@
 {
   "Intro": {
     "description": "test español"
+  },
+  "LocaleSwitcher" : {
+    "en": "Inglés",
+    "es": "Español"
   }
 }

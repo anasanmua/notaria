@@ -7,6 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { useState } from "react";
 import classNames from "classnames";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const NavBar: React.FC = () => {
   const [isDrawerVisible, setDrawerVisible] = useState(false);
@@ -68,6 +69,9 @@ const NavBar: React.FC = () => {
             Contacto
           </Button>
         </ScrollLink>
+        <span className={styles.languageSelector}>
+          <LocaleSwitcher />
+        </span>
       </Col>
       <Col className={styles.burgerIcon}>
         <Menu
@@ -86,6 +90,7 @@ const NavBar: React.FC = () => {
           onClick={handleAnchorClick}
           bounds={25}
           direction="vertical"
+          className={styles.marginBottom}
           items={[
             {
               key: "part-1",
@@ -104,6 +109,7 @@ const NavBar: React.FC = () => {
             },
           ]}
         />
+        <LocaleSwitcher />
       </Drawer>
     </Row>
   );
