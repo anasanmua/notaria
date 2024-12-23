@@ -18,10 +18,9 @@ import styles from "./services.module.css";
 
 const dataServicesTest = [
   {
-    icon: FileText,
-    title: "Redacción de Escrituras",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
+    icon: Users,
+    title: "notarialPowerTitle",
+    description: "notarialPowerDescription",
     href: "poder-notarial",
   },
   {
@@ -46,8 +45,8 @@ const dataServicesTest = [
     href: "poder-notarial",
   },
   {
-    icon: Users,
-    title: "Poderes Notariales",
+    icon: FileText,
+    title: "Redacción de Escrituras",
     description:
       "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
     href: "poder-notarial",

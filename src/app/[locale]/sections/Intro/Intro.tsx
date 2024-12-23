@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 
 const Intro = (): JSX.Element => {
   const t = useTranslations("Intro");
+  const t2 = useTranslations("General");
 
   return (
     <BasicSection backgroundColor="cream1">
@@ -16,22 +17,18 @@ const Intro = (): JSX.Element => {
         <Col xs={24} sm={12}>
           <Row gutter={[0, 10]}>
             <Col>
-              <Typography.Title>{t("description")}</Typography.Title>
+              <Typography.Title>{t("title")}</Typography.Title>
             </Col>
             <Col>
-              <Typography.Text>
-                Nos dedicamos a ofrecer servicios notariales de alta calidad,
-                respaldados por años de experiencia y un profundo conocimiento
-                del marco legal español.
-              </Typography.Text>
+              <Typography.Text>{t("description")}</Typography.Text>
             </Col>
             <Col>
               <Row gutter={10}>
                 <Col>
-                  <Button type="primary">Equipo</Button>
+                  <Button type="primary">{t2("team")}</Button>
                 </Col>
                 <Col>
-                  <Button>Contacto</Button>
+                  <Button>{t2("contact")}</Button>
                 </Col>
               </Row>
             </Col>

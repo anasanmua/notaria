@@ -1,9 +1,25 @@
 {
-  "Intro": {
-    "description": "test español"
+  "General": {
+    "team": "Equipo",
+    "contact": "Contacto"
   },
   "LocaleSwitcher" : {
     "en": "Inglés",
     "es": "Español"
+  },
+  "Intro": {
+    "title": "Al servicio de su tranquilidad jurídica",
+    "description": "Nos dedicamos a ofrecer servicios notariales de alta calidad, respaldados por años de experiencia y un profundo conocimiento del marco legal español."
+  },
+  "About" : {
+    "title": "Lorem",
+    "subtitle": "Tu notaría en el barrio de Hortaleza. Explora nuestros servicios y no dudes en ponerte en contacto.",
+    "item1": "Seguridad",
+    "item2": "Experiencia",
+    "item3": "Asesoramiento gratuito"
+  },
+  "Services": {
+    "notarialPowerTitle": "Poder notarial",
+    "notarialPowerDescription": "Un poder notarial es un documento legal mediante el cual una persona (llamada poderdante) otorga a otra persona (llamada apoderado) la facultad de actuar en su nombre y representación en asuntos específicos o generales."
   }
 }

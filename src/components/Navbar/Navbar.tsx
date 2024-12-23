@@ -7,7 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { useState } from "react";
 import classNames from "classnames";
-import LocaleSwitcher from "@/components/LocaleSwitcher";
+import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
 
 const NavBar: React.FC = () => {
   const [isDrawerVisible, setDrawerVisible] = useState(false);

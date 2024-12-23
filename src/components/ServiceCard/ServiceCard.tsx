@@ -1,6 +1,7 @@
 import { Button, Col, Row, Typography } from "antd";
 import styles from "./service-card.module.css";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface ServiceCardProps {
   icon: React.FC;
@@ -15,17 +16,18 @@ const ServiceCard = ({
   description,
   href,
 }: ServiceCardProps) => {
+  const t = useTranslations("Services");
   return (
     <Row>
       <Col className={styles.icon}>
         <Icon color={"white"} />
       </Col>
       <Col xs={24}>
-        <Typography.Title level={3}>{title}</Typography.Title>
+        <Typography.Title level={3}>{t(title)}</Typography.Title>
       </Col>
       <Col>
         <Typography.Text className={styles.description}>
-          {description}
+          {t(description)}
         </Typography.Text>
       </Col>
       <Col className={styles.button}>

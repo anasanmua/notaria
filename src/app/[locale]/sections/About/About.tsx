@@ -5,8 +5,11 @@ import Image from "next/image";
 import contract from "../../../../../public/images/contract.jpg";
 import { Trophy, BadgeCheck, Archive } from "lucide-react";
 import IconText from "@/components/IconText/IconText";
+import { useTranslations } from "next-intl";
 
 const About = () => {
+  const t = useTranslations("About");
+
   return (
     <BasicSection backgroundColor="cream2" id="sobre">
       <Row>
@@ -39,22 +42,18 @@ const About = () => {
             <Col xs={24} sm={12}>
               <Row gutter={[0, 16]}>
                 <Col xs={24} style={{ paddingTop: "25px" }}>
-                  <Typography.Text>
-                    Nos dedicamos a ofrecer servicios notariales de alta
-                    calidad, respaldados por años de experiencia y un profundo
-                    conocimiento del marco legal español.
-                  </Typography.Text>
+                  <Typography.Text>{t("subtitle")}</Typography.Text>
                 </Col>
                 <Col xs={24}>
-                  <IconText icon={Trophy} text={"Atención personalizada"} />
+                  <IconText icon={Trophy} text={t("item1")} />
                 </Col>
 
                 <Col xs={24}>
-                  <IconText icon={Archive} text={"Rapidez y eficencia"} />
+                  <IconText icon={Archive} text={t("item2")} />
                 </Col>
 
                 <Col xs={24}>
-                  <IconText icon={BadgeCheck} text={"Amplia experiencia"} />
+                  <IconText icon={BadgeCheck} text={t("item3")} />
                 </Col>
               </Row>
             </Col>
