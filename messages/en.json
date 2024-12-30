@@ -1,9 +1,43 @@
 {
-  "Intro": {
-    "description": "test english"
+  "General": {
+    "team": "Team",
+    "contact": "Contact"
   },
-  "LocaleSwitcher" : {
+  "LocaleSwitcher": {
     "en": "English",
     "es": "Spanish"
+  },
+  "Intro": {
+    "title": "At the service of your legal peace of mind",
+    "description": "We are dedicated to providing high-quality notarial services, backed by years of experience and a deep understanding of the Spanish legal framework."
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Your notary in the Hortaleza neighborhood. Explore our services and feel free to get in touch.",
+    "item1": "Security",
+    "item2": "Experience",
+    "item3": "Free advice"
+  },
+  "Services": {
+    "notarialPowerTitle": "Power of Attorney",
+    "notarialPowerDescription": "A power of attorney is a legal document that allows one person to authorize another to represent and act on their behalf in specific or general matters.",
+    "testamentaryTitle": "Testamentary Services",
+    "testamentaryDescription": "A set of procedures before or after death, ensuring proper estate management and compliance with the testator's wishes.",
+    "marriageContractsTitle": "Marriage Contracts",
+    "marriageContractsDescription": "Agreements to establish the matrimonial economic regime, such as separation of property, registered in the Civil Registry.",
+    "mortgageTitle": "Mortgage Loan",
+    "mortgageDescription": "The process of formalizing mortgages, including signing transparency acts and loan contracts in accordance with current regulations.",
+    "condominiumDissolutionTitle": "Condominium Dissolution",
+    "condominiumDissolutionDescription": "Dissolution of co-ownerships, redistributing properties and compensating co-owners through notarial agreements.",
+    "saleTitle": "Sale",
+    "saleDescription": "Notarized sales ensure secure transactions and facilitate property registration. The buyer typically chooses the notary office.",
+    "donationsTitle": "Donations",
+    "donationsDescription": "Formalization of gifts of movable or immovable property, with tax implications depending on the type and recipient of the donation.",
+    "nationalityTitle": "Oaths of Nationality",
+    "nationalityDescription": "Procedure to swear Spanish nationality before a notary, a key step to obtaining a Spanish ID and passport.",
+    "manifestationsTitle": "Statements of Facts",
+    "manifestationsDescription": "Notarial documents that record declarations or certify facts, useful in legal or administrative procedures.",
+    "signatureLegitimationTitle": "Signature Legitimation and Certification",
+    "signatureLegitimationDescription": "The notary certifies the authenticity of a signature or issues certified copies of original documents."
   }
 }

@@ -3,7 +3,7 @@
     "team": "Equipo",
     "contact": "Contacto"
   },
-  "LocaleSwitcher" : {
+  "LocaleSwitcher": {
     "en": "Inglés",
     "es": "Español"
   },
@@ -11,7 +11,7 @@
     "title": "Al servicio de su tranquilidad jurídica",
     "description": "Nos dedicamos a ofrecer servicios notariales de alta calidad, respaldados por años de experiencia y un profundo conocimiento del marco legal español."
   },
-  "About" : {
+  "About": {
     "title": "Lorem",
     "subtitle": "Tu notaría en el barrio de Hortaleza. Explora nuestros servicios y no dudes en ponerte en contacto.",
     "item1": "Seguridad",
@@ -20,6 +20,24 @@
   },
   "Services": {
     "notarialPowerTitle": "Poder notarial",
-    "notarialPowerDescription": "Un poder notarial es un documento legal mediante el cual una persona (llamada poderdante) otorga a otra persona (llamada apoderado) la facultad de actuar en su nombre y representación en asuntos específicos o generales."
+    "notarialPowerDescription": "Un poder notarial es un documento legal que permite a una persona otorgar a otra la facultad de representarla y actuar en su nombre en asuntos específicos o generales.",
+    "testamentaryTitle": "Testamentaría",
+    "testamentaryDescription": "Conjunto de trámites previos o posteriores al fallecimiento, asegurando una gestión adecuada del patrimonio y cumplimiento de la voluntad del testador.",
+    "marriageContractsTitle": "Capitulaciones matrimoniales",
+    "marriageContractsDescription": "Acuerdos para establecer el régimen económico matrimonial, como la separación de bienes, inscribiéndolo en el Registro Civil.",
+    "mortgageTitle": "Préstamo hipotecario",
+    "mortgageDescription": "Proceso para formalizar hipotecas, incluyendo la firma de actas de transparencia y contratos de préstamo según la normativa vigente.",
+    "condominiumDissolutionTitle": "Extinción de condominio",
+    "condominiumDissolutionDescription": "Disolución de copropiedades, redistribuyendo inmuebles y compensando a los copropietarios mediante acuerdos notariales.",
+    "saleTitle": "Compraventa",
+    "saleDescription": "La compraventa ante notario asegura la operación y facilita la inscripción en el Registro. El comprador suele elegir la notaría.",
+    "donationsTitle": "Donaciones",
+    "donationsDescription": "Formalización de regalos de bienes muebles o inmuebles, con implicaciones fiscales según el tipo y destinatario de la donación.",
+    "nationalityTitle": "Juras de nacionalidad",
+    "nationalityDescription": "Trámite para jurar la nacionalidad española ante notario, un paso clave para obtener el DNI y pasaporte español.",
+    "manifestationsTitle": "Actas de manifestaciones",
+    "manifestationsDescription": "Documentos notariales que recogen declaraciones o constatan hechos, útiles en trámites legales o administrativos.",
+    "signatureLegitimationTitle": "Legitimación de firma y compulsa",
+    "signatureLegitimationDescription": "El notario certifica la autenticidad de una firma o realiza copias certificadas de documentos originales."
   }
 }

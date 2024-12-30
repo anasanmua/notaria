@@ -1,11 +1,27 @@
+// Service.tsx
 "use client";
 import { Button, Col, Row, Typography } from "antd";
+import { useParams, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import contract from "../../../../../public/images/contract.jpg";
 import Image from "next/image";
 import styles from "./servicios.module.css";
 
-const Service = () => {
+interface ServiceProps {
+  title: string;
+  description: string;
+  icon?: React.FC;
+}
+
+const Service = async ({
+  params,
+}: {
+  params: Promise<{ servicios: string }>;
+}) => {
+  const servicios = (await params).servicios;
+  console.log(servicios, "title");
+
   return (
     <>
       <BasicSection backgroundColor="cream1">
@@ -28,95 +44,11 @@ const Service = () => {
           <Col xs={24} sm={12}>
             <Row gutter={[0, 10]}>
               <Col>
-                <Typography.Title>Poder notarial</Typography.Title>
+                HOLAAAAHOLAAAAHOLAAAAHOLAAAAHOLAAAAHOLAAAA
+                <Typography.Title>TestTitle</Typography.Title>
               </Col>
               <Col>
-                <Typography.Paragraph>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </Typography.Paragraph>
-              </Col>
-              <Col>
-                <Row gutter={10}>
-                  <Col>
-                    <Button type="primary">Equipo</Button>
-                  </Col>
-                  <Col>
-                    <Button>Contacto</Button>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </BasicSection>
-      <BasicSection backgroundColor="cream2">
-        <Row>
-          <Col xs={24} sm={12}>
-            {/*
-            <Typography.Title>Documentos</Typography.Title>
-*/}
-          </Col>
-          <Col xs={24} sm={12}>
-            <Row gutter={[0, 10]}>
-              <Col>
-                {/*
-                <Typography.Title>Poder notarial</Typography.Title>
-*/}
-              </Col>
-              <Col>
-                {/* <Typography.Paragraph>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </Typography.Paragraph>*/}
-              </Col>
-              <Col>
-                <Row gutter={10}>
-                  <Col>
-                    <Button type="primary">Equipo</Button>
-                  </Col>
-                  <Col>
-                    <Button>Contacto</Button>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </BasicSection>
-      <BasicSection backgroundColor="cream1">
-        <Row>
-          <Col xs={24} sm={12}>
-            <Typography.Title>Proceso</Typography.Title>
-          </Col>
-          <Col xs={24} sm={12}>
-            <Row gutter={[0, 10]}>
-              <Col>
-                <Typography.Title>Poder notarial</Typography.Title>
-              </Col>
-              <Col>
-                <Typography.Paragraph>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </Typography.Paragraph>
+                <Typography.Paragraph>TestDescription </Typography.Paragraph>
               </Col>
               <Col>
                 <Row gutter={10}>

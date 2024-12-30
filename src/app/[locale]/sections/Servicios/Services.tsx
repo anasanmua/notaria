@@ -25,66 +25,57 @@ const dataServicesTest = [
   },
   {
     icon: PenTool,
-    title: "Legalización de Documentos",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "testamentaryTitle",
+    description: "testamentaryDescription",
+    href: "testamentos",
   },
   {
     icon: CheckSquare,
-    title: "Actas Notariales",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "marriageContractsTitle",
+    description: "marriageContractsDescription",
+    href: "matrimonial",
   },
   {
     icon: Home,
-    title: "Constitución de Hipotecas",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "mortgageTitle",
+    description: "mortgageDescription",
+    href: "hipotecario",
   },
   {
     icon: FileText,
-    title: "Redacción de Escrituras",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "condominiumDissolutionTitle",
+    description: "condominiumDissolutionDescription",
+    href: "condominio",
   },
   {
     icon: Archive,
-    title: "Tramitación de Testamentos",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
-  },
-  {
-    icon: Handshake,
-    title: "Contrato de Compraventa",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "donationsTitle",
+    description: "donationsDescription",
+    href: "donaciones",
   },
   {
     icon: Folder,
-    title: "Constitución de Sociedades",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "nationalityTitle",
+    description: "nationalityDescription",
+    href: "jura-nacionalidad",
   },
   {
     icon: UserCheck,
-    title: "Autorización de Matrimonios",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "manifestationsTitle",
+    description: "manifestationsDescription",
+    href: "actas-manifestaciones",
   },
   {
     icon: DollarSign,
-    title: "Declaraciones Juradas",
-    description:
-      "Elaboración de escrituras públicas para la compra-venta de inmuebles, herencias, y testamentos de inmuebles, herencias y testamentos de inmuebles, herencias, y testamentos",
-    href: "poder-notarial",
+    title: "signatureLegitimationTitle",
+    description: "signatureLegitimationDescription",
+    href: "legitimacion-firma",
+  },
+  {
+    icon: Handshake,
+    title: "saleTitle",
+    description: "saleDescription",
+    href: "compra-ventaAAA",
   },
 ];
 
