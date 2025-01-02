@@ -39,5 +39,8 @@
     "manifestationsDescription": "Documentos notariales que recogen declaraciones o constatan hechos, útiles en trámites legales o administrativos.",
     "signatureLegitimationTitle": "Legitimación de firma y compulsa",
     "signatureLegitimationDescription": "El notario certifica la autenticidad de una firma o realiza copias certificadas de documentos originales."
+  },
+  "matrimonial": {
+    "title": "test123"
   }
 }

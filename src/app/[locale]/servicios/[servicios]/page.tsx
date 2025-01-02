@@ -1,34 +1,26 @@
-// Service.tsx
 "use client";
-import { Button, Col, Row, Typography } from "antd";
-import { useParams, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Col, Row } from "antd";
+import Title from "antd/lib/typography/Title";
+import Paragraph from "antd/lib/typography/Paragraph";
+import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import contract from "../../../../../public/images/contract.jpg";
 import Image from "next/image";
 import styles from "./servicios.module.css";
+import { useTranslations } from "use-intl";
 
-interface ServiceProps {
-  title: string;
-  description: string;
-  icon?: React.FC;
-}
-
-const Service = async ({
-  params,
-}: {
-  params: Promise<{ servicios: string }>;
-}) => {
-  const servicios = (await params).servicios;
-  console.log(servicios, "title");
+const Service = ({ params }: { params: { servicios: string } }) => {
+  const servicio = params.servicios;
+  console.log(servicio, "title");
+  const t = useTranslations(servicio);
 
   return (
     <>
       <BasicSection backgroundColor="cream1">
-        <Row
+        {/* <Row
           justify="space-between"
           className={styles.root}
-          gutter={{ xs: 10, sm: 50, md: 75, lg: 100 }}
+          // gutter={{ xs: 10, sm: 50, md: 75, lg: 100 }}
         >
           <Col xs={0} sm={6} md={8} lg={10} xl={12}>
             <Image
@@ -41,24 +33,52 @@ const Service = async ({
               priority
             />
           </Col>
-          <Col xs={24} sm={12}>
-            <Row gutter={[0, 10]}>
-              <Col>
-                HOLAAAAHOLAAAAHOLAAAAHOLAAAAHOLAAAAHOLAAAA
-                <Typography.Title>TestTitle</Typography.Title>
+          <Col>
+            <Row>
+              <Col xs={12}>
+                <Title>PODERES</Title>
               </Col>
               <Col>
-                <Typography.Paragraph>TestDescription </Typography.Paragraph>
+                <Text>
+                  Faculta a un tercero para que pueda actuar en tu nombre.
+                </Text>
               </Col>
               <Col>
-                <Row gutter={10}>
+                <Text>Tipos</Text>
+                <Row>
+                  <Col>General</Col>
                   <Col>
-                    <Button type="primary">Equipo</Button>
-                  </Col>
-                  <Col>
-                    <Button>Contacto</Button>
+                    Poder amplio para que puedan representarte en la mayoría de
+                    negocios jurídicos
                   </Col>
                 </Row>
+              </Col>
+            </Row>
+          </Col>
+        </Row> */}
+        <Row>
+          <Col xs={24}>
+            <Title>PODERES</Title>
+          </Col>
+          <Col xs={24}>
+            <Text>
+              Faculta a un tercero para que pueda actuar en tu nombre.
+            </Text>
+          </Col>
+          <Col xs={24}>
+            <Text>Tipos</Text>
+            <Row>
+              <Col xs={24}>General</Col>
+              <Col>
+                Poder amplio para que puedan representarte en la mayoría de
+                negocios jurídicos
+              </Col>
+              <Col xs={24}>Documentos</Col>
+              <Col>"Documento de identidad del poderdante y del apoderado"</Col>
+              <Col xs={24}> "Partida de nacimiento poderdante",</Col>
+              <Col>
+                "Si hay varios apoderados: indicar si el poder es solidario o
+                mancomunado"
               </Col>
             </Row>
           </Col>

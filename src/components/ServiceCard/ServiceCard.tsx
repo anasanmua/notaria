@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 interface ServiceCardProps {
-  icon: React.FC;
+  icon: React.FC<{ color: string }>;
   title: string;
   description: string;
   href: string;

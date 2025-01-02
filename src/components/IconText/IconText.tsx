@@ -5,9 +5,9 @@ import { ReactNode } from "react";
 import Link from "next/link";
 
 interface IconTextProps {
-  icon: React.FC;
+  icon: React.FC | React.FC<{ color: string }>;
   text: string | ReactNode;
-  type: "primary" | "secondary";
+  type?: "primary" | "secondary";
   href?: string;
 }
 
