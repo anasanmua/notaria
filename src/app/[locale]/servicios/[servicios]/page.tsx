@@ -1,12 +1,8 @@
 "use client";
 import { Col, Row } from "antd";
 import Title from "antd/lib/typography/Title";
-import Paragraph from "antd/lib/typography/Paragraph";
 import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
-import contract from "../../../../../public/images/contract.jpg";
-import Image from "next/image";
-import styles from "./servicios.module.css";
 import { useTranslations } from "use-intl";
 
 const Service = ({ params }: { params: { servicios: string } }) => {

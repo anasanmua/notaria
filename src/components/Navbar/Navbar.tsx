@@ -26,18 +26,16 @@ const NavBar: React.FC = () => {
   return (
     <Row justify="space-between" align="middle" className={styles.root}>
       <Col>
-        <Row gutter="8" align="middle">
-          <Col className={styles.logoButton}>
-            <Link href="/" aria-label="Home">
+        <Link href="/" aria-label="Home">
+          <Row gutter="8" align="middle" className={styles.logoButton}>
+            <Col>
               <SquareSquare color="var(--primary)" />
-            </Link>
-          </Col>
-          <Col>
-            <Link href="/" aria-label="Home">
+            </Col>
+            <Col>
               <Typography>Notaria</Typography>
-            </Link>
-          </Col>
-        </Row>
+            </Col>
+          </Row>
+        </Link>
       </Col>
       <Col className={classNames(styles.anchorMenu, anchorHidden)}>
         <Anchor

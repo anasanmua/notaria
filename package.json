@@ -3,30 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": " next dev",
-    "build": "i18nexus pull && next build",
-    "start": "i18nexus pull && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "antd": "^5.21.0",
-    "lucide-react": "^0.445.0",
+    "antd": "5.21.0",
+    "lucide-react": "0.445.0",
     "next": "14.2.13",
-    "next-i18n-router": "^5.5.1",
-    "next-intl": "^3.25.1",
-    "prettier": "^3.3.3",
-    "react": "18",
-    "react-dom": "^18",
-    "react-scroll": "^1.9.0",
-    "react-world-flags": "^1.6.0"
+    "next-i18n-router": "5.5.1",
+    "next-intl": "3.25.1",
+    "prettier": "3.3.3",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-scroll": "1.9.0",
+    "react-world-flags": "1.6.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/react-world-flags": "^1",
-    "eslint": "^8",
+    "@types/node": "20.0.0",
+    "@types/react": "18.0.0",
+    "@types/react-dom": "18.0.0",
+    "@types/react-world-flags": "1.0.0",
+    "eslint": "8.0.0",
     "eslint-config-next": "14.2.13",
-    "typescript": "^5"
+    "typescript": "5.0.0"
   }
 }
