@@ -1,4 +1,8 @@
-const ServicesLayout = ({ children }: React.ReactNode) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const ServicesLayout = ({ children }: LayoutProps) => {
   return <section>{children}</section>;
 };
 
