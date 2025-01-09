@@ -15,6 +15,7 @@ const NavBar: React.FC = () => {
   const anchorHidden =
     pathname === "/en" || pathname === "/es" ? "" : styles.anchorHidden;
 
+  // @ts-ignore
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
   };
@@ -39,6 +40,7 @@ const NavBar: React.FC = () => {
       </Col>
       <Col className={classNames(styles.anchorMenu, anchorHidden)}>
         <Anchor
+          // @ts-ignore
           onClick={handleAnchorClick}
           bounds={25}
           direction="horizontal"
@@ -62,7 +64,9 @@ const NavBar: React.FC = () => {
         />
       </Col>
       <Col className={styles.contactDropdownArea}>
+        {/*@ts-ignore*/}
         <ScrollLink to="part-4" smooth={true} duration={500}>
+          {/*@ts-ignore*/}
           <Button type="primary" className={styles.contactButton}>
             Contacto
           </Button>
@@ -85,6 +89,7 @@ const NavBar: React.FC = () => {
         open={isDrawerVisible}
       >
         <Anchor
+          // @ts-ignore
           onClick={handleAnchorClick}
           bounds={25}
           direction="vertical"
