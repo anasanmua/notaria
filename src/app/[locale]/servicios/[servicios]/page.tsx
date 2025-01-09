@@ -8,7 +8,6 @@ import { useTranslations } from "use-intl";
 const Service = ({ params }: { params: { servicios: string } }) => {
   const servicio = params.servicios;
   console.log(servicio, "title");
-  const t = useTranslations(servicio);
 
   return (
     <>
@@ -70,11 +69,11 @@ const Service = ({ params }: { params: { servicios: string } }) => {
                 negocios jurídicos
               </Col>
               <Col xs={24}>Documentos</Col>
-              <Col>"Documento de identidad del poderdante y del apoderado"</Col>
-              <Col xs={24}> "Partida de nacimiento poderdante",</Col>
+              <Col>Documento de identidad del poderdante y del apoderado</Col>
+              <Col xs={24}> Partida de nacimiento poderdante,</Col>
               <Col>
-                "Si hay varios apoderados: indicar si el poder es solidario o
-                mancomunado"
+                Si hay varios apoderados: indicar si el poder es solidario o
+                mancomunado
               </Col>
             </Row>
           </Col>

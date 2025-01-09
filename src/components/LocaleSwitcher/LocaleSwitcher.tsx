@@ -14,7 +14,9 @@ export default function LocaleSwitcher() {
         const flagCode = lang === "en" ? "gb" : lang;
         return (
           <option key={lang} value={lang}>
-            <Flag code={flagCode} width={20} />
+            {/*<span>
+              <Flag code={flagCode} width={20} />{" "}
+            </span>*/}
             <Typography.Text> {t(lang)}</Typography.Text>
           </option>
         );

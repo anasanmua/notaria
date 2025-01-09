@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
   const anchorHidden =
     pathname === "/en" || pathname === "/es" ? "" : styles.anchorHidden;
 
-  const handleAnchorClick = (e) => {
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
   };
 
@@ -27,7 +27,7 @@ const NavBar: React.FC = () => {
     <Row justify="space-between" align="middle" className={styles.root}>
       <Col>
         <Link href="/" aria-label="Home">
-          <Row gutter="8" align="middle" className={styles.logoButton}>
+          <Row gutter={8} align="middle" className={styles.logoButton}>
             <Col>
               <SquareSquare color="var(--primary)" />
             </Col>

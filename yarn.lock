@@ -550,6 +550,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-scroll@npm:^1.8.10":
+  version: 1.8.10
+  resolution: "@types/react-scroll@npm:1.8.10"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/fd488a2446f3654c7594fa664a3592661d2685608717f80e32d3749f496974d20876bcb127522a69b8249c2f513895a84b89bf6eeb95442fc6f5e7023f6baaff
+  languageName: node
+  linkType: hard
+
 "@types/react-world-flags@npm:1.6.0":
   version: 1.6.0
   resolution: "@types/react-world-flags@npm:1.6.0"
@@ -2991,6 +3000,7 @@ __metadata:
     "@types/node": "npm:20.0.0"
     "@types/react": "npm:18.0.0"
     "@types/react-dom": "npm:18.0.0"
+    "@types/react-scroll": "npm:^1.8.10"
     "@types/react-world-flags": "npm:1.6.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.19.1"
     "@typescript-eslint/parser": "npm:^8.19.1"

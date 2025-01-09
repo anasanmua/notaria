@@ -2,9 +2,10 @@ import { Button, Col, Row, Typography } from "antd";
 import styles from "./service-card.module.css";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { LucideIcon } from "lucide-react";
 
 interface ServiceCardProps {
-  icon: React.FC<{ color: string }>;
+  icon: LucideIcon;
   title: string;
   description: string;
   href: string;

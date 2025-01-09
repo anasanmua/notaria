@@ -6,11 +6,13 @@ const ContactMap = ({ apiKey }: { apiKey: string }) => {
     const initMap = () => {
       const location = { lat: 40.470164, lng: -3.642483 };
 
+      // @ts-ignore
       const map = new google.maps.Map(document.getElementById("map"), {
         center: location,
         zoom: 12,
       });
 
+      // @ts-ignore
       new google.maps.Marker({
         position: location,
         map: map,

@@ -20,6 +20,7 @@ export default function LocaleSwitcherSelect({
   const params = useParams();
 
   function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
+    // @ts-expect-error
     const nextLocale = event as Locale;
     startTransition(() => {
       router.replace(
@@ -35,6 +36,7 @@ export default function LocaleSwitcherSelect({
   return (
     <label>
       <Select
+        // @ts-ignore
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
