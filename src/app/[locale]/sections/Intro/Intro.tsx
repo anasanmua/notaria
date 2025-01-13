@@ -6,6 +6,7 @@ import Image from "next/image";
 import contract from "../../../../../public/images/contract.jpg";
 import styles from "./intro.module.css";
 import { useTranslations } from "next-intl";
+import { Link as ScrollLink } from "react-scroll";
 
 const Intro = (): JSX.Element => {
   const t = useTranslations("Intro");
@@ -25,10 +26,15 @@ const Intro = (): JSX.Element => {
             <Col>
               <Row gutter={10}>
                 <Col>
-                  <Button type="primary">{t2("team")}</Button>
+                  <ScrollLink to="equipo" smooth={true} duration={500}>
+                    <Button type="primary">{t2("team")}</Button>
+                  </ScrollLink>
                 </Col>
                 <Col>
-                  <Button>{t2("contact")}</Button>
+                  <ScrollLink to="contact" smooth={true} duration={500}>
+                    {/*@ts-ignore*/}
+                    <Button>{t2("contact")}</Button>
+                  </ScrollLink>
                 </Col>
               </Row>
             </Col>

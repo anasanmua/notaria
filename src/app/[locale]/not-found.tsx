@@ -23,7 +23,7 @@ export default function NotFound() {
                 </Typography.Title>
               </Col>
               <Col xs={24}>
-                <Link href="/Users/ana.san.modo/Desktop/PersonalProjects/notaria/public">
+                <Link href="/">
                   <Button type="primary">Volver al inicio</Button>
                 </Link>
               </Col>

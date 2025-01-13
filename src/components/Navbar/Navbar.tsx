@@ -65,7 +65,7 @@ const NavBar: React.FC = () => {
       </Col>
       <Col className={styles.contactDropdownArea}>
         {/*@ts-ignore*/}
-        <ScrollLink to="part-4" smooth={true} duration={500}>
+        <ScrollLink to="contact" smooth={true} duration={500}>
           {/*@ts-ignore*/}
           <Button type="primary" className={styles.contactButton}>
             Contacto

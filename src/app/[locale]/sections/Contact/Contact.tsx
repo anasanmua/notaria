@@ -8,7 +8,7 @@ const Contact = () => {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
   return (
-    <BasicSection id="part-4" backgroundColor="cream1">
+    <BasicSection id="contact" backgroundColor="cream1">
       <Row gutter={[{ sm: 64 }, { xs: 32 }]}>
         <Col xs={24} sm={24}>
           <ContactTitle />

@@ -1,5 +1,5 @@
 "use client";
-import { Col, Row } from "antd";
+import { Button, Col, Row } from "antd";
 import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
@@ -12,45 +12,6 @@ const Service = ({ params }: { params: { servicios: string } }) => {
   return (
     <>
       <BasicSection backgroundColor="cream1">
-        {/* <Row
-          justify="space-between"
-          className={styles.root}
-          // gutter={{ xs: 10, sm: 50, md: 75, lg: 100 }}
-        >
-          <Col xs={0} sm={6} md={8} lg={10} xl={12}>
-            <Image
-              src={contract}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-              alt="contract image"
-              priority
-            />
-          </Col>
-          <Col>
-            <Row>
-              <Col xs={12}>
-                <Title>PODERES</Title>
-              </Col>
-              <Col>
-                <Text>
-                  Faculta a un tercero para que pueda actuar en tu nombre.
-                </Text>
-              </Col>
-              <Col>
-                <Text>Tipos</Text>
-                <Row>
-                  <Col>General</Col>
-                  <Col>
-                    Poder amplio para que puedan representarte en la mayoría de
-                    negocios jurídicos
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
-        </Row> */}
         <Row>
           <Col xs={24}>
             <Title>PODERES</Title>
@@ -76,6 +37,11 @@ const Service = ({ params }: { params: { servicios: string } }) => {
                 mancomunado
               </Col>
             </Row>
+          </Col>
+          <Col>
+            <Button style={{ marginTop: "15px" }} href={"/formulario-contacto"}>
+              Solicitar más Información
+            </Button>
           </Col>
         </Row>
       </BasicSection>
