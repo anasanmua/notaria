@@ -26,11 +26,14 @@ const Intro = (): JSX.Element => {
             <Col>
               <Row gutter={10}>
                 <Col>
+                  {/*@ts-ignore*/}
                   <ScrollLink to="equipo" smooth={true} duration={500}>
+                    {/*@ts-ignore*/}
                     <Button type="primary">{t2("team")}</Button>
                   </ScrollLink>
                 </Col>
                 <Col>
+                  {/*@ts-ignore*/}
                   <ScrollLink to="contact" smooth={true} duration={500}>
                     {/*@ts-ignore*/}
                     <Button>{t2("contact")}</Button>
