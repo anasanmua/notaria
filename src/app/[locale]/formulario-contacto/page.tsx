@@ -1,13 +1,26 @@
 "use client";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import Title from "antd/lib/typography/Title";
-import { Button, Form, Input, InputNumber, Row } from "antd";
+import { Button, Form, Input, InputNumber, Row, Select } from "antd";
+import { useTranslations } from "next-intl";
 
 // text-align on columns left?
 const Information = () => {
-  const layout = {
+  const t = useTranslations("General");
+  const t2 = useTranslations("ContactForm");
+
+  const defaultLayout = {
     labelCol: { span: 4 },
     wrapperCol: { span: 16 },
+  };
+
+  const fullWidthLayout = {
+    labelCol: { span: 24 },
+    wrapperCol: { span: 20 },
+  };
+
+  const buttonLayout = {
+    wrapperCol: { span: 20 },
   };
 
   const validateMessages = {
@@ -25,12 +38,16 @@ const Information = () => {
     console.log(values);
   };
 
+  const onChange = (value: string) => {
+    console.log(`selected ${value}`);
+  };
+
   return (
     <BasicSection>
       <Title style={{ textAlign: "center" }}>Formulario de contacto</Title>
       <div style={{ display: "flex", justifyContent: " center" }}>
         <Form
-          {...layout}
+          {...defaultLayout}
           name="nest-messages"
           onFinish={onFinish}
           style={{ width: 600 }}
@@ -38,34 +55,74 @@ const Information = () => {
         >
           <Form.Item
             name={["user", "name"]}
-            label="Name"
+            label={t("name")}
             rules={[{ required: true }]}
+            labelAlign="left"
+          >
+            <Input />
+          </Form.Item>
+          <Form.Item
+            name={["user", "surname"]}
+            label={t("surname")}
+            labelAlign="left"
           >
             <Input />
           </Form.Item>
           <Form.Item
             name={["user", "email"]}
-            label="Email"
+            label={t("email")}
             rules={[{ type: "email" }]}
+            labelAlign="left"
           >
             <Input />
           </Form.Item>
           <Form.Item
-            name={["user", "age"]}
-            label="Age"
-            rules={[{ type: "number", min: 0, max: 99 }]}
+            name={["user", "phone"]}
+            label={t("phone")}
+            rules={[{ type: "number", min: 0 }]}
+            labelAlign="left"
           >
             <InputNumber />
           </Form.Item>
-          <Form.Item name={["user", "website"]} label="Website">
+          <Form.Item
+            name={["user", "country"]}
+            label={t("country")}
+            labelAlign="left"
+          >
             <Input />
           </Form.Item>
-          <Form.Item name={["user", "introduction"]} label="Introduction">
+          <Form.Item
+            {...fullWidthLayout}
+            name={["user", "contactWay"]}
+            label={t2("contactWay")}
+          >
+            <Select
+              placeholder="Select a reason"
+              optionFilterProp="label"
+              onChange={onChange}
+              options={[
+                {
+                  value: "mail",
+                  label: "Correo electrónico",
+                },
+                {
+                  value: "phone",
+                  label: t("phone"),
+                },
+              ]}
+            />
+          </Form.Item>
+          <Form.Item
+            {...fullWidthLayout}
+            name={["user", "howCanWeHelp"]}
+            label={t2("howCanWeHelp")}
+          >
             <Input.TextArea />
           </Form.Item>
           <Form.Item
+            {...buttonLayout}
             label={null}
-            style={{ display: "flex", justifyContent: "right" }}
+            style={{ textAlign: "right" }}
           >
             <Button type="primary" htmlType="submit">
               Submit

@@ -1,7 +1,12 @@
 {
   "General": {
     "team": "Equipo",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "name": "Nombre",
+    "surname": "Apellidos",
+    "phone": "Teléfono",
+    "country": "País",
+    "email": "Email"
   },
   "LocaleSwitcher": {
     "en": "Inglés",
@@ -40,7 +45,8 @@
     "signatureLegitimationTitle": "Legitimación de firma y compulsa",
     "signatureLegitimationDescription": "El notario certifica la autenticidad de una firma o realiza copias certificadas de documentos originales."
   },
-  "matrimonial": {
-    "title": "test123"
+  "ContactForm": {
+    "contactWay": "¿Cómo prefiere que le contactemos?",
+    "howCanWeHelp": "¿Cómo le podemos ayudar?"
   }
 }
