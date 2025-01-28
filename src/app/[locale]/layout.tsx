@@ -1,10 +1,10 @@
+import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import type { Metadata } from "next";
-import "@/styles/globals.css";
 import { ConfigProvider } from "antd";
 import { color } from "@/styles/colors";
 import Contact from "./sections/Contact/Contact";
@@ -36,18 +36,18 @@ export default async function RootLayout({
 
   const messages = await getMessages();
 
+  const myTheme = {
+    token: {
+      colorPrimary: color.primary,
+      fontFamily: `${plusJakartaSans.style.fontFamily}, sans-serif`,
+    },
+  };
+
   return (
     <html lang={locale}>
       <body className={plusJakartaSans.variable}>
         <NextIntlClientProvider messages={messages}>
-          <ConfigProvider
-            theme={{
-              token: {
-                colorPrimary: color.primary,
-                fontFamily: `${plusJakartaSans.style.fontFamily}, sans-serif`,
-              },
-            }}
-          >
+          <ConfigProvider theme={myTheme}>
             <Navbar />
             {children}
             <Contact />
