@@ -10,7 +10,7 @@ import { color } from "@/styles/colors";
 import Contact from "./sections/Contact/Contact";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import AntdRegistry from "@/components/Antregistry";
+import AntdRegistry from "@/components/AntRegistry/AntRegistry";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "400", "600", "800"],
