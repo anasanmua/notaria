@@ -1,3 +1,41 @@
-.root {
-  padding-top: 50px;
+.container {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 54vh;
+}
+
+.image {
+  transform: scaleX(-1);
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2px);
+}
+
+.textOverlay {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  align-items: center;
+}
+
+.title {
+  color: var(--white) !important;
+}
+
+.colorWhite {
+  color: var(--white) !important;
+}
+
+@media (max-width: 600px) {
+  .textOverlay {
+    padding: 50px;
+  }
+
+  .colorWhite {
+    display: none;
+  }
 }

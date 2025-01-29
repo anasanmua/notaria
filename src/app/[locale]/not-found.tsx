@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import tv from "../../../public/images/tv.jpg";
+import tv from "@/../public/images/tv.jpg";
 import { Button, Col, Divider, Row, Typography } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
 

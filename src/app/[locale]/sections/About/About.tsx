@@ -1,9 +1,7 @@
 "use client";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { Col, Row, Typography } from "antd";
-import Image from "next/image";
-import contract from "../../../../../public/images/contract.jpg";
-import { Trophy, BadgeCheck, Archive } from "lucide-react";
+import { Archive, BadgeCheck, Trophy } from "lucide-react";
 import IconText from "@/components/IconText/IconText";
 import { useTranslations } from "next-intl";
 
@@ -13,18 +11,6 @@ const About = () => {
   return (
     <BasicSection backgroundColor="cream2" id="sobre">
       <Row>
-        <Col xs={0} sm={6} md={8} lg={10} xl={12}>
-          <Image
-            priority
-            src={contract}
-            alt="Description of contract"
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        </Col>
         <Col>
           <Row gutter={50}>
             <Col xs={24} sm={12}>
@@ -51,7 +37,6 @@ const About = () => {
                 <Col xs={24}>
                   <IconText icon={Archive} text={t("item2")} />
                 </Col>
-
                 <Col xs={24}>
                   <IconText icon={BadgeCheck} text={t("item3")} />
                 </Col>
