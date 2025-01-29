@@ -1,6 +1,10 @@
-@import '@/styles/colors.css';
+@import "@/styles/colors.css";
 
 body {
-    font-family: "var(--font-plus-jakarta-sans)", sans-serif;
-    margin: 0px;
+  font-family: "var(--font-plus-jakarta-sans)", sans-serif;
+  margin: 0px;
+}
+
+a {
+  color: inherit;
 }
