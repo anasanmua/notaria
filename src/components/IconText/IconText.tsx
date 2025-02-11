@@ -27,11 +27,7 @@ const IconText = ({
         <Icon color={color} />
       </span>
       {href ? (
-        <Link
-          className={styles.link}
-          target="_blank"
-          href="https://www.google.com/maps/place/Notarial+P%C3%A9rez+Alvarez/@40.4701286,-3.6425056,16z/data=!3m1!4b1!4m6!3m5!1s0xd422ec20f5ab9fd:0x141beb4e5b18453d!8m2!3d40.4701286!4d-3.6425056!16s%2Fg%2F1hcb491m9?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
-        >
+        <Link className={styles.link} target="_blank" href={href}>
           {text}
         </Link>
       ) : (

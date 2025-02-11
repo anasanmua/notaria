@@ -28,6 +28,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ant-design/cssinjs@npm:1.23.0":
+  version: 1.23.0
+  resolution: "@ant-design/cssinjs@npm:1.23.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.11.1"
+    "@emotion/hash": "npm:^0.8.0"
+    "@emotion/unitless": "npm:^0.7.5"
+    classnames: "npm:^2.3.1"
+    csstype: "npm:^3.1.3"
+    rc-util: "npm:^5.35.0"
+    stylis: "npm:^4.3.4"
+  peerDependencies:
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: 10c0/c06877e6d005af86c3ce3c4d61ac3331801ad2e8d4ca4a6b1b34c401c13bfbf36afbe3b5459c415d92bcba60602662d7ae100baf74a1786cd47b27ef579126df
+  languageName: node
+  linkType: hard
+
 "@ant-design/cssinjs@npm:^1.21.0, @ant-design/cssinjs@npm:^1.21.1":
   version: 1.22.1
   resolution: "@ant-design/cssinjs@npm:1.22.1"
@@ -43,24 +61,6 @@ __metadata:
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
   checksum: 10c0/2c97d6ed9e701232b9c86c8139ef0c2760552c8a257bf85d03dadc057d945ec93b7a9946b06aecfe7ad5e28763ac4ca00765a4338ac4f4526b9b1c37da6d1a36
-  languageName: node
-  linkType: hard
-
-"@ant-design/cssinjs@npm:^1.23.0":
-  version: 1.23.0
-  resolution: "@ant-design/cssinjs@npm:1.23.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.11.1"
-    "@emotion/hash": "npm:^0.8.0"
-    "@emotion/unitless": "npm:^0.7.5"
-    classnames: "npm:^2.3.1"
-    csstype: "npm:^3.1.3"
-    rc-util: "npm:^5.35.0"
-    stylis: "npm:^4.3.4"
-  peerDependencies:
-    react: ">=16.0.0"
-    react-dom: ">=16.0.0"
-  checksum: 10c0/c06877e6d005af86c3ce3c4d61ac3331801ad2e8d4ca4a6b1b34c401c13bfbf36afbe3b5459c415d92bcba60602662d7ae100baf74a1786cd47b27ef579126df
   languageName: node
   linkType: hard
 
@@ -124,6 +124,13 @@ __metadata:
   version: 3.6.1
   resolution: "@ctrl/tinycolor@npm:3.6.1"
   checksum: 10c0/444d81612cd8c5c802a3d1253df83d5f77d3db87f351861655683a4743990e6b38976bf2e4129591c5a258607b63574b3c7bed702cf6a0eb7912222edf4570e9
+  languageName: node
+  linkType: hard
+
+"@emailjs/browser@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@emailjs/browser@npm:4.4.1"
+  checksum: 10c0/91c3d1702818dc2db61f382f5295e469ce2e6acb4d683d65239e0a12dea8b635cd8cea60ef9a83f2aa8fce857b1f8f8663e02dcd7f529cbf902f1f0e6d0d1b44
   languageName: node
   linkType: hard
 
@@ -3015,7 +3022,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "notaria@workspace:."
   dependencies:
-    "@ant-design/cssinjs": "npm:^1.23.0"
+    "@ant-design/cssinjs": "npm:1.23.0"
+    "@emailjs/browser": "npm:^4.4.1"
     "@types/node": "npm:20.0.0"
     "@types/react": "npm:18.0.0"
     "@types/react-dom": "npm:18.0.0"

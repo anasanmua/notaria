@@ -1,6 +1,6 @@
 "use client";
 import { Col, Row, Typography } from "antd";
-import { Clock, Mail, Map, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, Map, MapPin, Phone, Info } from "lucide-react";
 import IconText from "@/components/IconText/IconText";
 
 const { Title } = Typography;
@@ -14,10 +14,18 @@ const ContactInfo = () => (
         </Title>
       </Col>
       <Col xs={24}>
-        <IconText icon={Mail} text={"+34 911 23 23 23"} type={"secondary"} />
+        <IconText icon={Phone} text="+34 911 23 23 23" type="secondary" />
       </Col>
       <Col xs={24}>
-        <IconText icon={Phone} text={"notaria@gmail.com"} type={"secondary"} />
+        <IconText icon={Mail} text="notaria@gmail.com" type="secondary" />
+      </Col>
+      <Col xs={24}>
+        <IconText
+          icon={Info}
+          text="Formulario de contacto"
+          type="secondary"
+          href="/formulario-contacto"
+        />
       </Col>
     </Row>
     <Row gutter={[16, 16]}>
