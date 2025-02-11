@@ -11,6 +11,7 @@ import Contact from "./sections/Contact/Contact";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import AntdRegistry from "@/components/AntRegistry/AntRegistry";
+import CookieModal from "@/components/CookieModal/CookieModal";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ["200", "400", "600", "800"],
@@ -50,6 +51,7 @@ export default async function RootLayout({
         <AntdRegistry>
           <NextIntlClientProvider messages={messages}>
             <ConfigProvider theme={myTheme}>
+              <CookieModal />
               <Navbar />
               {children}
               <Contact />

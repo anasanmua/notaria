@@ -84,13 +84,7 @@ const Information = () => {
           >
             <InputNumber />
           </Form.Item>
-          <Form.Item
-            name={["user", "country"]}
-            label={t("country")}
-            labelAlign="left"
-          >
-            <Input />
-          </Form.Item>
+
           <Form.Item
             {...fullWidthLayout}
             name={["user", "contactWay"]}

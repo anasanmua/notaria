@@ -1,15 +1,14 @@
 "use client";
-import BasicSection from "@/components/BasicSection/BasicSection";
 import { Col, Row, Typography } from "antd";
+import Title from "antd/es/typography/Title";
+import Paragraph from "antd/es/typography/Paragraph";
+import Image from "next/image";
 import WorkerCard from "@/components/WorkerCard/WorkerCard";
+import BasicSection from "@/components/BasicSection/BasicSection";
+import justice from "@/../public/images/justice.jpg";
+import styles from "./team.module.css";
 
 const dataTeamTest = [
-  {
-    name: "Don Carlos Rodríguez-Viña Cancio",
-    jobTitle: "Notario",
-    mail: "john.doe@example.com",
-    phone: "+1-555-1234",
-  },
   {
     name: "Alejandro Ortega",
     jobTitle: "Oficial",
@@ -63,6 +62,28 @@ const dataTeamTest = [
 const Team = () => {
   return (
     <BasicSection backgroundColor="cream1" id="equipo">
+      <Row>
+        <Col xs={8}>
+          <Image
+            className={styles.img}
+            src={justice}
+            priority
+            width={400}
+            alt="justice image"
+          />
+        </Col>
+        <Col xs={16}>
+          <Paragraph>Don Carlos Rodríguez-Viña Cancio</Paragraph>
+          <Title level={2}>Notario en Hortaleza</Title>
+          <Title level={5}>
+            Como notaría en Barcelona queremos formar parte de los momentos
+            importantes del día a día de cualquier persona o empresa. Nuestro
+            compromiso es resolver de manera ágil y eficiente cualquier tipo de
+            trámite notarial que necesites. ¡Hacemos de tus necesidades
+            cotidianas nuestros servicios notariales!
+          </Title>
+        </Col>
+      </Row>
       <Typography.Title>Equipo</Typography.Title>
       <Row gutter={[{ sm: 32 }, { xs: 32, sm: 100 }]}>
         {dataTeamTest.map((worker) => (
