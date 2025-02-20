@@ -1,8 +1,10 @@
 "use client";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import Title from "antd/lib/typography/Title";
-import { Button, Form, Input, InputNumber, Row, Select } from "antd";
+import { Button, Form, Input, InputNumber, Select } from "antd";
 import { useTranslations } from "next-intl";
+import { FormEvent } from "react";
+import emailjs from "@emailjs/browser";
 
 // text-align on columns left?
 const Information = () => {
@@ -34,8 +36,23 @@ const Information = () => {
     },
   };
 
-  const onFinish = (values: any) => {
+  //type this values
+  const sendEmail = (values) => {
     console.log(values);
+    console.log("hello");
+
+    emailjs
+      .send("contact_service", "contact_form", values, {
+        publicKey: "SbZVFYR3ilV-3chOp",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        },
+      );
   };
 
   const onChange = (value: string) => {
@@ -48,8 +65,7 @@ const Information = () => {
       <div style={{ display: "flex", justifyContent: " center" }}>
         <Form
           {...defaultLayout}
-          name="nest-messages"
-          onFinish={onFinish}
+          onFinish={sendEmail}
           style={{ width: 600 }}
           validateMessages={validateMessages}
         >
@@ -82,7 +98,7 @@ const Information = () => {
             rules={[{ type: "number", min: 0 }]}
             labelAlign="left"
           >
-            <InputNumber />
+            <InputNumber style={{ width: 150 }} />
           </Form.Item>
 
           <Form.Item
@@ -108,7 +124,7 @@ const Information = () => {
           </Form.Item>
           <Form.Item
             {...fullWidthLayout}
-            name={["user", "howCanWeHelp"]}
+            name={["user", "message"]}
             label={t2("howCanWeHelp")}
           >
             <Input.TextArea />
