@@ -6,6 +6,15 @@ import { useTranslations } from "next-intl";
 import { FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 
+interface User extends Record<string, unknown> {
+  name: string;
+  surname: string;
+  email: string;
+  phone: number;
+  contactWay: string;
+  message: string;
+}
+
 // text-align on columns left?
 const Information = () => {
   const t = useTranslations("General");
@@ -37,7 +46,7 @@ const Information = () => {
   };
 
   //type this values
-  const sendEmail = (values) => {
+  const sendEmail = (values: User) => {
     console.log(values);
     console.log("hello");
 
@@ -55,10 +64,6 @@ const Information = () => {
       );
   };
 
-  const onChange = (value: string) => {
-    console.log(`selected ${value}`);
-  };
-
   return (
     <BasicSection>
       <Title style={{ textAlign: "center" }}>Formulario de contacto</Title>
@@ -70,22 +75,18 @@ const Information = () => {
           validateMessages={validateMessages}
         >
           <Form.Item
-            name={["user", "name"]}
+            name={"name"}
             label={t("name")}
             rules={[{ required: true }]}
             labelAlign="left"
           >
             <Input />
           </Form.Item>
-          <Form.Item
-            name={["user", "surname"]}
-            label={t("surname")}
-            labelAlign="left"
-          >
+          <Form.Item name={"surname"} label={t("surname")} labelAlign="left">
             <Input />
           </Form.Item>
           <Form.Item
-            name={["user", "email"]}
+            name={"email"}
             label={t("email")}
             rules={[{ type: "email" }]}
             labelAlign="left"
@@ -93,7 +94,7 @@ const Information = () => {
             <Input />
           </Form.Item>
           <Form.Item
-            name={["user", "phone"]}
+            name={"phone"}
             label={t("phone")}
             rules={[{ type: "number", min: 0 }]}
             labelAlign="left"
@@ -103,13 +104,12 @@ const Information = () => {
 
           <Form.Item
             {...fullWidthLayout}
-            name={["user", "contactWay"]}
+            name={"contactWay"}
             label={t2("contactWay")}
           >
             <Select
               placeholder="Select a reason"
               optionFilterProp="label"
-              onChange={onChange}
               options={[
                 {
                   value: "mail",
@@ -124,7 +124,7 @@ const Information = () => {
           </Form.Item>
           <Form.Item
             {...fullWidthLayout}
-            name={["user", "message"]}
+            name={"message"}
             label={t2("howCanWeHelp")}
           >
             <Input.TextArea />
