@@ -4,25 +4,34 @@ import { Col, Row, Typography } from "antd";
 import { Archive, BadgeCheck, Trophy } from "lucide-react";
 import IconText from "@/components/IconText/IconText";
 import { useTranslations } from "next-intl";
+import Title from "antd/lib/typography/Title";
+import styles from "./about.module.css";
 
-const About = () => {
+const About = (): JSX.Element => {
   const t = useTranslations("About");
 
   return (
-    <BasicSection backgroundColor="cream2" id="sobre">
+    <BasicSection backgroundColor="cream2" id="about">
       <Row>
         <Col>
           <Row gutter={50}>
             <Col xs={24} sm={12}>
-              <Typography.Title>Sobre</Typography.Title>
+              <Title level={3}>
+                Si necesitas los servicios de un notario, es importante que
+                tengas en cuenta lo siguiente:
+              </Title>
               <Typography.Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <ul>
+                  <li>En España ejercen cerca de 3.000 notarios</li>
+                  <li className={styles.li}>
+                    Como ciudadano, tienes derecho a elegir libremente el
+                    notario que mejor se adapte a tus necesidades.
+                  </li>
+                  <li>
+                    Los aranceles notariales están regulados por ley, lo que
+                    asegura tarifas uniformes y transparentes.
+                  </li>
+                </ul>
               </Typography.Paragraph>
             </Col>
             <Col xs={24} sm={12}>
