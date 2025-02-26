@@ -37,6 +37,7 @@ const NavBar: React.FC = () => {
           </Row>
         </Link>
       </Col>
+      {/*this is a useledd comment*/}
       <Col className={classNames(styles.anchorMenu, anchorHidden)}>
         <Anchor
           // @ts-ignore
