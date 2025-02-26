@@ -23,13 +23,13 @@ const dataServicesTest = [
     icon: Users,
     title: "notarialPowerTitle",
     description: "notarialPowerDescription",
-    href: "poder-notarial",
+    href: "poderes",
   },
   {
     icon: PenTool,
     title: "testamentaryTitle",
     description: "testamentaryDescription",
-    href: "testamentos",
+    href: "sucesiones",
   },
   {
     icon: CheckSquare,
@@ -65,7 +65,7 @@ const dataServicesTest = [
     icon: Folder,
     title: "nationalityTitle",
     description: "nationalityDescription",
-    href: "jura-nacionalidad",
+    href: "nacionalidad",
   },
   {
     icon: Landmark,
@@ -83,13 +83,13 @@ const dataServicesTest = [
     icon: UserCheck,
     title: "manifestationsTitle",
     description: "manifestationsDescription",
-    href: "actas-manifestaciones",
+    href: "actas",
   },
   {
     icon: DollarSign,
     title: "signatureLegitimationTitle",
     description: "signatureLegitimationDescription",
-    href: "legitimacion-firma",
+    href: "legitimacion",
   },
 ];
 

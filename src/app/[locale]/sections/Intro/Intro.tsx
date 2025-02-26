@@ -36,7 +36,7 @@ const Intro = () => {
           <Title className={styles.title}>{t("title")}</Title>
           <Text className={styles.description}>{t("description")}</Text>
           <div className={styles.buttonGroup}>
-            <Button onClick={() => scrollToSection("services")}>
+            <Button onClick={() => scrollToSection("services")} type="primary">
               {t2("services")}
             </Button>
             <Button onClick={() => scrollToSection("contact")}>

@@ -96,17 +96,17 @@ const NavBar: React.FC = () => {
           items={[
             {
               key: "part-1",
-              href: "#sobre",
+              href: "#about",
               title: "About",
             },
             {
               key: "part-2",
-              href: "#equipo",
+              href: "#team",
               title: "Team",
             },
             {
-              key: "part-3",
-              href: "#servicios",
+              key: "services",
+              href: "#services",
               title: "Services",
             },
           ]}
