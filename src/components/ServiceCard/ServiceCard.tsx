@@ -19,17 +19,16 @@ const ServiceCard = ({
 }: ServiceCardProps) => {
   const t = useTranslations("Services");
   return (
-    <Row>
+    <Row className={styles.root}>
       <Col className={styles.icon}>
         <Icon color={"white"} />
       </Col>
-      <Col xs={24}>
+      <Col xs={24} className={styles.flexGrow}>
         <Typography.Title level={3}>{t(title)}</Typography.Title>
       </Col>
-      <Col>
-        <Typography.Text className={styles.description}>
-          {t(description)}
-        </Typography.Text>
+      {/*useless comment*/}
+      <Col className={styles.flexGrow}>
+        <Typography.Text>{t(description)}</Typography.Text>
       </Col>
       <Col className={styles.button}>
         <Link href={`servicios/${href}`}>

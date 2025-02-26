@@ -23,7 +23,7 @@ const About = (): JSX.Element => {
               <Typography.Paragraph>
                 <ul>
                   <li>En España ejercen cerca de 3.000 notarios</li>
-                  <li className={styles.li}>
+                  <li>
                     Como ciudadano, tienes derecho a elegir libremente el
                     notario que mejor se adapte a tus necesidades.
                   </li>

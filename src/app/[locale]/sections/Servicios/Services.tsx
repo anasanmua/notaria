@@ -2,12 +2,14 @@
 import { Col, Row, Typography } from "antd";
 import {
   Archive,
+  Briefcase,
   CheckSquare,
+  ClipboardList,
   DollarSign,
   FileText,
   Folder,
-  Handshake,
   Home,
+  Landmark,
   PenTool,
   UserCheck,
   Users,
@@ -42,22 +44,40 @@ const dataServicesTest = [
     href: "hipotecario",
   },
   {
-    icon: FileText,
-    title: "condominiumDissolutionTitle",
-    description: "condominiumDissolutionDescription",
-    href: "condominio",
-  },
-  {
     icon: Archive,
     title: "donationsTitle",
     description: "donationsDescription",
     href: "donaciones",
   },
   {
+    icon: FileText,
+    title: "realStateTitle",
+    description: "realStateDescription",
+    href: "inmobiliario",
+  },
+  {
+    icon: Briefcase,
+    title: "tradeTitle",
+    description: "tradeDescription",
+    href: "mercantil",
+  },
+  {
     icon: Folder,
     title: "nationalityTitle",
     description: "nationalityDescription",
     href: "jura-nacionalidad",
+  },
+  {
+    icon: Landmark,
+    title: "policiesTitle",
+    description: "policiesDescription",
+    href: "polizas",
+  },
+  {
+    icon: ClipboardList,
+    title: "ratificationsTitle",
+    description: "ratificationsDescription",
+    href: "ratificaciones",
   },
   {
     icon: UserCheck,
@@ -70,12 +90,6 @@ const dataServicesTest = [
     title: "signatureLegitimationTitle",
     description: "signatureLegitimationDescription",
     href: "legitimacion-firma",
-  },
-  {
-    icon: Handshake,
-    title: "saleTitle",
-    description: "saleDescription",
-    href: "compra-ventaAAA",
   },
 ];
 

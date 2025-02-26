@@ -1,17 +1,27 @@
+.root {
+  background-color: var(--brown-2);
+  min-height: 281px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+}
 .icon {
   padding: 10px;
   border-radius: 8px;
   background-color: var(--primary);
 }
 
-.description {
-  text-align: justify;
+.flexGrow {
+  flex-grow: 1;
 }
 
 .button {
   margin-top: 16px;
+  align-self: flex-start;
 }
-
 
 .link {
   color: var(--brown-6);
@@ -20,7 +30,6 @@
 .link:hover {
   color: var(--brown-8);
   text-decoration: underline;
-
 }
 
 .link:active {
