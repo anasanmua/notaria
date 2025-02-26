@@ -61,7 +61,7 @@ const dataTeamTest = [
 
 const Team = () => {
   return (
-    <BasicSection backgroundColor="cream1" id="equipo">
+    <BasicSection backgroundColor="cream1" id="team">
       <Row>
         <Col xs={8}>
           <Image

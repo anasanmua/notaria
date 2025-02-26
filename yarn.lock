@@ -127,7 +127,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emailjs/browser@npm:^4.4.1":
+"@emailjs/browser@npm:4.4.1":
   version: 4.4.1
   resolution: "@emailjs/browser@npm:4.4.1"
   checksum: 10c0/91c3d1702818dc2db61f382f5295e469ce2e6acb4d683d65239e0a12dea8b635cd8cea60ef9a83f2aa8fce857b1f8f8663e02dcd7f529cbf902f1f0e6d0d1b44
@@ -1287,6 +1287,13 @@ __metadata:
   dependencies:
     toggle-selection: "npm:^1.0.6"
   checksum: 10c0/3ebf5e8ee00601f8c440b83ec08d838e8eabb068c1fae94a9cda6b42f288f7e1b552f3463635f419af44bf7675afc8d0390d30876cf5c2d5d35f86d9c56a3e5f
+  languageName: node
+  linkType: hard
+
+"country-flag-icons@npm:^1.5.18":
+  version: 1.5.18
+  resolution: "country-flag-icons@npm:1.5.18"
+  checksum: 10c0/99aa10f23521c81512da721885f91a419261ba2608020497b42b98ec4a2f33e26c8f9cad3a4d42a4f582018be8ade9ea67600768ffaa46746e325a6d5ba24a59
   languageName: node
   linkType: hard
 
@@ -3023,7 +3030,7 @@ __metadata:
   resolution: "notaria@workspace:."
   dependencies:
     "@ant-design/cssinjs": "npm:1.23.0"
-    "@emailjs/browser": "npm:^4.4.1"
+    "@emailjs/browser": "npm:4.4.1"
     "@types/node": "npm:20.0.0"
     "@types/react": "npm:18.0.0"
     "@types/react-dom": "npm:18.0.0"
@@ -3032,6 +3039,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:8.19.1"
     "@typescript-eslint/parser": "npm:8.19.1"
     antd: "npm:5.21.0"
+    country-flag-icons: "npm:^1.5.18"
     eslint: "npm:8.0.0"
     eslint-config-next: "npm:14.2.13"
     lucide-react: "npm:0.445.0"
@@ -3040,6 +3048,7 @@ __metadata:
     next-intl: "npm:3.25.1"
     prettier: "npm:3.3.3"
     react: "npm:18.2.0"
+    react-country-flag: "npm:^3.1.0"
     react-dom: "npm:18.0.0"
     react-scroll: "npm:1.9.0"
     react-world-flags: "npm:1.6.0"
@@ -3822,6 +3831,15 @@ __metadata:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
   checksum: 10c0/25de315f744702a3cd5152726c71c0245af7f4e605756fd5659d288304461b5c34404c2df088396321c45aa3b0da17540e772748d2153df8d2b6f0a6165bb79a
+  languageName: node
+  linkType: hard
+
+"react-country-flag@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "react-country-flag@npm:3.1.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: 10c0/6271cde6cf355c66e2b669c74e98596d771534154210bbb84cd84788f46710c7ee14671229cb92203d09aeb4c30206bb882b73d63d95a73f96cdaca09ed2bd0d
   languageName: node
   linkType: hard
 

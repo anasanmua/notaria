@@ -2,6 +2,8 @@
   "General": {
     "team": "Equipo",
     "contact": "Contacto",
+    "about": "Sobre nosotros",
+    "services": "Servicios",
     "name": "Nombre",
     "surname": "Apellidos",
     "phone": "Teléfono",
@@ -13,13 +15,13 @@
     "es": "Español"
   },
   "Intro": {
-    "title": "Al servicio de su tranquilidad jurídica",
-    "description": "Nos dedicamos a ofrecer servicios notariales de alta calidad, respaldados por años de experiencia y un profundo conocimiento del marco legal español."
+    "title": "Tu notaría en el barrio de Hortaleza. ",
+    "description": "Explora nuestros servicios y no dudes en ponerte en contacto."
   },
   "About": {
     "title": "Lorem",
-    "subtitle": "Tu notaría en el barrio de Hortaleza. Explora nuestros servicios y no dudes en ponerte en contacto.",
-    "item1": "Seguridad",
+    "subtitle": "Por ello, cuando vayas a elegir a un notario, que sea por la calidad de sus servicios.",
+    "item1": "Seguridad jurídica",
     "item2": "Experiencia",
     "item3": "Asesoramiento gratuito"
   },

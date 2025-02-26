@@ -13,13 +13,23 @@
   top: 0;
   left: 0;
   filter: blur(2px);
+  z-index: -1;
 }
 
 .textOverlay {
   display: flex;
-  position: absolute;
-  height: 100%;
   align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  padding-right: 5%;
+}
+
+.textContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .title {
@@ -28,6 +38,16 @@
 
 .colorWhite {
   color: var(--white) !important;
+}
+
+.description {
+  color: var(--white) !important;
+  font-size: 1.2rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px; /* Space between buttons */
 }
 
 @media (max-width: 600px) {

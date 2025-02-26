@@ -15,7 +15,6 @@ const NavBar: React.FC = () => {
   const anchorHidden =
     pathname === "/en" || pathname === "/es" ? "" : styles.anchorHidden;
 
-  // @ts-ignore
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
   };
