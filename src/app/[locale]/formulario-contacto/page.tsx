@@ -1,9 +1,8 @@
 "use client";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import Title from "antd/lib/typography/Title";
-import { Button, Form, Input, InputNumber, Select } from "antd";
+import { Button, Checkbox, Form, Input, InputNumber, Select } from "antd";
 import { useTranslations } from "next-intl";
-import { FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 
 interface User extends Record<string, unknown> {
@@ -13,6 +12,7 @@ interface User extends Record<string, unknown> {
   phone: number;
   contactWay: string;
   message: string;
+  privacyPolicy: boolean;
 }
 
 // text-align on columns left?
@@ -22,7 +22,7 @@ const Information = () => {
 
   const defaultLayout = {
     labelCol: { span: 4 },
-    wrapperCol: { span: 16 },
+    wrapperCol: { span: 20 },
   };
 
   const fullWidthLayout = {
@@ -34,6 +34,7 @@ const Information = () => {
     wrapperCol: { span: 20 },
   };
 
+  // TO DO Añadir rule para pol.priv
   const validateMessages = {
     required: "${label} is required!",
     types: {
@@ -45,11 +46,7 @@ const Information = () => {
     },
   };
 
-  //type this values
   const sendEmail = (values: User) => {
-    console.log(values);
-    console.log("hello");
-
     emailjs
       .send("contact_service", "contact_form", values, {
         publicKey: "SbZVFYR3ilV-3chOp",
@@ -69,6 +66,7 @@ const Information = () => {
       <Title style={{ textAlign: "center" }}>Formulario de contacto</Title>
       <div style={{ display: "flex", justifyContent: " center" }}>
         <Form
+          layout="vertical"
           {...defaultLayout}
           onFinish={sendEmail}
           style={{ width: 600 }}
@@ -132,8 +130,20 @@ const Information = () => {
           <Form.Item
             {...buttonLayout}
             label={null}
-            style={{ textAlign: "right" }}
+            style={{ textAlign: "left" }}
           >
+            <Form.Item name="privacyPolicy">
+              <Checkbox>
+                He leído y acepto la
+                <a
+                  href="/politica-privacidad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Política de Privacidad
+                </a>
+              </Checkbox>
+            </Form.Item>
             <Button type="primary" htmlType="submit">
               Submit
             </Button>

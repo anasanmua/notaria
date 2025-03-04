@@ -1,45 +1,56 @@
 "use client";
-import { Button, Col, Row } from "antd";
+import { Button, Col, Row, Tabs } from "antd";
 import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
-import { useTranslations } from "use-intl";
+import { data, DataService, Service } from "@/utils/data";
+import { useTranslations } from "next-intl";
 
 const Service = ({ params }: { params: { servicios: string } }) => {
+  const t = useTranslations("Service");
   const servicio = params.servicios;
-  console.log(servicio, "title");
+
+  const tabArray = data[servicio as keyof DataService];
+
+  const tabs = tabArray?.map((item: Service) => ({
+    key: item.type,
+    label: t(item.type),
+    children: (
+      <>
+        <Title level={4}>Descripción</Title>
+        <Text>{t(item.description)}</Text>
+        {item.documents && (
+          <>
+            <Title level={5}>Documentos necesarios</Title>
+            <ul>
+              {item.documents.map((doc, idx) => (
+                <li key={idx}>{t(doc)}</li>
+              ))}
+            </ul>
+          </>
+        )}
+      </>
+    ),
+  }));
 
   return (
     <>
       <BasicSection backgroundColor="cream1">
         <Row>
           <Col xs={24}>
-            <Title>PODERES</Title>
+            <Title>
+              {servicio.charAt(0).toUpperCase() + servicio.slice(1)}
+            </Title>
           </Col>
           <Col xs={24}>
-            <Text>
-              Faculta a un tercero para que pueda actuar en tu nombre.
-            </Text>
-          </Col>
-          <Col xs={24}>
-            <Text>Tipos</Text>
-            <Row>
-              <Col xs={24}>General</Col>
-              <Col>
-                Poder amplio para que puedan representarte en la mayoría de
-                negocios jurídicos
-              </Col>
-              <Col xs={24}>Documentos</Col>
-              <Col>Documento de identidad del poderdante y del apoderado</Col>
-              <Col xs={24}> Partida de nacimiento poderdante,</Col>
-              <Col>
-                Si hay varios apoderados: indicar si el poder es solidario o
-                mancomunado
-              </Col>
-            </Row>
+            <Tabs type="card" items={tabs} />
           </Col>
           <Col>
-            <Button style={{ marginTop: "15px" }} href={"/formulario-contacto"}>
+            <Button
+              style={{ marginTop: "15px" }}
+              type="primary"
+              href={"/formulario-contacto"}
+            >
               Solicitar más Información
             </Button>
           </Col>
