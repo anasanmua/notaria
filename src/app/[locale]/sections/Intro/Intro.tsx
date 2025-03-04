@@ -8,17 +8,11 @@ import { Button, Col, Row } from "antd";
 import { Link as ScrollLink } from "react-scroll";
 import { scroller } from "react-scroll";
 import styles from "./intro.module.css";
+import { scrollToSection } from "@/utils/scroller";
 
 const Intro = () => {
   const t = useTranslations("Intro");
   const t2 = useTranslations("General");
-
-  const scrollToSection = (section: string) => {
-    scroller.scrollTo(section, {
-      smooth: true,
-      duration: 500,
-    });
-  };
 
   return (
     <div className={styles.container}>

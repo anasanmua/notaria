@@ -3,13 +3,15 @@ import { usePathname } from "next/navigation";
 import { Anchor, Typography, Row, Col, Button, Drawer } from "antd";
 import { Menu, SquareSquare } from "lucide-react";
 import styles from "./navbar.module.css";
-import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { useState } from "react";
 import classNames from "classnames";
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
+import { useTranslations } from "next-intl";
+import { scrollToSection } from "@/utils/scroller";
 
 const NavBar: React.FC = () => {
+  const t = useTranslations("General");
   const [isDrawerVisible, setDrawerVisible] = useState(false);
   const pathname = usePathname();
   const anchorHidden =
@@ -46,30 +48,27 @@ const NavBar: React.FC = () => {
           items={[
             {
               key: "part-1",
-              href: "#sobre",
-              title: "About",
+              href: "#about",
+              title: t("about"),
             },
             {
               key: "part-2",
-              href: "#equipo",
-              title: "Team",
+              href: "#team",
+              title: t("team"),
             },
             {
               key: "part-3",
-              href: "#servicios",
-              title: "Services",
+              href: "#services",
+              title: t("services"),
             },
           ]}
         />
       </Col>
+
       <Col className={styles.contactDropdownArea}>
-        {/*@ts-ignore*/}
-        <ScrollLink to="contact" smooth={true} duration={500}>
-          {/*@ts-ignore*/}
-          <Button type="primary" className={styles.contactButton}>
-            Contacto
-          </Button>
-        </ScrollLink>
+        <Button type="primary" onClick={() => scrollToSection("contact")}>
+          {t("contact")}
+        </Button>
         <span className={styles.languageSelector}>
           <LocaleSwitcher />
         </span>
@@ -97,17 +96,17 @@ const NavBar: React.FC = () => {
             {
               key: "part-1",
               href: "#about",
-              title: "About",
+              title: t("about"),
             },
             {
               key: "part-2",
               href: "#team",
-              title: "Team",
+              title: t("team"),
             },
             {
               key: "services",
               href: "#services",
-              title: "Services",
+              title: t("services"),
             },
           ]}
         />

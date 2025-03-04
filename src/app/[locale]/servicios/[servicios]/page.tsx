@@ -3,17 +3,17 @@ import { Button, Col, Row, Tabs } from "antd";
 import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
-import { data } from "@/utils/data";
+import { data, DataService, Service } from "@/utils/data";
 import { useTranslations } from "next-intl";
 
 const Service = ({ params }: { params: { servicios: string } }) => {
   const t = useTranslations("Service");
   const servicio = params.servicios;
 
-  const tabArray = data[servicio];
-  console.log(tabArray, "hey");
-  const tabs = tabArray?.map((item, index) => ({
-    key: item.type + index,
+  const tabArray = data[servicio as keyof DataService];
+
+  const tabs = tabArray?.map((item: Service) => ({
+    key: item.type,
     label: t(item.type),
     children: (
       <>
@@ -38,8 +38,9 @@ const Service = ({ params }: { params: { servicios: string } }) => {
       <BasicSection backgroundColor="cream1">
         <Row>
           <Col xs={24}>
-            {/*TODO This doesnt work*/}
-            <Title>{servicio}</Title>
+            <Title>
+              {servicio.charAt(0).toUpperCase() + servicio.slice(1)}
+            </Title>
           </Col>
           <Col xs={24}>
             <Tabs type="card" items={tabs} />

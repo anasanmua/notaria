@@ -1,4 +1,25 @@
-export const data = {
+export interface Service {
+  type: string;
+  description: string;
+  documents?: string[];
+}
+
+export interface DataService {
+  poderes: Service[];
+  sucesiones: Service[];
+  matrimonial: Service[];
+  hipotecario: Service[];
+  donaciones: Service[];
+  inmobiliario: Service[];
+  mercantil: Service[];
+  nacionalidad: Service[];
+  polizas: Service[];
+  ratificaciones: Service[];
+  actas: Service[];
+  legitimacion: Service[];
+}
+
+export const data: DataService = {
   poderes: [
     {
       type: "generalTitle",
