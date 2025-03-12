@@ -23,10 +23,10 @@ const WorkerCard = ({ name, title, mail, phone }: WorkerCardProps) => {
         <Col xs={24}>{title}</Col>
       </Row>
       <Col xs={24}>
-        <IconText icon={Mail} text={mail} type="secondary" />
+        <IconText icon={Mail} text={mail} type={"secondary"} />
       </Col>
       <Col xs={24}>
-        <IconText icon={Phone} text={phone} type="secondary" />
+        <IconText icon={Phone} text={phone} type={"secondary"} />
       </Col>
     </Row>
   );

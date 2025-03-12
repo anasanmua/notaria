@@ -8,11 +8,11 @@ import BasicSection from "@/components/BasicSection/BasicSection";
 export default function NotFound() {
   return (
     <>
-      <BasicSection backgroundColor="cream1">
+      <BasicSection backgroundColor={"cream1"}>
         <Row
           gutter={[0, 40]}
           style={{ textAlign: "center", paddingTop: "50px" }}
-          align="middle"
+          align={"middle"}
         >
           <Col xs={12}>
             <Row>
@@ -23,15 +23,15 @@ export default function NotFound() {
                 </Typography.Title>
               </Col>
               <Col xs={24}>
-                <Link href="/">
-                  <Button type="primary">Volver al inicio</Button>
+                <Link href={"/"}>
+                  <Button type={"primary"}>Volver al inicio</Button>
                 </Link>
               </Col>
             </Row>
           </Col>
 
           <Col xs={12}>
-            <Image src={tv} priority width={400} alt="tv with no image" />
+            <Image src={tv} priority width={400} alt={"tv with no image"} />
           </Col>
         </Row>
       </BasicSection>

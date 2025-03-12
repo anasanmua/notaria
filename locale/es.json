@@ -8,7 +8,8 @@
     "surname": "Apellidos",
     "phone": "Teléfono",
     "country": "País",
-    "email": "Email"
+    "email": "Email",
+    "selectReason": "Seleccione una opción"
   },
   "LocaleSwitcher": {
     "en": "Inglés",
@@ -125,7 +126,7 @@
     "marriageProcedureDocu8": "Indicar lugar de celebración del matrimonio.",
 
     "divorceTitle": "Divorcio y liquidación de la sociedad de gananciales",
-    "divorceDescription": "El divorcio se puede realizar notarialmente cuando no haya hijos menores y los cónyuges actúen de mutuo acuerdo. En ese caso, tendrán que acudir primero a un abogado que elabore un convenio regulador de las consecuencias personales y patrimoniales de la ruptura. Si hay bienes en común, el divorcio puede ir aparejado a la liquidación de la sociedad de gananciales.",
+    "divorceDescription": "El divorcio se puede realizar notarialmente cuando no haya hijos menores y los cónyuges actúen de mutuo acuerdo. En ese caso, tendrán que acudir primero a un abogado que elabore un convenio regulador de las consecuencias personales y patrimoniales de la ruptura. Si hay bienes en común, el divorcio puede ir aparejado a la liquidación de la sociedad de gananciales.***IMPUESTOS: La escritura de liquidación de la sociedad de gananciales está sujeta pero exenta al pago del Impuesto de Actos Jurídicos Documentados. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "divorceTaxesNote": "***IMPUESTOS: La escritura de liquidación de la sociedad de gananciales está sujeta pero exenta al pago del Impuesto de Actos Jurídicos Documentados. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "divorceDocu1": "Documento de identidad de ambos.",
     "divorceDocu2": "Datos del abogado.",
@@ -189,7 +190,7 @@
     "realEstateTransactionsDocu5": "Certificado corriente de pago comunidad de propietarios.",
     "realEstateTransactionsDocu6": "Certificado de eficiencia energética.",
     "realEstateTransactionsDocu7": "Indicar si va a ser vivienda habitual de los compradores.",
-    "realEstateTransactionsDocu8": "Datos de contacto si media inmobiliaria.",
+    "realEstateTransactionsDocu8": "Datos de contacto si media inmobiliariaaaaaa.",
     "realEstateTransactionsDocu9": "Precio y forma de pago: transferencia, cheque, etc.",
     "realEstateTransactionsDocu10": "Si la finca está gravada con hipoteca, certificado de deuda y cuánto se retiene para su cancelación.",
 
@@ -224,7 +225,7 @@
     "landSegregationDocu3": "Licencia de segregación emitida por el Ayuntamiento competente.",
 
     "useChangeTitle": "Cambio de uso",
-    "useChangeDescription": "¿Tienes un inmueble cuyo uso actual no corresponde al que tiene en el Registro de la Propiedad? Si has realizado una obra de transformación y deseas cambiar el uso de la edificación es necesario presentar la solicitud de cambio de uso, a través de una escritura pública que modifique la descripción registral. ***IMPUESTOS: La escritura de cambio de uso está sujeta al Impuesto de actos Jurídicos Documentados. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
+    "useChangeDescription": "¿Tienes un local y te gustaría emplearlo como vivienda? Ponte en contacto con nosotros y te explicamos la mejor forma de hacerlo según tu caso concreto.",
     "useChangeDocu1": "Documento de identidad de los propietarios, estado civil y profesión",
     "useChangeDocu2": "Título de propiedad.",
     "useChangeDocu3": "Certificado técnico",
@@ -233,7 +234,7 @@
     "useChangeDocu6": "Si se encuentra en una comunidad de propietarios, se requerirá la autorización de la junta a menos que el cambio de uso esté permitido o, según algunas sentencias, no esté prohibido en los estatutos de la comunidad.",
 
     "companyFormationTitle": "Constitución de sociedades",
-    "companyFormationDescription": "Existen diversos tipos de sociedades en función de la responsabilidad patrimonial asumida por los socios, siendo las más comunes aquellas en las que se limita dicha responsabilidad, concretamente las sociedades limitadas y anónimas. Su constitución se realiza en las notarías, donde además podrás recibir asesoramiento sobre cuál es la forma más adecuada para la empresa que deseas realizar o sobre la redacción de los estatutos sociales.Una vez constituida la sociedad hay que solicitar el NIF provisional de la nueva empresa, liquidar el Impuesto de Operaciones Societarias, presentar copia de la escritura en el Registro Mercantil y, tras su inscripción, solicitar el CIF definitivo. Todos estos trámites se pueden realizar igualmente a través de la notaría.\n\n***IMPUESTOS: La constitución de sociedades se liquida como exenta en el Impuesto de Operaciones Societarias. El plazo de presentación es de 30 días hábiles tras la firma de la escritura.",
+    "companyFormationDescription": "Existen diversos tipos de sociedades en función de la responsabilidad patrimonial asumida por los socios, siendo las más comunes aquellas en las que se limita dicha responsabilidad, concretamente las sociedades limitadas y anónimas. Su constitución se realiza en las notarías, donde además podrás recibir asesoramiento sobre cuál es la forma más adecuada para la empresa que deseas realizar o sobre la redacción de los estatutos sociales. Una vez constituida la sociedad hay que solicitar el NIF provisional de la nueva empresa, liquidar el Impuesto de Operaciones Societarias, presentar copia de la escritura en el Registro Mercantil y, tras su inscripción, solicitar el CIF definitivo. Todos estos trámites se pueden realizar igualmente a través de la notaría.\n\n***IMPUESTOS: La constitución de sociedades se liquida como exenta en el Impuesto de Operaciones Societarias. El plazo de presentación es de 30 días hábiles tras la firma de la escritura.",
     "companyFormationDocu1": "Documento de identidad de los socios",
     "companyFormationDocu2": "Certificado de denominación social (se puede obtener telemáticamente desde la propia notaría)",
     "companyFormationDocu3": "Identificar los bienes que van a integrar el capital social",

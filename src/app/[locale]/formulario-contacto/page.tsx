@@ -3,17 +3,8 @@ import BasicSection from "@/components/BasicSection/BasicSection";
 import Title from "antd/lib/typography/Title";
 import { Button, Checkbox, Form, Input, InputNumber, Select } from "antd";
 import { useTranslations } from "next-intl";
-import emailjs from "@emailjs/browser";
-
-interface User extends Record<string, unknown> {
-  name: string;
-  surname: string;
-  email: string;
-  phone: number;
-  contactWay: string;
-  message: string;
-  privacyPolicy: boolean;
-}
+import { sendEmail, User } from "@/app/[locale]/formulario-contacto/MailSender";
+import styles from "./formulario-contacto.module.css";
 
 // text-align on columns left?
 const Information = () => {
@@ -34,70 +25,51 @@ const Information = () => {
     wrapperCol: { span: 20 },
   };
 
-  // TO DO Añadir rule para pol.priv
   const validateMessages = {
-    required: "${label} is required!",
+    required: "El ${label} es un campo obligatorio",
     types: {
-      email: "${label} is not a valid email!",
-      number: "${label} is not a valid number!",
+      email: "Por favor, añada un dominio válido al email",
+      number: "Por favor, introduzca un número de teléfono válido",
     },
     number: {
       range: "${label} must be between ${min} and ${max}",
     },
   };
 
-  const sendEmail = (values: User) => {
-    emailjs
-      .send("contact_service", "contact_form", values, {
-        publicKey: "SbZVFYR3ilV-3chOp",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        },
-      );
-  };
-
   return (
     <BasicSection>
-      <Title style={{ textAlign: "center" }}>Formulario de contacto</Title>
-      <div style={{ display: "flex", justifyContent: " center" }}>
+      <Title className={styles.title}>Formulario de contacto</Title>
+      <div className={styles.formContainer}>
         <Form
-          layout="vertical"
+          layout={"vertical"}
           {...defaultLayout}
           onFinish={sendEmail}
-          style={{ width: 600 }}
+          className={styles.form}
           validateMessages={validateMessages}
         >
           <Form.Item
             name={"name"}
             label={t("name")}
             rules={[{ required: true }]}
-            labelAlign="left"
           >
             <Input />
           </Form.Item>
-          <Form.Item name={"surname"} label={t("surname")} labelAlign="left">
+          <Form.Item name={"surname"} label={t("surname")} labelAlign={"left"}>
             <Input />
           </Form.Item>
           <Form.Item
             name={"email"}
             label={t("email")}
-            rules={[{ type: "email" }]}
-            labelAlign="left"
+            rules={[{ type: "email", required: true }]}
           >
             <Input />
           </Form.Item>
           <Form.Item
             name={"phone"}
             label={t("phone")}
-            rules={[{ type: "number", min: 0 }]}
-            labelAlign="left"
+            rules={[{ type: "number", min: 0, required: true }]}
           >
-            <InputNumber style={{ width: 150 }} />
+            <InputNumber className={styles.phoneNumber} />
           </Form.Item>
 
           <Form.Item
@@ -106,12 +78,12 @@ const Information = () => {
             label={t2("contactWay")}
           >
             <Select
-              placeholder="Select a reason"
-              optionFilterProp="label"
+              placeholder={t("selectReason")}
+              optionFilterProp={"label"}
               options={[
                 {
                   value: "mail",
-                  label: "Correo electrónico",
+                  label: t("email"),
                 },
                 {
                   value: "phone",
@@ -124,26 +96,29 @@ const Information = () => {
             {...fullWidthLayout}
             name={"message"}
             label={t2("howCanWeHelp")}
+            rules={[{ required: true }]}
           >
-            <Input.TextArea />
+            <Input.TextArea className={styles.maxHeight} />
           </Form.Item>
+
           <Form.Item
-            {...buttonLayout}
-            label={null}
-            style={{ textAlign: "left" }}
+            name={"privacy"}
+            valuePropName={"checked"}
+            rules={[
+              {
+                required: true,
+                message: "Por favor, acepte la Política de privacidad",
+              },
+            ]}
           >
-            <Form.Item name="privacyPolicy">
-              <Checkbox>
-                He leído y acepto la
-                <a
-                  href="/politica-privacidad"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Política de Privacidad
-                </a>
-              </Checkbox>
-            </Form.Item>
+            <Checkbox>
+              He leído y acepto la{" "}
+              <a href={"/politica-privacidad"} target={"_blank"}>
+                Política de Privacidad
+              </a>
+            </Checkbox>
+          </Form.Item>
+          <Form.Item {...buttonLayout} label={null} className={styles.button}>
             <Button type="primary" htmlType="submit">
               Submit
             </Button>
