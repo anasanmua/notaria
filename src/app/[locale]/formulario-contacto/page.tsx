@@ -41,7 +41,7 @@ const Information = () => {
       <Title className={styles.title}>Formulario de contacto</Title>
       <div className={styles.formContainer}>
         <Form
-          layout="vertical"
+          layout={"vertical"}
           {...defaultLayout}
           onFinish={sendEmail}
           className={styles.form}
@@ -54,7 +54,7 @@ const Information = () => {
           >
             <Input />
           </Form.Item>
-          <Form.Item name={"surname"} label={t("surname")} labelAlign="left">
+          <Form.Item name={"surname"} label={t("surname")} labelAlign={"left"}>
             <Input />
           </Form.Item>
           <Form.Item
@@ -79,7 +79,7 @@ const Information = () => {
           >
             <Select
               placeholder={t("selectReason")}
-              optionFilterProp="label"
+              optionFilterProp={"label"}
               options={[
                 {
                   value: "mail",
@@ -102,8 +102,8 @@ const Information = () => {
           </Form.Item>
 
           <Form.Item
-            name="privacy"
-            valuePropName="checked"
+            name={"privacy"}
+            valuePropName={"checked"}
             rules={[
               {
                 required: true,
@@ -113,7 +113,7 @@ const Information = () => {
           >
             <Checkbox>
               He leído y acepto la{" "}
-              <a href="/politica-privacidad" target="_blank">
+              <a href={"/politica-privacidad"} target={"_blank"}>
                 Política de Privacidad
               </a>
             </Checkbox>

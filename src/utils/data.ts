@@ -175,7 +175,6 @@ export const data: DataService = {
         "donationMoneyDocu4",
         "donationMoneyDocu5",
         "donationMoneyDocu6",
-        "donationMoneyDocu7",
       ],
     },
     {

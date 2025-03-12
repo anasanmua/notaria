@@ -6,7 +6,7 @@ const Cookies = () => {
   return (
     <>
       <BasicSection backgroundColor={"cream1"}>
-        <Row justify="center">
+        <Row justify={"center"}>
           <Col xs={24} style={{ textAlign: "center" }}>
             <Title>Cookies</Title>
           </Col>
