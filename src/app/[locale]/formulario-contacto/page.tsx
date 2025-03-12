@@ -3,17 +3,7 @@ import BasicSection from "@/components/BasicSection/BasicSection";
 import Title from "antd/lib/typography/Title";
 import { Button, Checkbox, Form, Input, InputNumber, Select } from "antd";
 import { useTranslations } from "next-intl";
-import emailjs from "@emailjs/browser";
-
-interface User extends Record<string, unknown> {
-  name: string;
-  surname: string;
-  email: string;
-  phone: number;
-  contactWay: string;
-  message: string;
-  privacyPolicy: boolean;
-}
+import { sendEmail, User } from "@/app/[locale]/formulario-contacto/MailSender";
 
 // text-align on columns left?
 const Information = () => {
@@ -44,21 +34,6 @@ const Information = () => {
     number: {
       range: "${label} must be between ${min} and ${max}",
     },
-  };
-
-  const sendEmail = (values: User) => {
-    emailjs
-      .send("contact_service", "contact_form", values, {
-        publicKey: "SbZVFYR3ilV-3chOp",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        },
-      );
   };
 
   return (
@@ -132,14 +107,10 @@ const Information = () => {
             label={null}
             style={{ textAlign: "left" }}
           >
-            <Form.Item name="privacyPolicy">
+            <Form.Item name="privacy" valuePropName="checked">
               <Checkbox>
                 He leído y acepto la
-                <a
-                  href="/politica-privacidad"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="/politica-privacidad" target="_blank">
                   Política de Privacidad
                 </a>
               </Checkbox>
