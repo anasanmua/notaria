@@ -203,12 +203,18 @@ export const data: DataService = {
         "realEstateTransactionsDocu6",
         "realEstateTransactionsDocu7",
         "realEstateTransactionsDocu8",
+        "realEstateTransactionsDocu9",
+        "realEstateTransactionsDocu10",
       ],
     },
     {
       type: "condominiumExtinctionTitle",
       description: "condominiumExtinctionDescription",
-      documents: ["condominiumExtinctionDocu1", "condominiumExtinctionDocu2"],
+      documents: [
+        "condominiumExtinctionDocu1",
+        "condominiumExtinctionDocu2",
+        "condominiumExtinctionDocu3",
+      ],
     },
     {
       type: "newBuildingDeclarationTitle",
@@ -238,7 +244,11 @@ export const data: DataService = {
     {
       type: "landSegregationTitle",
       description: "landSegregationDescription",
-      documents: ["landSegregationDocu1", "landSegregationDocu2"],
+      documents: [
+        "landSegregationDocu1",
+        "landSegregationDocu2",
+        "landSegregationDocu3",
+      ],
     },
     {
       type: "useChangeTitle",
@@ -271,42 +281,13 @@ export const data: DataService = {
         "realOwnershipDocu1",
         "realOwnershipDocu2",
         "realOwnershipDocu3",
+        "realOwnershipDocu4",
       ],
     },
     {
       type: "postConstitutionActionsTitle",
       description: "postConstitutionActionsDescription",
       documents: ["postConstitutionActionsDocu1"],
-    },
-    {
-      type: "nationalityOathTitle",
-      description: "nationalityOathDescription",
-      documents: [
-        "nationalityOathDocu1",
-        "nationalityOathDocu2",
-        "nationalityOathDocu3",
-        "nationalityOathDocu4",
-      ],
-    },
-    {
-      type: "policiesTitle",
-      description: "policiesDescription",
-      documents: ["policiesDocu1", "policiesDocu2"],
-    },
-    {
-      type: "ratificationsTitle",
-      description: "ratificationsDescription",
-      documents: ["ratificationsDocu1", "ratificationsDocu2"],
-    },
-    {
-      type: "manifestationsAndPresenceActsTitle",
-      description: "manifestationsAndPresenceActsDescription",
-      documents: ["manifestationsAndPresenceActsDocu1"],
-    },
-    {
-      type: "signatureAuthenticationAndDocumentCopyingTitle",
-      description: "signatureAuthenticationAndDocumentCopyingDescription",
-      documents: ["signatureAuthenticationAndDocumentCopyingDocu1"],
     },
   ],
   nacionalidad: [
