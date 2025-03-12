@@ -8,7 +8,8 @@
     "surname": "Apellidos",
     "phone": "Teléfono",
     "country": "País",
-    "email": "Email"
+    "email": "Email",
+    "selectReason": "Seleccione una opción"
   },
   "LocaleSwitcher": {
     "en": "Inglés",
