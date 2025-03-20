@@ -1,3 +1,18 @@
+import {
+  Archive,
+  Briefcase,
+  CheckSquare,
+  ClipboardList,
+  DollarSign,
+  FileText,
+  Folder,
+  Home,
+  Landmark,
+  PenTool,
+  UserCheck,
+  Users,
+} from "lucide-react";
+
 export interface Service {
   type: string;
   description: string;
@@ -336,3 +351,78 @@ export const data: DataService = {
     },
   ],
 };
+
+export const dataCardServices = [
+  {
+    icon: Users,
+    title: "notarialPowerTitle",
+    description: "notarialPowerDescription",
+    href: "poderes",
+  },
+  {
+    icon: PenTool,
+    title: "testamentaryTitle",
+    description: "testamentaryDescription",
+    href: "sucesiones",
+  },
+  {
+    icon: CheckSquare,
+    title: "marriageContractsTitle",
+    description: "marriageContractsDescription",
+    href: "matrimonial",
+  },
+  {
+    icon: Home,
+    title: "mortgageTitle",
+    description: "mortgageDescription",
+    href: "hipotecario",
+  },
+  {
+    icon: Archive,
+    title: "donationsTitle",
+    description: "donationsDescription",
+    href: "donaciones",
+  },
+  {
+    icon: FileText,
+    title: "realStateTitle",
+    description: "realStateDescription",
+    href: "inmobiliario",
+  },
+  {
+    icon: Briefcase,
+    title: "tradeTitle",
+    description: "tradeDescription",
+    href: "mercantil",
+  },
+  {
+    icon: Folder,
+    title: "nationalityTitle",
+    description: "nationalityDescription",
+    href: "nacionalidad",
+  },
+  {
+    icon: Landmark,
+    title: "policiesTitle",
+    description: "policiesDescription",
+    href: "polizas",
+  },
+  {
+    icon: ClipboardList,
+    title: "ratificationsTitle",
+    description: "ratificationsDescription",
+    href: "ratificaciones",
+  },
+  {
+    icon: UserCheck,
+    title: "manifestationsTitle",
+    description: "manifestationsDescription",
+    href: "actas",
+  },
+  {
+    icon: DollarSign,
+    title: "signatureLegitimationTitle",
+    description: "signatureLegitimationDescription",
+    href: "legitimacion",
+  },
+];

@@ -43,6 +43,11 @@ export default async function RootLayout({
       colorPrimary: color.primary,
       fontFamily: `${plusJakartaSans.style.fontFamily}, sans-serif`,
     },
+    components: {
+      Tabs: {
+        itemSelectedColor: "var(--white)",
+      },
+    },
   };
 
   return (
