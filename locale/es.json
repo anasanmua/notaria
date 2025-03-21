@@ -9,7 +9,9 @@
     "phone": "Teléfono",
     "country": "País",
     "email": "Email",
-    "selectReason": "Seleccione una opción"
+    "selectReason": "Seleccione una opción",
+    "description": "Descripción",
+    "documentsNeeded": "Documentos necesarios"
   },
   "LocaleSwitcher": {
     "en": "Inglés",

@@ -8,10 +8,13 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import styles from "./servicios.module.css";
 import Head from "next/head";
+import { getEmoji } from "@/utils/emojiFunction";
 
 const Service = ({ params }: { params: { servicios: string } }) => {
   const t = useTranslations("Service");
+  const t2 = useTranslations("General");
   const servicio = params.servicios;
+  const tabArray = data[servicio as keyof DataService];
 
   const getImage = (servicio: string) => {
     try {
@@ -23,26 +26,31 @@ const Service = ({ params }: { params: { servicios: string } }) => {
 
   const imageUrl = getImage(servicio);
 
-  const tabArray = data[servicio as keyof DataService];
-
   const tabs = tabArray?.map((item: Service) => ({
     key: item.type,
     label: t(item.type),
     children: (
-      <>
-        <Title level={4}>Descripción</Title>
-        <Text>{t(item.description)}</Text>
+      <Row>
+        <Col xs={24} sm={12}>
+          <Title level={4}>{t2("description")}</Title>
+          <Text>{t(item.description)}</Text>
+        </Col>
         {item.documents && (
-          <>
-            <Title level={5}>Documentos necesarios</Title>
+          <Col xs={24} sm={12}>
+            <Title level={4}>{t2("documentsNeeded")}</Title>
             <ul>
               {item.documents.map((doc, idx) => (
-                <li key={idx}>{t(doc)}</li>
+                <li key={idx}>
+                  <span style={{ marginRight: "10px" }}>
+                    {getEmoji(t(doc))}
+                  </span>
+                  <Text>{t(doc)}</Text>
+                </li>
               ))}
             </ul>
-          </>
+          </Col>
         )}
-      </>
+      </Row>
     ),
   }));
 
