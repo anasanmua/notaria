@@ -5,10 +5,23 @@ import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { data, DataService, Service } from "@/utils/data";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
+import styles from "./servicios.module.css";
+import Head from "next/head";
 
 const Service = ({ params }: { params: { servicios: string } }) => {
   const t = useTranslations("Service");
   const servicio = params.servicios;
+
+  const getImage = (servicio: string) => {
+    try {
+      return require(`@/../public/images/${servicio}.jpg`);
+    } catch (error) {
+      return require("@/../public/images/poderes.jpg"); // Fallback image
+    }
+  };
+
+  const imageUrl = getImage(servicio);
 
   const tabArray = data[servicio as keyof DataService];
 
@@ -35,19 +48,31 @@ const Service = ({ params }: { params: { servicios: string } }) => {
 
   return (
     <>
+      <Head>
+        <link rel="preload" as="image" href={imageUrl} />
+      </Head>
       <BasicSection backgroundColor="cream1">
         <Row>
+          <Col xs={24} className={styles.imageCol}>
+            <Image
+              className={styles.image}
+              src={imageUrl}
+              height={600}
+              priority
+              alt={servicio}
+            />
+          </Col>
           <Col xs={24}>
-            <Title>
+            <Title className={styles.title}>
               {servicio.charAt(0).toUpperCase() + servicio.slice(1)}
             </Title>
           </Col>
           <Col xs={24}>
-            <Tabs type="card" items={tabs} />
+            <Tabs centered type="card" items={tabs} />
           </Col>
           <Col>
             <Button
-              style={{ marginTop: "15px" }}
+              className={styles.button}
               type="primary"
               href={"/formulario-contacto"}
             >
