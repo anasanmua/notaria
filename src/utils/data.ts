@@ -17,6 +17,7 @@ export interface Service {
   type: string;
   description: string;
   documents?: string[];
+  tax?: string;
 }
 
 export interface DataService {
@@ -95,6 +96,7 @@ export const data: DataService = {
         "inheritanceDocu7",
         "inheritanceDocu8",
       ],
+      tax: "inheritanceTax",
     },
     {
       type: "inheritanceRenunciationTitle",
@@ -137,6 +139,7 @@ export const data: DataService = {
         "divorceDocu4",
         "divorceDocu5",
       ],
+      tax: "divorceTax",
     },
     {
       type: "marriageContributionTitle",
@@ -163,6 +166,7 @@ export const data: DataService = {
         "mortgageLoanDocu8",
         "mortgageLoanDocu9",
       ],
+      tax: "mortgageTax",
     },
     {
       type: "subrogationAndNovationTitle",
@@ -177,6 +181,7 @@ export const data: DataService = {
         "mortgageCancellationDocu2",
         "mortgageCancellationDocu3",
       ],
+      tax: "mortgageTax",
     },
   ],
   donaciones: [
@@ -191,6 +196,7 @@ export const data: DataService = {
         "donationMoneyDocu5",
         "donationMoneyDocu6",
       ],
+      tax: "donationTax",
     },
     {
       type: "donationRealEstateTitle",
@@ -203,6 +209,7 @@ export const data: DataService = {
         "donationRealEstateDocu5",
         "donationRealEstateDocu6",
       ],
+      tax: "donationRealStateTax",
     },
   ],
   inmobiliario: [
@@ -221,6 +228,7 @@ export const data: DataService = {
         "realEstateTransactionsDocu9",
         "realEstateTransactionsDocu10",
       ],
+      tax: "realEstateTax",
     },
     {
       type: "condominiumExtinctionTitle",
@@ -230,6 +238,7 @@ export const data: DataService = {
         "condominiumExtinctionDocu2",
         "condominiumExtinctionDocu3",
       ],
+      tax: "condominiumExtinTax",
     },
     {
       type: "newBuildingDeclarationTitle",
@@ -264,6 +273,7 @@ export const data: DataService = {
         "landSegregationDocu2",
         "landSegregationDocu3",
       ],
+      tax: "landSegregationTax",
     },
     {
       type: "useChangeTitle",
@@ -276,6 +286,7 @@ export const data: DataService = {
         "useChangeDocu5",
         "useChangeDocu6",
       ],
+      tax: "useChangeTax",
     },
   ],
   mercantil: [
@@ -288,6 +299,7 @@ export const data: DataService = {
         "companyFormationDocu3",
         "companyFormationDocu4",
       ],
+      tax: "companyFormationTax",
     },
     {
       type: "realOwnershipTitle",

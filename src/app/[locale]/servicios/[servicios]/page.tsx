@@ -1,5 +1,5 @@
 "use client";
-import { Button, Col, Row, Tabs } from "antd";
+import { Button, Col, Row, Tabs, Tag } from "antd";
 import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
@@ -9,6 +9,8 @@ import Image from "next/image";
 import styles from "./servicios.module.css";
 import Head from "next/head";
 import { getEmoji } from "@/utils/emojiFunction";
+import Link from "next/link";
+import { ExclamationCircleOutlined } from "@ant-design/icons";
 
 const Service = ({ params }: { params: { servicios: string } }) => {
   const t = useTranslations("Service");
@@ -33,7 +35,76 @@ const Service = ({ params }: { params: { servicios: string } }) => {
       <Row>
         <Col xs={24} sm={12}>
           <Title level={4}>{t2("description")}</Title>
-          <Text>{t(item.description)}</Text>
+          {t.rich(item.description, {
+            registroCivil: (chunks) => (
+              <Link target="_blank" href="https://google.com">
+                {chunks}
+              </Link>
+            ),
+            colegioNotarial: (chunks) => (
+              <Link href="https://google.com">{chunks}</Link>
+            ),
+            ministerioAsuntos: (chunks) => (
+              <Link href="https://google.com">{chunks}</Link>
+            ),
+            impuestoSucesiones: (chunks) => (
+              <Link href="https://google.com">{chunks}</Link>
+            ),
+            patrimoniales: (chunks) => (
+              <Link href="https://google.com">{chunks}</Link>
+            ),
+            terrenos: (chunks) => (
+              <Link href="https://google.com">{chunks}</Link>
+            ),
+            donaciones: (chunks) => (
+              <Link href="https://google.com">{chunks}</Link>
+            ),
+            actos: (chunks) => <Link href="https://google.com">{chunks}</Link>,
+            societarias: (chunks) => (
+              <Link href="https://google.com">{chunks}</Link>
+            ),
+          })}
+          {item.tax && (
+            <Tag
+              icon={<ExclamationCircleOutlined />}
+              color="gold"
+              style={{ whiteSpace: "unset", marginTop: "10px" }}
+            >
+              {t.rich(item.tax, {
+                registroCivil: (chunks) => (
+                  <Link target="_blank" href="https://google.com">
+                    {chunks}
+                  </Link>
+                ),
+                colegioNotarial: (chunks) => (
+                  <Link href="https://google.com">{chunks}</Link>
+                ),
+                ministerioAsuntos: (chunks) => (
+                  <Link href="https://google.com">{chunks}</Link>
+                ),
+                impuestoSucesiones: (chunks) => (
+                  <Link href="https://google.com">{chunks}</Link>
+                ),
+                patrimoniales: (chunks) => (
+                  <Link href="https://google.com">{chunks}</Link>
+                ),
+                terrenos: (chunks) => (
+                  <Link href="https://google.com">{chunks}</Link>
+                ),
+                donaciones: (chunks) => (
+                  <Link href="https://google.com">{chunks}</Link>
+                ),
+                actos: (chunks) => (
+                  <Link href="https://google.com" style={{ color: "blue" }}>
+                    {chunks}
+                  </Link>
+                ),
+                societarias: (chunks) => (
+                  <Link href="https://google.com">{chunks}</Link>
+                ),
+              })}
+            </Tag>
+          )}
         </Col>
         {item.documents && (
           <Col xs={24} sm={12}>
@@ -44,7 +115,28 @@ const Service = ({ params }: { params: { servicios: string } }) => {
                   <span style={{ marginRight: "10px" }}>
                     {getEmoji(t(doc))}
                   </span>
-                  <Text>{t(doc)}</Text>
+                  <Text>
+                    {t.rich(doc, {
+                      empadronamiento: (chunks) => (
+                        <Link href="https://google.com">{chunks}</Link>
+                      ),
+                      defuncion: (chunks) => (
+                        <Link href="https://google.com">{chunks}</Link>
+                      ),
+                      matrimonio: (chunks) => (
+                        <Link href="https://google.com">{chunks}</Link>
+                      ),
+                      voluntades: (chunks) => (
+                        <Link href="https://google.com">{chunks}</Link>
+                      ),
+                      fallecimiento: (chunks) => (
+                        <Link href="https://google.com">{chunks}</Link>
+                      ),
+                      partidas: (chunks) => (
+                        <Link href="https://google.com">{chunks}</Link>
+                      ),
+                    })}
+                  </Text>
                 </li>
               ))}
             </ul>
@@ -71,14 +163,14 @@ const Service = ({ params }: { params: { servicios: string } }) => {
             />
           </Col>
           <Col xs={24}>
-            <Title className={styles.title}>
+            <Title className={styles.centerText}>
               {servicio.charAt(0).toUpperCase() + servicio.slice(1)}
             </Title>
           </Col>
           <Col xs={24}>
             <Tabs centered type="card" items={tabs} />
           </Col>
-          <Col>
+          <Col className={styles.centerText} xs={24}>
             <Button
               className={styles.button}
               type="primary"
