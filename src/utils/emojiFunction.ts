@@ -28,9 +28,9 @@ export const getEmoji = (doc: string) => {
   if (doc.includes("eficiencia energética")) return "🔋";
   if (doc.includes("gestoría del banco")) return "📞";
   if (doc.includes("precio y forma de pago")) return "💵";
+  if (doc.includes("hipoteca") && doc.includes("cancelación")) return "❌🏠";
   if (doc.includes("hipoteca")) return "🏠";
   if (doc.includes("subrogación") || doc.includes("novación")) return "🔄";
-  if (doc.includes("hipoteca") && doc.includes("cancelación")) return "❌🏠";
   if (doc.includes("donación") && doc.includes("dinero")) return "💸";
   if (doc.includes("donación") && doc.includes("inmuebles")) return "🏠💸";
   if (doc.includes("compraventa") || doc.includes("inmobiliarias"))
