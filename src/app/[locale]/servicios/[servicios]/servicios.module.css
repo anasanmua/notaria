@@ -14,3 +14,12 @@
 .button {
   margin-top: 2rem;
 }
+
+.link {
+  color: blue !important;
+}
+
+.tag {
+  white-space: unset;
+  margin-top: 10px;
+}

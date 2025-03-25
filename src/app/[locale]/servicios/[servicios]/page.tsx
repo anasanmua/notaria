@@ -6,11 +6,11 @@ import BasicSection from "@/components/BasicSection/BasicSection";
 import { data, DataService, Service } from "@/utils/data";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import styles from "./servicios.module.css";
 import Head from "next/head";
 import { getEmoji } from "@/utils/emojiFunction";
 import Link from "next/link";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
+import styles from "./servicios.module.css";
 
 const Service = ({ params }: { params: { servicios: string } }) => {
   const t = useTranslations("Service");
@@ -66,36 +66,52 @@ const Service = ({ params }: { params: { servicios: string } }) => {
           })}
           {item.tax && (
             <Tag
+              className={styles.tag}
               icon={<ExclamationCircleOutlined />}
               color="gold"
-              style={{ whiteSpace: "unset", marginTop: "10px" }}
             >
               {t.rich(item.tax, {
                 registroCivil: (chunks) => (
-                  <Link target="_blank" href="https://google.com">
+                  <Link
+                    target="_blank"
+                    href="https://google.com"
+                    className={styles.link}
+                  >
                     {chunks}
                   </Link>
                 ),
                 colegioNotarial: (chunks) => (
-                  <Link href="https://google.com">{chunks}</Link>
+                  <Link href="https://google.com" className={styles.link}>
+                    {chunks}
+                  </Link>
                 ),
                 ministerioAsuntos: (chunks) => (
-                  <Link href="https://google.com">{chunks}</Link>
+                  <Link href="https://google.com" className={styles.link}>
+                    {chunks}
+                  </Link>
                 ),
                 impuestoSucesiones: (chunks) => (
-                  <Link href="https://google.com">{chunks}</Link>
+                  <Link href="https://google.com" className={styles.link}>
+                    {chunks}
+                  </Link>
                 ),
                 patrimoniales: (chunks) => (
-                  <Link href="https://google.com">{chunks}</Link>
+                  <Link href="https://google.com" className={styles.link}>
+                    {chunks}
+                  </Link>
                 ),
                 terrenos: (chunks) => (
-                  <Link href="https://google.com">{chunks}</Link>
+                  <Link href="https://google.com" className={styles.link}>
+                    {chunks}
+                  </Link>
                 ),
                 donaciones: (chunks) => (
-                  <Link href="https://google.com">{chunks}</Link>
+                  <Link href="https://google.com" className={styles.link}>
+                    {chunks}
+                  </Link>
                 ),
                 actos: (chunks) => (
-                  <Link href="https://google.com" style={{ color: "blue" }}>
+                  <Link href="https://google.com" className={styles.link}>
                     {chunks}
                   </Link>
                 ),
@@ -105,11 +121,17 @@ const Service = ({ params }: { params: { servicios: string } }) => {
               })}
             </Tag>
           )}
+          {item.additionalTitle && (
+            <Title level={4}>{t(item.additionalTitle)}</Title>
+          )}
+          {item.additionalDescription && (
+            <Text>{t(item.additionalDescription)}</Text>
+          )}
         </Col>
         {item.documents && (
           <Col xs={24} sm={12}>
             <Title level={4}>{t2("documentsNeeded")}</Title>
-            {item.hasAdditionalText && <Text>{t("mortgageWithProperty")}</Text>}
+            {item.hasAdditionalDocs && <Text>{t("mortgageWithProperty")}</Text>}
             <ul>
               {item.documents.map((doc, idx) => (
                 <li key={idx}>
@@ -141,13 +163,16 @@ const Service = ({ params }: { params: { servicios: string } }) => {
                 </li>
               ))}
             </ul>
-            {item.hasAdditionalText && (
-              <div>{t("mortgageWithoutProperty")}</div>
+            {item.hasAdditionalDocs && (
+              <Text>{t("mortgageWithoutProperty")}</Text>
             )}
             <ul>
               {item.additionalDocs &&
                 item.additionalDocs.map((el) => <li key={el}>{t(el)}</li>)}
             </ul>
+            <Text italic>
+              {item.additionalInfoDoc && t(item.additionalInfoDoc)}
+            </Text>
           </Col>
         )}
       </Row>

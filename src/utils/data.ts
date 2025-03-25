@@ -18,8 +18,11 @@ export interface Service {
   description: string;
   documents?: string[];
   tax?: string;
-  hasAdditionalText?: boolean;
+  hasAdditionalDocs?: boolean;
   additionalDocs?: string[];
+  additionalDescription?: string;
+  additionalTitle?: string;
+  additionalInfoDoc?: string;
 }
 
 export interface DataService {
@@ -169,7 +172,7 @@ export const data: DataService = {
         "mortgageLoanDocu9",
       ],
       tax: "mortgageTax",
-      hasAdditionalText: true,
+      hasAdditionalDocs: true,
       additionalDocs: [
         "mortgageLoanDocu13",
         "mortgageLoanDocu12",
@@ -249,20 +252,18 @@ export const data: DataService = {
       tax: "condominiumExtinTax",
     },
     {
-      type: "newBuildingDeclarationTitle",
-      description: "newBuildingDeclarationDescription",
-      documents: ["newBuildingDeclarationDocu1"],
-    },
-    {
-      type: "newBuildingConstructionTitle",
-      description: "newBuildingConstructionDescription",
+      type: "buildingConstructionTitle",
+      description: "buildingConstructionDescription",
       documents: [
-        "newBuildingConstructionDocu1",
-        "newBuildingConstructionDocu2",
-        "newBuildingConstructionDocu3",
-        "newBuildingConstructionDocu4",
-        "newBuildingConstructionDocu5",
+        "buildingConstructionDocu1",
+        "buildingConstructionDocu2",
+        "buildingConstructionDocu3",
+        "buildingConstructionDocu4",
+        "buildingConstructionDocu5",
       ],
+      tax: "buildingConstructionTax",
+      additionalTitle: "buildingConstructionPlusTitle",
+      additionalDescription: "buildingConstructionPlusDescription",
     },
     {
       type: "oldNewBuildingTitle",
@@ -272,6 +273,9 @@ export const data: DataService = {
         "oldNewBuildingDocu2",
         "oldNewBuildingDocu3",
       ],
+      tax: "oldNewBuildingNewBuildingTax",
+      additionalTitle: "oldNewBuildingPlusTitle",
+      additionalDescription: "oldNewBuildingPlusDescription",
     },
     {
       type: "landSegregationTitle",
@@ -295,6 +299,7 @@ export const data: DataService = {
         "useChangeDocu6",
       ],
       tax: "useChangeTax",
+      additionalInfoDoc: "additionalInfoDoc",
     },
   ],
   mercantil: [
