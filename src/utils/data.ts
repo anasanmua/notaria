@@ -18,6 +18,8 @@ export interface Service {
   description: string;
   documents?: string[];
   tax?: string;
+  hasAdditionalText?: boolean;
+  additionalDocs?: string[];
 }
 
 export interface DataService {
@@ -167,6 +169,12 @@ export const data: DataService = {
         "mortgageLoanDocu9",
       ],
       tax: "mortgageTax",
+      hasAdditionalText: true,
+      additionalDocs: [
+        "mortgageLoanDocu13",
+        "mortgageLoanDocu12",
+        "mortgageLoanDocu11",
+      ],
     },
     {
       type: "subrogationAndNovationTitle",

@@ -64,26 +64,32 @@
     "generalDocu1": "Documento de identidad del poderdante y del apoderado.",
     "generalDocu2": "Si hay varios apoderados: indicar si el poder es solidario (con que firme uno en ejercicio del poder es suficiente) o mancomunado (tendrán que firmar todos).",
     "generalDocu3": "Partida de nacimiento poderdante (no es imprescindible).",
+
     "lawsuitsTitle": "Pleitos",
     "lawsuitsDescription": "Poder para que abogados y procuradores puedan representarte en un procedimiento judicial.",
     "lawsuitsDocu1": "Documento de identidad del poderdante.",
     "lawsuitsDocu2": "Listado de abogados y procuradores con número de colegiado y colegio al que pertenecen.",
+
     "specialPowersTitle": "Especiales",
     "specialPowersDescription": "Poderes para actos concretos que se realizan de manera personalizada en función de lo solicitado por el cliente. Por ejemplo, poder para vender, comprar o aceptar herencias.",
     "specialPowersDocu1": "Documento de identidad del poderdante y del apoderado.",
     "specialPowersDocu2": "Datos relativos a la facultad que se va a otorgar, por ejemplo, en el caso de compraventa, los datos del inmueble, o en el caso de aceptación de herencia, los datos del difunto.",
+
     "foreignPowersTitle": "Extranjero",
     "foreignPowersDescription": "Poder para que tenga validez en otro país. \nUna vez firmado el poder, se tendrá que apostillar o legalizar en el <colegioNotarial> Colegio Notarial </colegioNotarial>o en el <ministerioAsuntos> Ministerio de Asuntos Exteriores.</ministerioAsuntos>",
     "foreignPowersDocu1": "Documento de identidad del poderdante (español y extranjero) y del apoderado.",
     "foreignPowersDocu2": "Modelo del poder conforme a la normativa del lugar donde se va a aplicar.",
+
     "revocationTitle": "Revocación",
     "revocationDescription": "Todos los poderes que hayas otorgado pueden ser revocados en cualquier momento. En este sentido, es conveniente que lleves a la notaría la copia del poder que ahora quieras revocar así como los datos de localización del apoderado para que se notifique la revocación.",
     "revocationDocu1": "Documento de identidad del poderdante.",
     "revocationDocu2": "Escritura de poder que se quiere revocar (preferiblemente el original).",
     "revocationDocu3": "Datos de localización del apoderado si se quiere que el notario le notifique la revocación.",
+
     "willTitle": "Testamento",
     "willDescription": "Es el documento más importante en una sucesión pues en él se determina el destino de todo el patrimonio del fallecido. \n¿Te suena aquello de la legítima y los herederos forzosos? \nEn España, dependiendo de los familiares que tengamos hay una parte de nuestros bienes que les corresponden por derecho: legítima de los descendientes, de los ascendientes y del cónyuge.\nPor ello, es fundamental que acudas a un profesional, para que te asesore de manera que se pueda cumplir tu voluntad y, a su vez, no se actúe en contra de las normas que limitan la capacidad del testador de disponer de sus bienes.",
     "willDocu1": "Documento de identidad del testador.",
+
     "heirsDeclarationTitle": "Declaración de herederos",
     "heirsDeclarationDescription": "Cuando la persona fallecida no otorgó testamento, entonces hay que realizar una declaración de herederos para determinar quiénes son (de los familiares más cercanos) y que, posteriormente, se adjudiquen los bienes.",
     "heirsDeclarationDocu1": "Documento de identidad del fallecido o certificado de empadronamiento.",
@@ -94,6 +100,7 @@
     "heirsDeclarationDocu6": "Si el difunto/a era viudo/a, será necesario el certificado de defunción de su esposo/a.",
     "heirsDeclarationDocu7": "Documento de identidad de los herederos.",
     "heirsDeclarationDocu8": "Dos testigos que no sean familia o puedan tener interés en la herencia.",
+
     "inheritanceTitle": "Herencia",
     "inheritanceDescription": "Si ya conocemos quiénes son los herederos del fallecido (por testamento o por declaración de herederos), el siguiente paso es aceptar la herencia y adjudicar los bienes, de tal modo que se modifique su titularidad y pasen a formar parte del patrimonio de cada heredero. En este sentido, te asesoramos para que, cumpliendo con los requisitos legales y la voluntad del testador, se realice la partición de manera satisfactoria para todos los herederos.\nTen en cuenta que el reparto de la herencia se puede llevar a cabo en notaría siempre que haya acuerdo entre todos o, en su defecto, con el nombramiento de un contador-partidor dativo si lo requiere la mitad de los herederos.\n\n.",
     "inheritanceDocu1": "<defuncion> Certificado de defunción.</defuncion>",
@@ -156,6 +163,11 @@
     "mortgageLoanDocu8": "Datos de contacto de la gestoría del banco.",
     "mortgageLoanDocu9": "Precio y forma de pago: transferencia, cheque, etc.",
     "mortgageLoanDocu10": "Si la finca está gravada con hipoteca, certificado de deuda y cuánto se retiene para su cancelación.",
+    "mortgageLoanDocu11": "Título de propiedad.",
+    "mortgageLoanDocu12": "Documento de identidad del prestatario.",
+    "mortgageLoanDocu13": "Escritura del préstamo anterior.",
+    "mortgageWithProperty": "Hipoteca con compra de inmueble",
+    "mortgageWithoutProperty": "Hipoteca de vivienda ya en propiedad",
 
     "subrogationAndNovationTitle": "Subrogación y Novación",
     "subrogationAndNovationDescription": "También formalizamos subrogaciones cuando cambia la entidad bancaria y novaciones de préstamo cuando cambian las condiciones iniciales, por ejemplo, el tipo de interés o la cuantía del préstamo.",
@@ -289,8 +301,6 @@
     "manifestationsAndPresenceActsDescription": "El notario, como fedatario público, puede dejar constancia de las manifestaciones que le soliciten. Por ejemplo, es habitual emplear las actas de manifestaciones para solicitud de visados de reagrupación familiar, como complemento a las cartas de invitación, para dar fe de vida, como prueba en juicio, o cualquier otro caso en el que el notario sea requerido. A su vez, el notario puede desplazarse al lugar donde se le requiera, siempre que esté en su zona de actuación, y dar fe de lo que allí se pueda observar, por ejemplo, fotos del estado de un inmueble. ",
 
     "signatureAuthenticationAndDocumentCopyingTitle": "Legitimación de firma y compulsa de documentos",
-    "signatureAuthenticationAndDocumentCopyingDescription": "Si vas a firmar un documento privado, el notario puede dar fe de que efectivamente esa firma es tuya, a esto se le llama legitimación de firma.\n\nTambién se pueden hacer copias de documentos originales como títulos, DNI o Pasaporte, de tal modo que dichas copias, al ser en papel timbrado y firmadas y selladas por el notario, equivalen al original",
-
-    "content": "Buy some <shoesLink>shoes</shoesLink> and <shirtsLink>shirts</shirtsLink>"
+    "signatureAuthenticationAndDocumentCopyingDescription": "Si vas a firmar un documento privado, el notario puede dar fe de que efectivamente esa firma es tuya, a esto se le llama legitimación de firma.\n\nTambién se pueden hacer copias de documentos originales como títulos, DNI o Pasaporte, de tal modo que dichas copias, al ser en papel timbrado y firmadas y selladas por el notario, equivalen al original"
   }
 }

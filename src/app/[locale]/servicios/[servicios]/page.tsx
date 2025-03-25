@@ -109,6 +109,7 @@ const Service = ({ params }: { params: { servicios: string } }) => {
         {item.documents && (
           <Col xs={24} sm={12}>
             <Title level={4}>{t2("documentsNeeded")}</Title>
+            {item.hasAdditionalText && <Text>{t("mortgageWithProperty")}</Text>}
             <ul>
               {item.documents.map((doc, idx) => (
                 <li key={idx}>
@@ -139,6 +140,13 @@ const Service = ({ params }: { params: { servicios: string } }) => {
                   </Text>
                 </li>
               ))}
+            </ul>
+            {item.hasAdditionalText && (
+              <div>{t("mortgageWithoutProperty")}</div>
+            )}
+            <ul>
+              {item.additionalDocs &&
+                item.additionalDocs.map((el) => <li key={el}>{t(el)}</li>)}
             </ul>
           </Col>
         )}
