@@ -1,6 +1,6 @@
 .title {
   text-align: center;
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 
 .formContainer {
@@ -9,17 +9,17 @@
 }
 
 .form {
-  width: 600px !important;
+  width: 37.5rem !important;
 }
 
 .phoneNumber {
-  width: 150px;
+  width: 15.625rem;
 }
 
 .maxHeight {
-  max-height: 100px;
+  max-height: 6.25rem;
 }
 
 .button {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }

@@ -1,4 +1,4 @@
-import { Button, Col, Row, Typography } from "antd";
+import { Button, Col, Row, Tooltip, Typography } from "antd";
 import styles from "./service-card.module.css";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
@@ -23,12 +23,19 @@ const ServiceCard = ({
       <Col className={styles.icon}>
         <Icon color={"white"} />
       </Col>
-      <Col xs={24} className={styles.flexGrow}>
-        <Typography.Title level={3}>{t(title)}</Typography.Title>
+      <Col xs={24}>
+        <Tooltip title={t(title)}>
+          <Typography.Title className={styles.titleEllipsis} level={3}>
+            {t(title)}
+          </Typography.Title>
+        </Tooltip>
       </Col>
-      {/*useless comment*/}
-      <Col className={styles.flexGrow}>
-        <Typography.Text>{t(description)}</Typography.Text>
+      <Col>
+        <Tooltip title={t(description)}>
+          <Typography.Text className={styles.descriptionEllipsis}>
+            {t(description)}
+          </Typography.Text>
+        </Tooltip>
       </Col>
       <Col className={styles.button}>
         <Link href={`servicios/${href}`}>

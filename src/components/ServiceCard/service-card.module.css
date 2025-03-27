@@ -14,8 +14,22 @@
   background-color: var(--primary);
 }
 
-.flexGrow {
-  flex-grow: 1;
+.titleEllipsis {
+  min-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.descriptionEllipsis {
+  max-height: 70px;
+  min-height: 70px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .button {

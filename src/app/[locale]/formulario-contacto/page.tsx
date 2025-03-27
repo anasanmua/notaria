@@ -29,10 +29,6 @@ const Information = () => {
     required: "El ${label} es un campo obligatorio",
     types: {
       email: "Por favor, añada un dominio válido al email",
-      number: "Por favor, introduzca un número de teléfono válido",
-    },
-    number: {
-      range: "${label} must be between ${min} and ${max}",
     },
   };
 
@@ -67,7 +63,7 @@ const Information = () => {
           <Form.Item
             name={"phone"}
             label={t("phone")}
-            rules={[{ type: "number", min: 0, required: true }]}
+            rules={[{ required: true }]}
           >
             <InputNumber className={styles.phoneNumber} />
           </Form.Item>

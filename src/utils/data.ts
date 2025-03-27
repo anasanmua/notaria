@@ -1,7 +1,28 @@
+import {
+  Archive,
+  Briefcase,
+  CheckSquare,
+  ClipboardList,
+  DollarSign,
+  FileText,
+  Folder,
+  Home,
+  Landmark,
+  PenTool,
+  UserCheck,
+  Users,
+} from "lucide-react";
+
 export interface Service {
   type: string;
   description: string;
   documents?: string[];
+  tax?: string;
+  hasAdditionalDocs?: boolean;
+  additionalDocs?: string[];
+  additionalDescription?: string;
+  additionalTitle?: string;
+  additionalInfoDoc?: string;
 }
 
 export interface DataService {
@@ -80,6 +101,7 @@ export const data: DataService = {
         "inheritanceDocu7",
         "inheritanceDocu8",
       ],
+      tax: "inheritanceTax",
     },
     {
       type: "inheritanceRenunciationTitle",
@@ -122,6 +144,7 @@ export const data: DataService = {
         "divorceDocu4",
         "divorceDocu5",
       ],
+      tax: "divorceTax",
     },
     {
       type: "marriageContributionTitle",
@@ -148,6 +171,13 @@ export const data: DataService = {
         "mortgageLoanDocu8",
         "mortgageLoanDocu9",
       ],
+      tax: "mortgageTax",
+      hasAdditionalDocs: true,
+      additionalDocs: [
+        "mortgageLoanDocu13",
+        "mortgageLoanDocu12",
+        "mortgageLoanDocu11",
+      ],
     },
     {
       type: "subrogationAndNovationTitle",
@@ -162,6 +192,7 @@ export const data: DataService = {
         "mortgageCancellationDocu2",
         "mortgageCancellationDocu3",
       ],
+      tax: "mortgageTax",
     },
   ],
   donaciones: [
@@ -176,6 +207,7 @@ export const data: DataService = {
         "donationMoneyDocu5",
         "donationMoneyDocu6",
       ],
+      tax: "donationTax",
     },
     {
       type: "donationRealEstateTitle",
@@ -188,6 +220,7 @@ export const data: DataService = {
         "donationRealEstateDocu5",
         "donationRealEstateDocu6",
       ],
+      tax: "donationRealStateTax",
     },
   ],
   inmobiliario: [
@@ -206,6 +239,7 @@ export const data: DataService = {
         "realEstateTransactionsDocu9",
         "realEstateTransactionsDocu10",
       ],
+      tax: "realEstateTax",
     },
     {
       type: "condominiumExtinctionTitle",
@@ -215,22 +249,21 @@ export const data: DataService = {
         "condominiumExtinctionDocu2",
         "condominiumExtinctionDocu3",
       ],
+      tax: "condominiumExtinTax",
     },
     {
-      type: "newBuildingDeclarationTitle",
-      description: "newBuildingDeclarationDescription",
-      documents: ["newBuildingDeclarationDocu1"],
-    },
-    {
-      type: "newBuildingConstructionTitle",
-      description: "newBuildingConstructionDescription",
+      type: "buildingConstructionTitle",
+      description: "buildingConstructionDescription",
       documents: [
-        "newBuildingConstructionDocu1",
-        "newBuildingConstructionDocu2",
-        "newBuildingConstructionDocu3",
-        "newBuildingConstructionDocu4",
-        "newBuildingConstructionDocu5",
+        "buildingConstructionDocu1",
+        "buildingConstructionDocu2",
+        "buildingConstructionDocu3",
+        "buildingConstructionDocu4",
+        "buildingConstructionDocu5",
       ],
+      tax: "buildingConstructionTax",
+      additionalTitle: "buildingConstructionPlusTitle",
+      additionalDescription: "buildingConstructionPlusDescription",
     },
     {
       type: "oldNewBuildingTitle",
@@ -240,6 +273,9 @@ export const data: DataService = {
         "oldNewBuildingDocu2",
         "oldNewBuildingDocu3",
       ],
+      tax: "oldNewBuildingNewBuildingTax",
+      additionalTitle: "oldNewBuildingPlusTitle",
+      additionalDescription: "oldNewBuildingPlusDescription",
     },
     {
       type: "landSegregationTitle",
@@ -249,6 +285,7 @@ export const data: DataService = {
         "landSegregationDocu2",
         "landSegregationDocu3",
       ],
+      tax: "landSegregationTax",
     },
     {
       type: "useChangeTitle",
@@ -261,6 +298,8 @@ export const data: DataService = {
         "useChangeDocu5",
         "useChangeDocu6",
       ],
+      tax: "useChangeTax",
+      additionalInfoDoc: "additionalInfoDoc",
     },
   ],
   mercantil: [
@@ -273,6 +312,7 @@ export const data: DataService = {
         "companyFormationDocu3",
         "companyFormationDocu4",
       ],
+      tax: "companyFormationTax",
     },
     {
       type: "realOwnershipTitle",
@@ -336,3 +376,78 @@ export const data: DataService = {
     },
   ],
 };
+
+export const dataCardServices = [
+  {
+    icon: Users,
+    title: "notarialPowerTitle",
+    description: "notarialPowerDescription",
+    href: "poderes",
+  },
+  {
+    icon: PenTool,
+    title: "testamentaryTitle",
+    description: "testamentaryDescription",
+    href: "sucesiones",
+  },
+  {
+    icon: CheckSquare,
+    title: "marriageContractsTitle",
+    description: "marriageContractsDescription",
+    href: "matrimonial",
+  },
+  {
+    icon: Home,
+    title: "mortgageTitle",
+    description: "mortgageDescription",
+    href: "hipotecario",
+  },
+  {
+    icon: Archive,
+    title: "donationsTitle",
+    description: "donationsDescription",
+    href: "donaciones",
+  },
+  {
+    icon: FileText,
+    title: "realStateTitle",
+    description: "realStateDescription",
+    href: "inmobiliario",
+  },
+  {
+    icon: Briefcase,
+    title: "tradeTitle",
+    description: "tradeDescription",
+    href: "mercantil",
+  },
+  {
+    icon: Folder,
+    title: "nationalityTitle",
+    description: "nationalityDescription",
+    href: "nacionalidad",
+  },
+  {
+    icon: Landmark,
+    title: "policiesTitle",
+    description: "policiesDescription",
+    href: "polizas",
+  },
+  {
+    icon: ClipboardList,
+    title: "ratificationsTitle",
+    description: "ratificationsDescription",
+    href: "ratificaciones",
+  },
+  {
+    icon: UserCheck,
+    title: "manifestationsTitle",
+    description: "manifestationsDescription",
+    href: "actas",
+  },
+  {
+    icon: DollarSign,
+    title: "signatureLegitimationTitle",
+    description: "signatureLegitimationDescription",
+    href: "legitimacion",
+  },
+];
