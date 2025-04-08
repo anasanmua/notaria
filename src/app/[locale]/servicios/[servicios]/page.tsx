@@ -13,7 +13,7 @@ import { ExclamationCircleOutlined } from "@ant-design/icons";
 import styles from "./servicios.module.css";
 import Paragraph from "antd/lib/typography/Paragraph";
 
-const Services = ({ params }: { params: { paramService: string } }) => {
+const Services = ({ params }: { params: { servicios: string } }) => {
   const t = useTranslations("Service");
   const t2 = useTranslations("General");
   const selectedService = params.servicios;
