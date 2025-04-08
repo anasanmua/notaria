@@ -19,12 +19,13 @@
 }
 
 .link {
-  color: var(--brown-6) !important;
+  color: var(--brown-6) ;
+  text-decoration: underline;
 }
 
 .link:hover {
-  color: var(--brown-8);
-  text-decoration: underline;
+  color: var(--brown-4) ;
+  text-decoration: none;
 }
 
 .link:active {

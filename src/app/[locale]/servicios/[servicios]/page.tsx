@@ -11,6 +11,7 @@ import { getEmoji } from "@/utils/emojiFunction";
 import Link from "next/link";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 import styles from "./servicios.module.css";
+import Paragraph from "antd/lib/typography/Paragraph";
 
 const Service = ({ params }: { params: { servicios: string } }) => {
   const t = useTranslations("Service");
@@ -35,37 +36,40 @@ const Service = ({ params }: { params: { servicios: string } }) => {
       <Row>
         <Col xs={24} sm={12}>
           <Title level={4}>{t2("description")}</Title>
+          <Paragraph style={{textAlign: "justify"}}>
           {t.rich(item.description, {
             registroCivil: (chunks) => (
-              <Link target="_blank" href="https://google.com">
+              <Link target="_blank" href="https://sede.mjusticia.gob.es/es/tramites/certificado-nacimiento">
                 {chunks}
               </Link>
             ),
             colegioNotarial: (chunks) => (
-              <Link href="https://google.com">{chunks}</Link>
+              <Link target="_blank" href="https://madrid.notariado.org/portal/legalizacion-y-apostillas">{chunks}</Link>
             ),
             ministerioAsuntos: (chunks) => (
-              <Link href="https://google.com">{chunks}</Link>
+              <Link target="_blank" href="https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Legalizaciones/Servicio-de-legalizaciones.aspx">{chunks}</Link>
             ),
             impuestoSucesiones: (chunks) => (
-              <Link href="https://google.com">{chunks}</Link>
+              <Link target="_blank" href="https://www.comunidad.madrid/servicios/atencion-contribuyente/impuesto-sucesiones">{chunks}</Link>
             ),
             patrimoniales: (chunks) => (
-              <Link href="https://google.com">{chunks}</Link>
+              <Link target="_blank" href="https://google.com">{chunks}</Link>
             ),
             terrenos: (chunks) => (
-              <Link href="https://google.com">{chunks}</Link>
+              <Link target="_blank" href="https://agenciatributaria.madrid.es/portales/contribuyente/es/Tramites/Plusvalia-Autoliquidacion/?vgnextoid=6258ef82e1bed010VgnVCM1000000b205a0aRCRD&vgnextchannel=97d608f9be116810VgnVCM1000001d4a900aRCRD">{chunks}</Link>
             ),
             donaciones: (chunks) => (
-              <Link href="https://google.com">{chunks}</Link>
+              <Link target="_blank" href="https://www.comunidad.madrid/servicios/atencion-contribuyente/donaciones">{chunks}</Link>
             ),
-            actos: (chunks) => <Link href="https://google.com">{chunks}</Link>,
+            actos: (chunks) => <Link href="https://www.comunidad.madrid/servicios/atencion-contribuyente/actos-juridicos-documentados">{chunks}</Link>,
             societarias: (chunks) => (
-              <Link href="https://google.com">{chunks}</Link>
+              <Link target="_blank" href="https://www.comunidad.madrid/servicios/atencion-contribuyente/operaciones-societarias">{chunks}</Link>
             ),
           })}
+          </Paragraph>
           {item.tax && (
-            <Tag
+              <Paragraph>
+              <Tag
               className={styles.tag}
               icon={<ExclamationCircleOutlined />}
               color="gold"
@@ -74,53 +78,42 @@ const Service = ({ params }: { params: { servicios: string } }) => {
                 registroCivil: (chunks) => (
                   <Link
                     target="_blank"
-                    href="https://google.com"
-                    className={styles.link}
+                    href="https://sede.mjusticia.gob.es/es/tramites/certificado-nacimiento"
                   >
                     {chunks}
                   </Link>
                 ),
                 colegioNotarial: (chunks) => (
-                  <Link href="https://google.com" className={styles.link}>
+                  <Link target="_blank" href="https://madrid.notariado.org/portal/expedientes-matrimoniales" >
                     {chunks}
                   </Link>
                 ),
                 ministerioAsuntos: (chunks) => (
-                  <Link href="https://google.com" className={styles.link}>
+                  <Link target="_blank" href="https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Legalizaciones/Servicio-de-legalizaciones.aspx">
                     {chunks}
                   </Link>
                 ),
                 impuestoSucesiones: (chunks) => (
-                  <Link href="https://google.com" className={styles.link}>
-                    {chunks}
-                  </Link>
+                    <Link target="_blank" href="https://www.comunidad.madrid/servicios/atencion-contribuyente/impuesto-sucesiones">{chunks}</Link>
                 ),
                 patrimoniales: (chunks) => (
-                  <Link href="https://google.com" className={styles.link}>
-                    {chunks}
-                  </Link>
+                    <Link target="_blank" href="https://google.com">{chunks}</Link>
                 ),
                 terrenos: (chunks) => (
-                  <Link href="https://google.com" className={styles.link}>
-                    {chunks}
-                  </Link>
+                    <Link target="_blank" href="https://agenciatributaria.madrid.es/portales/contribuyente/es/Tramites/Plusvalia-Autoliquidacion/?vgnextoid=6258ef82e1bed010VgnVCM1000000b205a0aRCRD&vgnextchannel=97d608f9be116810VgnVCM1000001d4a900aRCRD">{chunks}</Link>
                 ),
                 donaciones: (chunks) => (
-                  <Link href="https://google.com" className={styles.link}>
-                    {chunks}
-                  </Link>
+                    <Link target="_blank" href="https://www.comunidad.madrid/servicios/atencion-contribuyente/donaciones">{chunks}</Link>
                 ),
-                actos: (chunks) => (
-                  <Link href="https://google.com" className={styles.link}>
-                    {chunks}
-                  </Link>
-                ),
+                actos: (chunks) => <Link href="https://www.comunidad.madrid/servicios/atencion-contribuyente/actos-juridicos-documentados">{chunks}</Link>,
                 societarias: (chunks) => (
-                  <Link href="https://google.com">{chunks}</Link>
+                    <Link target="_blank" href="https://www.comunidad.madrid/servicios/atencion-contribuyente/operaciones-societarias">{chunks}</Link>
                 ),
               })}
             </Tag>
-          )}
+            </Paragraph>
+
+            )}
           {item.additionalTitle && (
             <Title level={4}>{t(item.additionalTitle)}</Title>
           )}
@@ -141,22 +134,22 @@ const Service = ({ params }: { params: { servicios: string } }) => {
                   <Text>
                     {t.rich(doc, {
                       empadronamiento: (chunks) => (
-                        <Link href="https://google.com">{chunks}</Link>
+                        <Link target="_blank" href="https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=23ccdd9d6baed010VgnVCM2000000c205a0aRCRD&vgnextchannel=5388a38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default">{chunks}</Link>
                       ),
                       defuncion: (chunks) => (
-                        <Link href="https://google.com">{chunks}</Link>
+                        <Link target="_blank" href="https://sede.mjusticia.gob.es/es/tramites/certificado-defuncion">{chunks}</Link>
                       ),
                       matrimonio: (chunks) => (
-                        <Link href="https://google.com">{chunks}</Link>
+                        <Link target="_blank" href="https://sede.mjusticia.gob.es/es/tramites/certificado-matrimonio">{chunks}</Link>
                       ),
                       voluntades: (chunks) => (
-                        <Link href="https://google.com">{chunks}</Link>
+                        <Link target="_blank" href="https://sede.mjusticia.gob.es/es/tramites/certificado-actos-ultima">{chunks}</Link>
                       ),
                       fallecimiento: (chunks) => (
-                        <Link href="https://google.com">{chunks}</Link>
+                        <Link target="_blank" href="https://www.mjusticia.gob.es/es/ciudadania/tramite?k=solicitud-certificado-contratos-seguros-cobertura-fallecimiento-online">{chunks}</Link>
                       ),
                       partidas: (chunks) => (
-                        <Link href="https://google.com">{chunks}</Link>
+                        <Link target="_blank" href="https://sede.mjusticia.gob.es/es/tramites/certificado-nacimiento">{chunks}</Link>
                       ),
                     })}
                   </Text>

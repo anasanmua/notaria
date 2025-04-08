@@ -222,7 +222,7 @@
     "condominiumExtinctionDocu2": "Título de propiedad.",
     "condominiumExtinctionDocu3": "Valoración total del inmueble y forma de pago de la compensación dineraria: transferencia, cheque, etc.",
 
-    "buildingConstructionTitle": "Declaración de obra nueva I",
+    "buildingConstructionTitle": "Obra en construcción y/o finalizada",
     "buildingConstructionPlusTitle": "Obra en construcción y/o finalizada",
     "buildingConstructionDescription": "Cuando adquieres un terreno sin edificar y, posteriormente, construyes en él o bien se amplía o modifica lo ya construído, es necesario formalizar una escritura notarial de obra nueva si queremos trasladar esta realidad física al Registro de la Propiedad.",
     "buildingConstructionPlusDescription": "Cuando adquieres un terreno sin edificar y, posteriormente, construyes en él o bien se amplía o modifica lo ya construído, es necesario formalizar una escritura notarial de obra nueva si queremos trasladar esta realidad física al Registro de la Propiedad.Consiste en declarar el inicio de la construcción y su posterior finalización.",
@@ -233,7 +233,7 @@
     "buildingConstructionDocu4": "Certificación emitida por un técnico competente que acredite que la obra de construcción se ajusta a su descripción.",
     "buildingConstructionDocu5": "Acta de finalización de obra que certifica que la obra se ha realizado según el proyecto y las licencias municipales.",
 
-    "oldNewBuildingTitle": "Declaración de obra nueva II",
+    "oldNewBuildingTitle": "Obra nueva 'antigua'",
     "oldNewBuildingPlusTitle": "Obra nueva 'antigua'",
     "oldNewBuildingNewBuildingTax": "***IMPUESTOS: La escritura de obra nueva está sujeta al <actos> Impuesto de Actos Jurídicos Documentados</actos>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "oldNewBuildingPlusDescription": "¿Has heredado una vivienda y en las escrituras sólo figura el terreno? ¿Vas a realizar una venta y la descripción registral del inmueble no incluye una ampliación realizada? Muchas veces se da el caso de que la edificación existe desde hace varios años pero no consta en el Registro de la Propiedad e incluso puede que se construyese sin licencia. En estos casos es necesario que el tiempo transcurrido desde la construcción hasta la declaración de obra nueva sea superior al necesario para la prescripción de acciones administrativas que declaren su ilegalidad, lo cual dependerá de la normativa autonómica. En el caso de la Comunidad de Madrid, la Ley del Suelo fija un plazo de 4 años.\n",
