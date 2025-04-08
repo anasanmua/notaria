@@ -220,7 +220,7 @@ export const data: DataService = {
         "donationRealEstateDocu5",
         "donationRealEstateDocu6",
       ],
-      tax: "donationRealStateTax",
+      tax: "donationRealEstateTax",
     },
   ],
   inmobiliario: [

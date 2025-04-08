@@ -18,28 +18,31 @@ const ServiceCard = ({
   href,
 }: ServiceCardProps) => {
   const t = useTranslations("Services");
+  const t2 = useTranslations("General");
   return (
     <Row className={styles.root}>
       <Col className={styles.icon}>
         <Icon color={"white"} />
       </Col>
       <Col xs={24}>
-        <Tooltip title={t(title)}>
-          <Typography.Title className={styles.titleEllipsis} level={3}>
+          <Typography.Title
+            className={styles.titleEllipsis}
+            level={3}
+            ellipsis={{ tooltip: t(title) }}
+          >
             {t(title)}
           </Typography.Title>
-        </Tooltip>
       </Col>
       <Col>
         <Tooltip title={t(description)}>
-          <Typography.Text className={styles.descriptionEllipsis}>
+          <Typography.Text className={styles.descriptionEllipsis} >
             {t(description)}
           </Typography.Text>
         </Tooltip>
       </Col>
       <Col className={styles.button}>
         <Link href={`servicios/${href}`}>
-          <Button>Más información</Button>
+          <Button>{t2("moreInfo")}</Button>
         </Link>
       </Col>
     </Row>

@@ -63,7 +63,7 @@ const Information = () => {
           <Form.Item
             name={"phone"}
             label={t("phone")}
-            rules={[{ required: true }]}
+            rules={[{ required: true, type: "number" }]}
           >
             <InputNumber className={styles.phoneNumber} />
           </Form.Item>

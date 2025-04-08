@@ -11,7 +11,8 @@
     "email": "Email",
     "selectReason": "Seleccione una opción",
     "description": "Descripción",
-    "documentsNeeded": "Documentos necesarios"
+    "documentsNeeded": "Documentos necesarios",
+    "moreInfo": "Más información"
   },
   "LocaleSwitcher": {
     "en": "Inglés",
@@ -193,7 +194,7 @@
 
     "donationRealEstateTitle": "Donación de inmuebles",
     "donationRealEstateDescription": "Para que sea efectiva la donación de un inmueble, ésta se debe hacer en escritura pública. Igual que la anterior, las donaciones entre familiares están bonificadas aunque en muchos casos es más interesante dejar los bienes en testamento ya que, en las donaciones de inmuebles, la carga fiscal es elevada puesto que esta operación da lugar al pago del impuesto de donaciones, al de plusvalía municipal (ambos a cargo del donatario), pero también grava la renta del donante como una ganancia patrimonial por la diferencia del valor de adquisición el bien y el de su posterior donación.",
-    "donationRealStateTax": " ***IMPUESTOS: La escritura de donación está sujeta al <donaciones>Impuesto de Donaciones</donaciones>. Además del Impuesto sobre el <terrenos>Incremento de Valor de los Terrenos de Naturaleza Urbana</terrenos> (Plusvalía Municipal). El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
+    "donationRealEstateTax": " ***IMPUESTOS: La escritura de donación está sujeta al <donaciones>Impuesto de Donaciones</donaciones>. Además del Impuesto sobre el <terrenos>Incremento de Valor de los Terrenos de Naturaleza Urbana</terrenos> (Plusvalía Municipal). El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "donationRealEstateDocu1": "Documento de identidad de donantes y donatarios, estados civiles y profesión actual.",
     "donationRealEstateDocu2": "Cantidad a donar.",
     "donationRealEstateDocu3": "Parentesco y residencia del donatario (quien recibe la donación).",

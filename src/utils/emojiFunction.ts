@@ -20,7 +20,7 @@ const emojiMap: Record<string, string> = {
   "empadronamiento": "🏠",
   "convenio regulador": "📝",
   "liquidación": "💸",
-  "aportar": "💍",
+  "aportar": "🍥",
   "título de propiedad": "🏡",
   "préstamo hipotecario": "🏦",
   "arrendamiento": "📑",
@@ -110,7 +110,6 @@ export const getEmoji = (doc: string): string => {
   if (lowerDoc.includes("nacionalidad") && lowerDoc.includes("jura"))
     return "🇪🇸✍️";
 
-  // Then check all other keyword matches
   for (const [keyword, emoji] of Object.entries(emojiMap)) {
     if (lowerDoc.includes(keyword.toLowerCase())) {
       return emoji;
