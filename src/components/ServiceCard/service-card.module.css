@@ -1,29 +1,29 @@
 .root {
   background-color: var(--brown-2);
-  min-height: 281px;
+  min-height: 17.5625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
 }
 .icon {
-  padding: 10px;
-  border-radius: 8px;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
   background-color: var(--primary);
 }
 
 .titleEllipsis {
-  min-width: 190px;
+  min-width: 11.875rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .descriptionEllipsis {
-  max-height: 70px;
-  min-height: 70px;
+  max-height: 4.375rem;
+  min-height: 4.375rem;
 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -33,7 +33,7 @@
 }
 
 .button {
-  margin-top: 16px;
+  margin-top: 1rem;
   align-self: flex-start;
 }
 
