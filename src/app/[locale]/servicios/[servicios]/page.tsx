@@ -26,8 +26,6 @@ const Services = ({ params }: { params: { servicios: string } }) => {
       return require("@/../public/images/poderes.jpg"); // Fallback image
     }
   };
-  console.log(params)
-  console.log(selectedService)
 
   const imageUrl = getImage(selectedService);
 
