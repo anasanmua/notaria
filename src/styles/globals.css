@@ -14,7 +14,7 @@ body {
 }
 
 .ant-typography a:hover {
-  color: var(--brown-4) ;
+  color: var(--brown-4);
   text-decoration: none;
 }
 

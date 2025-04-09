@@ -1,34 +1,34 @@
 .root {
-  display: flex;
-  gap: 16px;
-  align-items: center;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .backgroundColorPrimary {
-  background-color: var(--primary);
+    background-color: var(--primary);
 }
 
 .backgroundColorSecondary {
-  background-color: var(--cream-1);
-  border: 1px solid var(--brown-3);
+    background-color: var(--cream-1);
+    border: 0.0625rem solid var(--brown-3);
 }
 
 .icon {
-  padding: 10px;
-  border-radius: 8px;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
 }
 
 .link {
-  color: var(--brown-6) ;
-  text-decoration: underline;
+    color: var(--brown-6);
+    text-decoration: underline;
 }
 
 .link:hover {
-  color: var(--brown-4) ;
-  text-decoration: none;
+    color: var(--brown-4);
+    text-decoration: none;
 }
 
 .link:active {
-  color: var(--brown-10);
-  text-decoration: underline;
+    color: var(--brown-10);
+    text-decoration: underline;
 }
