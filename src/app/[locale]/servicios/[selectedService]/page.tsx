@@ -13,6 +13,7 @@ import {ExclamationCircleOutlined} from "@ant-design/icons";
 import styles from "./servicios.module.css";
 import Paragraph from "antd/lib/typography/Paragraph";
 import {ReactNode} from "react";
+import {capitalizeFirstLetter} from "@/utils/stringUtils";
 
 const Services = ({params}: { params: { selectedService: string } }) => {
     const t = useTranslations("Service");
@@ -22,9 +23,9 @@ const Services = ({params}: { params: { selectedService: string } }) => {
 
     const getImage = (selectedService: string) => {
         try {
-            return require(`@/../public/images/${selectedService}.jpg`);
+            return `/images/${selectedService}.jpg`;
         } catch (error) {
-            return require("@/../public/images/poderes.jpg");
+            return "/images/poderes.jpg";
         }
     };
 
@@ -64,8 +65,10 @@ const Services = ({params}: { params: { selectedService: string } }) => {
             </Link>
         ),
         patrimoniales: (chunks: ReactNode) => (
-            <Link target="_blank"
-                  href="https://www.comunidad.madrid/servicios/atencion-contribuyente/transmisiones-patrimoniales-onerosas">
+            <Link
+                target="_blank"
+                href="https://www.comunidad.madrid/servicios/atencion-contribuyente/transmisiones-patrimoniales-onerosas"
+            >
                 {chunks}
             </Link>
         ),
@@ -86,9 +89,10 @@ const Services = ({params}: { params: { selectedService: string } }) => {
             </Link>
         ),
         actos: (chunks: ReactNode) => (
-
-            <Link target="_blank"
-                  href="https://www.comunidad.madrid/servicios/atencion-contribuyente/actos-juridicos-documentados">
+            <Link
+                target="_blank"
+                href="https://www.comunidad.madrid/servicios/atencion-contribuyente/actos-juridicos-documentados"
+            >
                 {chunks}
             </Link>
         ),
@@ -216,20 +220,19 @@ const Services = ({params}: { params: { selectedService: string } }) => {
                 <link rel="preload" as="image" href={imageUrl}/>
             </Head>
             <BasicSection backgroundColor="cream1">
-                <Row>
-                    <Col xs={24} className={styles.imageCol}>
+                <Row justify="center">
+                    <Col xs={24} sm={16} className={styles.imageCol}>
                         <Image
                             className={styles.image}
                             src={imageUrl}
-                            height={600}
+                            fill
                             priority
                             alt={selectedService}
                         />
                     </Col>
                     <Col xs={24}>
                         <Title className={styles.centerText}>
-                            {selectedService.charAt(0).toUpperCase() +
-                                selectedService.slice(1)}
+                            {capitalizeFirstLetter(selectedService)}
                         </Title>
                     </Col>
                     <Col xs={24}>

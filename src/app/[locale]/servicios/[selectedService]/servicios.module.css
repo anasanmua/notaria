@@ -1,10 +1,12 @@
 .imageCol {
     text-align: center;
     padding: 0.9375rem;
+    height: 37.5rem;
 }
 
 .image {
     border-radius: 0.25rem;
+    object-fit: cover;
 }
 
 .centerText {
@@ -18,4 +20,10 @@
 .tag {
     white-space: unset !important;
     margin-top: 0.625rem;
+}
+
+@media (max-width: 768px) {
+    .imageCol {
+        height: 250px;
+    }
 }
