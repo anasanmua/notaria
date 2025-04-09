@@ -4,7 +4,7 @@ import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import {data, DataService, Service} from "@/utils/data";
-import {useTranslations} from "next-intl";
+import {RichTranslationValues, useTranslations} from "next-intl";
 import Image from "next/image";
 import Head from "next/head";
 import {getEmoji} from "@/utils/emojiFunction";
@@ -12,6 +12,7 @@ import Link from "next/link";
 import {ExclamationCircleOutlined} from "@ant-design/icons";
 import styles from "./servicios.module.css";
 import Paragraph from "antd/lib/typography/Paragraph";
+import {ReactNode} from "react";
 
 const Services = ({params}: { params: { selectedService: string } }) => {
     const t = useTranslations("Service");
@@ -29,8 +30,8 @@ const Services = ({params}: { params: { selectedService: string } }) => {
 
     const imageUrl = getImage(selectedService);
 
-    const richTextLinks = {
-        registroCivil: (chunks) => (
+    const richTextLinks: RichTranslationValues = {
+        registroCivil: (chunks: ReactNode) => (
             <Link
                 target="_blank"
                 href="https://sede.mjusticia.gob.es/es/tramites/certificado-nacimiento"
@@ -38,7 +39,7 @@ const Services = ({params}: { params: { selectedService: string } }) => {
                 {chunks}
             </Link>
         ),
-        colegioNotarial: (chunks) => (
+        colegioNotarial: (chunks: ReactNode) => (
             <Link
                 target="_blank"
                 href="https://madrid.notariado.org/portal/legalizacion-y-apostillas"
@@ -46,7 +47,7 @@ const Services = ({params}: { params: { selectedService: string } }) => {
                 {chunks}
             </Link>
         ),
-        ministerioAsuntos: (chunks) => (
+        ministerioAsuntos: (chunks: ReactNode) => (
             <Link
                 target="_blank"
                 href="https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Legalizaciones/Servicio-de-legalizaciones.aspx"
@@ -54,7 +55,7 @@ const Services = ({params}: { params: { selectedService: string } }) => {
                 {chunks}
             </Link>
         ),
-        impuestoSucesiones: (chunks) => (
+        impuestoSucesiones: (chunks: ReactNode) => (
             <Link
                 target="_blank"
                 href="https://www.comunidad.madrid/servicios/atencion-contribuyente/impuesto-sucesiones"
@@ -62,13 +63,13 @@ const Services = ({params}: { params: { selectedService: string } }) => {
                 {chunks}
             </Link>
         ),
-        patrimoniales: (chunks) => (
+        patrimoniales: (chunks: ReactNode) => (
             <Link target="_blank"
                   href="https://www.comunidad.madrid/servicios/atencion-contribuyente/transmisiones-patrimoniales-onerosas">
                 {chunks}
             </Link>
         ),
-        terrenos: (chunks) => (
+        terrenos: (chunks: ReactNode) => (
             <Link
                 target="_blank"
                 href="https://agenciatributaria.madrid.es/portales/contribuyente/es/Tramites/Plusvalia-Autoliquidacion/?vgnextoid=6258ef82e1bed010VgnVCM1000000b205a0aRCRD&vgnextchannel=97d608f9be116810VgnVCM1000001d4a900aRCRD"
@@ -76,7 +77,7 @@ const Services = ({params}: { params: { selectedService: string } }) => {
                 {chunks}
             </Link>
         ),
-        donaciones: (chunks) => (
+        donaciones: (chunks: ReactNode) => (
             <Link
                 target="_blank"
                 href="https://www.comunidad.madrid/servicios/atencion-contribuyente/donaciones"
@@ -84,14 +85,14 @@ const Services = ({params}: { params: { selectedService: string } }) => {
                 {chunks}
             </Link>
         ),
-        actos: (chunks) => (
+        actos: (chunks: ReactNode) => (
 
             <Link target="_blank"
                   href="https://www.comunidad.madrid/servicios/atencion-contribuyente/actos-juridicos-documentados">
                 {chunks}
             </Link>
         ),
-        societarias: (chunks) => (
+        societarias: (chunks: ReactNode) => (
             <Link
                 target="_blank"
                 href="https://www.comunidad.madrid/servicios/atencion-contribuyente/operaciones-societarias"
