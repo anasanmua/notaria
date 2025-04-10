@@ -4,11 +4,10 @@ import Text from "antd/lib/typography/Text";
 import justice from "@/../public/images/justice.jpg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Button, Col, Row } from "antd";
-import { Link as ScrollLink } from "react-scroll";
-import { scroller } from "react-scroll";
+import { Button } from "antd";
 import styles from "./intro.module.css";
 import { scrollToSection } from "@/utils/scroller";
+import CallToActionButton from "@/components/CallToActionButton/CallToActionButton";
 
 const Intro = () => {
   const t = useTranslations("Intro");
@@ -30,12 +29,12 @@ const Intro = () => {
           <Title className={styles.title}>{t("title")}</Title>
           <Text className={styles.description}>{t("description")}</Text>
           <div className={styles.buttonGroup}>
-            <Button onClick={() => scrollToSection("services")} type="primary">
+            <Button onClick={() => scrollToSection("services")}>
               {t2("services")}
             </Button>
-            <Button onClick={() => scrollToSection("contact")}>
+            <CallToActionButton onClick={() => scrollToSection("contact")}>
               {t2("contact")}
-            </Button>
+            </CallToActionButton>
           </div>
         </div>
       </div>
