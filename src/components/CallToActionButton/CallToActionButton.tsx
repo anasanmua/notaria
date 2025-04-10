@@ -2,7 +2,7 @@ import React from "react";
 import { Button, ButtonProps } from "antd";
 import { color } from "@/styles/colors";
 
-const CallToActionButton: React.FC<ButtonProps> = ({ className, ...props }) => {
+const CallToActionButton: React.FC<ButtonProps> = ({ ...props }) => {
   return (
     <Button
       style={{
