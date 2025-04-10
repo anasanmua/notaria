@@ -74,7 +74,7 @@ const NavBar: React.FC = () => {
           <LocaleSwitcher />
         </span>
       </Col>
-      <Col className={styles.burgerIcon} styles={{ backgroundColor: "red" }}>
+      <Col className={styles.burgerIcon}>
         <Menu
           onClick={toggleDrawer}
           style={{ fontSize: "24px", cursor: "pointer" }}
