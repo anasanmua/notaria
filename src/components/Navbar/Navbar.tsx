@@ -9,6 +9,7 @@ import classNames from "classnames";
 import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
 import { useTranslations } from "next-intl";
 import { scrollToSection } from "@/utils/scroller";
+import CallToActionButton from "@/components/CallToActionButton/CallToActionButton";
 
 const NavBar: React.FC = () => {
   const t = useTranslations("General");
@@ -66,14 +67,14 @@ const NavBar: React.FC = () => {
       </Col>
 
       <Col className={styles.contactDropdownArea}>
-        <Button type="primary" onClick={() => scrollToSection("contact")}>
+        <CallToActionButton onClick={() => scrollToSection("contact")}>
           {t("contact")}
-        </Button>
+        </CallToActionButton>
         <span className={styles.languageSelector}>
           <LocaleSwitcher />
         </span>
       </Col>
-      <Col className={styles.burgerIcon}>
+      <Col className={styles.burgerIcon} styles={{ backgroundColor: "red" }}>
         <Menu
           onClick={toggleDrawer}
           style={{ fontSize: "24px", cursor: "pointer" }}
