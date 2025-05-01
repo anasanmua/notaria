@@ -12,7 +12,10 @@
     "selectReason": "Seleccione una opción",
     "description": "Descripción",
     "documentsNeeded": "Documentos necesarios",
-    "moreInfo": "Más información"
+    "moreInfo": "Más información",
+    "requestMoreInfo": "Solicitar más información",
+    "privacyPolicy": "Política de privacidad",
+    "legalNotice": "Aviso legal"
   },
   "LocaleSwitcher": {
     "en": "Inglés",
@@ -65,32 +68,26 @@
     "generalDocu1": "Documento de identidad del poderdante y del apoderado.",
     "generalDocu2": "Si hay varios apoderados: indicar si el poder es solidario (con que firme uno en ejercicio del poder es suficiente) o mancomunado (tendrán que firmar todos).",
     "generalDocu3": "Partida de nacimiento poderdante (no es imprescindible).",
-
     "lawsuitsTitle": "Pleitos",
     "lawsuitsDescription": "Poder para que abogados y procuradores puedan representarte en un procedimiento judicial.",
     "lawsuitsDocu1": "Documento de identidad del poderdante.",
     "lawsuitsDocu2": "Listado de abogados y procuradores con número de colegiado y colegio al que pertenecen.",
-
     "specialPowersTitle": "Especiales",
     "specialPowersDescription": "Poderes para actos concretos que se realizan de manera personalizada en función de lo solicitado por el cliente. Por ejemplo, poder para vender, comprar o aceptar herencias.",
     "specialPowersDocu1": "Documento de identidad del poderdante y del apoderado.",
     "specialPowersDocu2": "Datos relativos a la facultad que se va a otorgar, por ejemplo, en el caso de compraventa, los datos del inmueble, o en el caso de aceptación de herencia, los datos del difunto.",
-
     "foreignPowersTitle": "Extranjero",
     "foreignPowersDescription": "Poder para que tenga validez en otro país. \nUna vez firmado el poder, se tendrá que apostillar o legalizar en el <colegioNotarial> Colegio Notarial </colegioNotarial>o en el <ministerioAsuntos> Ministerio de Asuntos Exteriores.</ministerioAsuntos>",
     "foreignPowersDocu1": "Documento de identidad del poderdante (español y extranjero) y del apoderado.",
     "foreignPowersDocu2": "Modelo del poder conforme a la normativa del lugar donde se va a aplicar.",
-
     "revocationTitle": "Revocación",
     "revocationDescription": "Todos los poderes que hayas otorgado pueden ser revocados en cualquier momento. En este sentido, es conveniente que lleves a la notaría la copia del poder que ahora quieras revocar así como los datos de localización del apoderado para que se notifique la revocación.",
     "revocationDocu1": "Documento de identidad del poderdante.",
     "revocationDocu2": "Escritura de poder que se quiere revocar (preferiblemente el original).",
     "revocationDocu3": "Datos de localización del apoderado si se quiere que el notario le notifique la revocación.",
-
     "willTitle": "Testamento",
     "willDescription": "Es el documento más importante en una sucesión pues en él se determina el destino de todo el patrimonio del fallecido. \n¿Te suena aquello de la legítima y los herederos forzosos? \nEn España, dependiendo de los familiares que tengamos hay una parte de nuestros bienes que les corresponden por derecho: legítima de los descendientes, de los ascendientes y del cónyuge.\nPor ello, es fundamental que acudas a un profesional, para que te asesore de manera que se pueda cumplir tu voluntad y, a su vez, no se actúe en contra de las normas que limitan la capacidad del testador de disponer de sus bienes.",
     "willDocu1": "Documento de identidad del testador.",
-
     "heirsDeclarationTitle": "Declaración de herederos",
     "heirsDeclarationDescription": "Cuando la persona fallecida no otorgó testamento, entonces hay que realizar una declaración de herederos para determinar quiénes son (de los familiares más cercanos) y que, posteriormente, se adjudiquen los bienes.",
     "heirsDeclarationDocu1": "Documento de identidad del fallecido o certificado de empadronamiento.",
@@ -101,7 +98,6 @@
     "heirsDeclarationDocu6": "Si el difunto/a era viudo/a, será necesario el certificado de defunción de su esposo/a.",
     "heirsDeclarationDocu7": "Documento de identidad de los herederos.",
     "heirsDeclarationDocu8": "Dos testigos que no sean familia o puedan tener interés en la herencia.",
-
     "inheritanceTitle": "Herencia",
     "inheritanceDescription": "Si ya conocemos quiénes son los herederos del fallecido (por testamento o por declaración de herederos), el siguiente paso es aceptar la herencia y adjudicar los bienes, de tal modo que se modifique su titularidad y pasen a formar parte del patrimonio de cada heredero. En este sentido, te asesoramos para que, cumpliendo con los requisitos legales y la voluntad del testador, se realice la partición de manera satisfactoria para todos los herederos.\nTen en cuenta que el reparto de la herencia se puede llevar a cabo en notaría siempre que haya acuerdo entre todos o, en su defecto, con el nombramiento de un contador-partidor dativo si lo requiere la mitad de los herederos.\n\n.",
     "inheritanceDocu1": "<defuncion> Certificado de defunción.</defuncion>",
@@ -113,19 +109,16 @@
     "inheritanceDocu7": "Certificado de saldo en cuentas bancarias a fecha de fallecimiento.",
     "inheritanceDocu8": "Resto de documentación que acredite la titularidad del fallecido sobre los bienes que se vayan a adjudicar.",
     "inheritanceTax": "***IMPUESTOS: El plazo para el pago del <impuestoSucesiones> Impuesto de Sucesiones </impuestoSucesiones>y el de Impuesto sobre el <terrenos>Incremento de Valor de los Terrenos de Naturaleza Urbana</terrenos> (Plusvalía Municipal) es de seis meses contados desde la fecha del fallecimiento.\nAntes de que se cumpla el quinto mes, se puede solicitar una PRÓRROGA por otros seis meses más",
-
     "inheritanceRenunciationTitle": "Renuncia de herencia",
     "inheritanceRenunciationDescription": "Si quieres apartarte de una herencia es necesario que renuncies en escritura pública. La renuncia pura y simple no tiene consecuencias fiscales para el renunciante, si bien, la renuncia a favor de un tercero se entiende como una donación. También es fundamental revisar el testamento del fallecido, si lo hay, para tener en cuenta las sustituciones que pudieran haberse previsto.",
     "inheritanceRenunciationDocu1": "Documento de identidad del renunciante.",
     "inheritanceRenunciationDocu2": "<defuncion> Certificado de defunción.</defuncion>",
     "inheritanceRenunciationDocu3": "<voluntades>Certificado de últimas voluntades.</voluntades>",
     "inheritanceRenunciationDocu4": "Copia del testamento (si procede).",
-
     "marriageContractsTitle": "Capitulaciones matrimoniales",
     "marriageContractsDescription": "Los cónyuges pueden acordar, tanto antes como después del matrimonio, el régimen económico que regirá su relación. Con carácter general, aunque existen normas especiales regionales, si no se dice, el régimen es el de sociedad de gananciales, por el cual, todos los bienes adquiridos con anterioridad al matrimonio son de la sociedad de gananciales, no individuales de cada uno, salvo lo adquirido por herencia o donación que tiene carácter privativo. Si quieres establecer otro régimen es necesario firmar en documento público unas capitulaciones matrimoniales en las que se pacte la separación de bienes y, posteriormente, que se inscriban en el Registro Civil.",
     "marriageContractsDocu1": "Documento de identidad de ambos.",
     "marriageContractsDocu2": "<matrimonio>Certificado de matrimonio</matrimonio> o Libro de Familia (si procede).",
-
     "marriageProcedureTitle": "Expediente matrimonial y celebración del matrimonio",
     "marriageProcedureDescription": "Los matrimonios se pueden celebrar en notaría y se llevan a cabo en dos actos. El primero es el expediente matrimonial, en el cual se valora si los contrayentes son aptos para casarse de acuerdo con la normativa española. Para este acto la elección de notario no es libre sino que se hace a través del <colegioNotarial> Colegio Notarial.</colegioNotarial> Una vez cerrado el expediente de manera favorable, el siguiente paso es la celebración del matrimonio que se puede hacer en la misma notaría donde se firmó el expediente, en otra, en el ayuntamiento, etc. según la elección de los contrayentes.",
     "marriageProcedureDocu1": "Documento de identidad de ambos.",
@@ -136,7 +129,6 @@
     "marriageProcedureDocu6": "Certificado de soltería (caso de extranjeros).",
     "marriageProcedureDocu7": "Indicar régimen económico matrimonial: gananciales o separación de bienes.",
     "marriageProcedureDocu8": "Indicar lugar de celebración del matrimonio.",
-
     "divorceTitle": "Divorcio y liquidación de la sociedad de gananciales",
     "divorceDescription": "El divorcio se puede realizar notarialmente cuando no haya hijos menores y los cónyuges actúen de mutuo acuerdo. En ese caso, tendrán que acudir primero a un abogado que elabore un convenio regulador de las consecuencias personales y patrimoniales de la ruptura. Si hay bienes en común, el divorcio puede ir aparejado a la liquidación de la sociedad de gananciales.",
     "divorceTax": "***IMPUESTOS: La escritura de liquidación de la sociedad de gananciales está sujeta pero exenta al pago del <actos>Impuesto de Actos Jurídicos Documentados</actos>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
@@ -145,13 +137,11 @@
     "divorceDocu3": "<empadronamiento>Certificado de empadronamiento.</empadronamiento>",
     "divorceDocu4": "Convenio regulador.",
     "divorceDocu5": "En el caso de liquidación de la sociedad de gananciales, inventario de bienes, títulos de propiedad, valoración de los bienes y regla de reparto.",
-
     "marriageContributionTitle": "Aportación a la sociedad de gananciales",
     "marriageContributionDescription": "Los cónyuges pueden aportar bienes privativos a la sociedad de gananciales y, además, ello no da lugar al pago de impuestos al momento de realizar la aportación. El cónyuge que aporta un bien a la sociedad decide si renuncia al derecho de reembolso, que consiste en que le sea devuelto el bien aportado o valor del mismo al momento de liquidarse la sociedad de gananciales.",
     "marriageContributionDocu1": "Documento de identidad de ambos.",
     "marriageContributionDocu2": "<matrimonio>Certificado de matrimonio</matrimonio> o Libro de Familia.",
     "marriageContributionDocu3": "Título de propiedad de los bienes objeto de aportación.",
-
     "mortgageLoanTitle": "Préstamo hipotecario",
     "mortgageLoanDescription": "Si vas a pedir un préstamo hipotecario ten en cuenta que, quien se haga cargo de los gastos notariales (suele ser la parte compradora), tiene el derecho a elegir notaría. A continuación te contamos todo lo que necesitas saber: Primero tienes que firmar las condiciones del préstamo con el banco (FEIN, FIAE, proyecto de contrato, etc.) y éste sube a la plataforma notarial (SIGNO) dicha documentación para que podamos empezar con el proceso. Una vez tengamos asignada la operación nos pondremos en contacto contigo. La firma de un préstamo hipotecario tiene dos fases: 1. Firma del acta de transparencia, en la que el notario te explicará las condiciones del préstamo y se asegurará de que comprendes su contenido para velar por tus intereses. 2. Firma del préstamo hipotecario y, si es el caso, la compraventa, extinción de condominio u operación que lleve aparejada. Ten en cuenta que desde que el banco sube la operación a la plataforma hasta que puede firmarse el préstamo tienen que pasar, al menos, 10 días naturales.",
     "mortgageLoanDocu1": "Documento de identidad de vendedores y compradores, profesión y estado civil.",
@@ -169,19 +159,16 @@
     "mortgageLoanDocu13": "Escritura del préstamo anterior.",
     "mortgageWithProperty": "Hipoteca con compra de inmueble",
     "mortgageWithoutProperty": "Hipoteca de vivienda ya en propiedad",
-
     "subrogationAndNovationTitle": "Subrogación y Novación",
     "subrogationAndNovationDescription": "También formalizamos subrogaciones cuando cambia la entidad bancaria y novaciones de préstamo cuando cambian las condiciones iniciales, por ejemplo, el tipo de interés o la cuantía del préstamo.",
     "subrogationAndNovationDocu1": "Documento de identidad del prestatario.",
     "subrogationAndNovationDocu2": "Escritura del préstamo anterior.",
-
     "mortgageCancellationTitle": "Cancelación de hipoteca",
     "mortgageCancellationDescription": "Si ya has amortizado tu préstamo y quieres proceder a su cancelación registral, es necesario que un apoderado del banco firme una escritura pública de cancelación y que ésta se inscriba. Otra forma es solicitar la cancelación por caducidad cuando hayan transcurrido 21 años desde la última cuota del préstamo, en cuyo caso no hay que firmar escritura pública de cancelación.",
     "mortgageTax": "***IMPUESTOS: La escritura de cancelación hipotecaria está sujeta pero exenta al pago del <actos>Impuesto de Actos Jurídicos Documentados</actos>, es decir, que una vez que la tengas tendrás que declarar el impuesto, que aparecerá como exento de pago y ya podrás acudir al Registro de la Propiedad y que la finca figure libre de cargas. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "mortgageCancellationDocu1": "Documento de identidad del prestatario.",
     "mortgageCancellationDocu2": "Certificado de deuda cero.",
     "mortgageCancellationDocu3": "Nota simple del Registro de la Propiedad.",
-
     "donationMoneyTitle": "Donación de dinero",
     "donationMoneyDescription": "No es necesario que se hagan en escritura pública (ante notario) pero sí recomendable cuando en la Comunidad Autónoma donde más tiempo haya residido el donatario (quien recibe el dinero) tenga beneficios fiscales. Es el caso de Madrid, donde las donaciones entre familiares están muy bonificadas si se formalizan en escritura pública.",
     "donationTax": " ***IMPUESTOS: La escritura de donación está sujeta al <donaciones>Impuesto de Donaciones</donaciones>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
@@ -191,7 +178,6 @@
     "donationMoneyDocu4": "Indicar si es o no colacionable (si se descuenta de la herencia futura).",
     "donationMoneyDocu5": "Indicar origen del dinero: rendimientos del trabajo, herencia; y destino: compra de vivienda habitual, amortización de préstamo por la compra de ésta u otros.",
     "donationMoneyDocu6": "Indicar si se han realizado más donaciones en los últimos 3 años a la misma persona.",
-
     "donationRealEstateTitle": "Donación de inmuebles",
     "donationRealEstateDescription": "Para que sea efectiva la donación de un inmueble, ésta se debe hacer en escritura pública. Igual que la anterior, las donaciones entre familiares están bonificadas aunque en muchos casos es más interesante dejar los bienes en testamento ya que, en las donaciones de inmuebles, la carga fiscal es elevada puesto que esta operación da lugar al pago del impuesto de donaciones, al de plusvalía municipal (ambos a cargo del donatario), pero también grava la renta del donante como una ganancia patrimonial por la diferencia del valor de adquisición el bien y el de su posterior donación.",
     "donationRealEstateTax": " ***IMPUESTOS: La escritura de donación está sujeta al <donaciones>Impuesto de Donaciones</donaciones>. Además del Impuesto sobre el <terrenos>Incremento de Valor de los Terrenos de Naturaleza Urbana</terrenos> (Plusvalía Municipal). El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
@@ -201,7 +187,6 @@
     "donationRealEstateDocu4": "Indicar si es o no colacionable (si se descuenta de la herencia futura).",
     "donationRealEstateDocu5": "Título de propiedad.",
     "donationRealEstateDocu6": "Valor del inmueble.",
-
     "realEstateTransactionsTitle": "Compraventas inmobiliarias",
     "realEstateTransactionsDescription": "La formalización de una compraventa de una vivienda, terreno, local comercial o plaza de garaje en escritura pública ante notario es la mejor garantía de que la operación se realizará de forma segura y, además, de que se podrá inscribir la titularidad en el Registro de la Propiedad. Ten en cuenta que, quien se haga cargo de los gastos notariales, normalmente es la parte compradora, tiene el derecho a elegir notaría.",
     "realEstateTax": " ***IMPUESTOS: La escritura de compraventa está sujeta al <patrimoniales>Impuesto de Transmisiones Patrimoniales</patrimoniales> y el Impuesto sobre el <terrenos>Incremento de Valor de los Terrenos de Naturaleza Urbana</terrenos> (Plusvalía Municipal). El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
@@ -215,14 +200,12 @@
     "realEstateTransactionsDocu8": "Datos de contacto si media inmobiliariaaaaaa.",
     "realEstateTransactionsDocu9": "Precio y forma de pago: transferencia, cheque, etc.",
     "realEstateTransactionsDocu10": "Si la finca está gravada con hipoteca, certificado de deuda y cuánto se retiene para su cancelación.",
-
     "condominiumExtinctionTitle": "Extinción de condominio",
     "condominiumExtinctionDescription": "La extinción de condominio se produce cuando varias personas tienen uno o varios inmuebles en copropiedad y disuelven esa comunidad de tal forma que sólo queda un propietario y el resto se ve compensado en dinero. Por ejemplo, si tres hermanos tienen dos fincas en copropiedad, que adquirieron por herencia de sus padres, deciden que cada hermano se quede un inmueble y el tercero reciba una cantidad equivalente a su participación en la propiedad.",
     "condominiumExtinTax": " ***IMPUESTOS: La escritura de extinción de condominio está sujeta al <actos> Impuesto de actos Jurídicos Documentados</actos>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "condominiumExtinctionDocu1": "Documento de identidad de los propietarios, estado civil y profesión.",
     "condominiumExtinctionDocu2": "Título de propiedad.",
     "condominiumExtinctionDocu3": "Valoración total del inmueble y forma de pago de la compensación dineraria: transferencia, cheque, etc.",
-
     "buildingConstructionTitle": "Obra en construcción y/o finalizada",
     "buildingConstructionPlusTitle": "Obra en construcción y/o finalizada",
     "buildingConstructionDescription": "Cuando adquieres un terreno sin edificar y, posteriormente, construyes en él o bien se amplía o modifica lo ya construído, es necesario formalizar una escritura notarial de obra nueva si queremos trasladar esta realidad física al Registro de la Propiedad.",
@@ -233,7 +216,6 @@
     "buildingConstructionDocu3": "Licencia para la realización de obras emitida por el Ayuntamiento competente.",
     "buildingConstructionDocu4": "Certificación emitida por un técnico competente que acredite que la obra de construcción se ajusta a su descripción.",
     "buildingConstructionDocu5": "Acta de finalización de obra que certifica que la obra se ha realizado según el proyecto y las licencias municipales.",
-
     "oldNewBuildingTitle": "Obra nueva 'antigua'",
     "oldNewBuildingPlusTitle": "Obra nueva 'antigua'",
     "oldNewBuildingNewBuildingTax": "***IMPUESTOS: La escritura de obra nueva está sujeta al <actos> Impuesto de Actos Jurídicos Documentados</actos>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
@@ -242,14 +224,12 @@
     "oldNewBuildingDocu1": "Documento de identidad de los propietarios, estado civil y profesión.",
     "oldNewBuildingDocu2": "Título de propiedad.",
     "oldNewBuildingDocu3": "Proyecto técnico redactado por arquitecto que justifique la obra y la legalidad de la misma.",
-
     "landSegregationTitle": "Segregación de fincas",
     "landSegregationDescription": "La segregación consiste en la separación de una parte de la finca original para dar lugar a otra u otras fincas independientes de la primera.",
     "landSegregationTax": "***IMPUESTOS: La escritura de segregación está sujeta al <actos>Impuesto de actos Jurídicos Documentados</actos>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "landSegregationDocu1": "Documento de identidad de los propietarios, estado civil y profesión.",
     "landSegregationDocu2": "Título de propiedad.",
     "landSegregationDocu3": "Licencia de segregación emitida por el Ayuntamiento competente.",
-
     "useChangeTitle": "Cambio de uso",
     "useChangeDescription": "¿Tienes un local y te gustaría emplearlo como vivienda? Ponte en contacto con nosotros y te explicamos la mejor forma de hacerlo según tu caso concreto.",
     "useChangeTax": "***IMPUESTOS: La escritura de cambio de uso está sujeta al <actos>Impuesto de actos Jurídicos Documentados</actos>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
@@ -260,7 +240,6 @@
     "useChangeDocu5": "Licencia de Primera Ocupación",
     "useChangeDocu6": "Si se encuentra en una comunidad de propietarios, se requerirá la autorización de la junta a menos que el cambio de uso esté permitido o, según algunas sentencias, no esté prohibido en los estatutos de la comunidad.",
     "additionalInfoDoc": "Si el cambio de uso se realiza una vez cumplido el plazo de prescripción de la infracción urbanística de que se trate, será necesario que se certifique su antigüedad por un técnico competente o certificación catastral.",
-
     "companyFormationTitle": "Constitución de sociedades",
     "companyFormationDescription": "Existen diversos tipos de sociedades en función de la responsabilidad patrimonial asumida por los socios, siendo las más comunes aquellas en las que se limita dicha responsabilidad, concretamente las sociedades limitadas y anónimas. Su constitución se realiza en las notarías, donde además podrás recibir asesoramiento sobre cuál es la forma más adecuada para la empresa que deseas realizar o sobre la redacción de los estatutos sociales. Una vez constituida la sociedad hay que solicitar el NIF provisional de la nueva empresa, liquidar el <societarias>Impuesto de Operaciones Societarias</societarias>, presentar copia de la escritura en el Registro Mercantil y, tras su inscripción, solicitar el CIF definitivo. Todos estos trámites se pueden realizar igualmente a través de la notaría.",
     "companyFormationTax": "***IMPUESTOS: La constitución de sociedades se liquida como exenta en el Impuesto de Operaciones Societarias. El plazo de presentación es de 30 días hábiles tras la firma de la escritura.",
@@ -268,18 +247,15 @@
     "companyFormationDocu2": "Certificado de denominación social (se puede obtener telemáticamente desde la propia notaría)",
     "companyFormationDocu3": "Identificar los bienes que van a integrar el capital social",
     "companyFormationDocu4": "Estatutos (podemos encargarnos también de su redacción)",
-
     "realOwnershipTitle": "Acta de titularidad real",
     "realOwnershipDescription": "Este acta es una medida contra el blanqueo de capitales consistente en la obligación de identificar a los titulares reales de una sociedad ya sea por control, posesión o administración. En este sentido, se entiende con carácter general que son titulares reales aquellos que tienen una participación en la sociedad igual o superior al 25%. El acta de titularidad real tendrá validez siempre y cuando no se produzcan cambios en los porcentajes de participación de los socios. ",
     "realOwnershipDocu1": "Documento de identidad del representante.",
     "realOwnershipDocu2": "Escritura de constitución de la sociedad.",
     "realOwnershipDocu3": "Escritura de nombramiento de cargo o poder.",
     "realOwnershipDocu4": "Datos de identificación de los titulares reales.",
-
     "postConstitutionActionsTitle": "Otras actuaciones posteriores a la constitución",
     "postConstitutionActionsDescription": "Una vez creada la sociedad, esta constitución inicial puede ir sufriendo cambios que se lleven a cabo en escritura pública como un CAMBIO DE DOMICILIO SOCIAL, NOMBRAMIENTO O CESE DE CARGOS, APODERAMIENTOS, AMPLIACIONES O REDUCCIONES DE CAPITAL.",
     "postConstitutionActionsDocu1": "La documentación necesaria puede variar en función de cada caso, ponte en contacto con nosotros y te informamos.",
-
     "nationalityOathTitle": "Juras de nacionalidad",
     "nationalityOathDescription": "Una vez hayas recibido la resolución del Ministerio de Justicia concediéndote la nacionalidad española, el siguiente paso es firmar la llamada jura de nacionalidad, que es un trámite en el que el interesado jura o promete respetar a la Constitución, al Rey y al ordenamiento jurídico. El plazo es de 180 días desde que se emite la citada resolución. Actualmente, debido a la saturación de los registros civiles, donde también se puede firmar la jura, existe la posibilidad de firmar la jura por vía notarial de una forma mucho más ágil y sencilla. Una vez nos facilites la documentación necesaria, elaboremos tu escritura y la firmes, la remitiremos al Registro Civil, quien te enviará una partida de nacimiento con la que podrás solicitar, a través de la Policía Nacional, la expedición de DNI y Pasaporte españoles.",
     "nationalityOathDocu1": "NIE y Pasaporte.",
@@ -287,7 +263,6 @@
     "nationalityOathDocu3": "Certificado de nacimiento del país de origen.",
     "nationalityOathDocu4": "Certificado de antecedentes penales del país de origen.",
     "nationalityOathDocu5": "Indicar si tienes hijos menores bajo tu patria potestad.",
-
     "policiesTitle": "Pólizas",
     "policiesDescription": "Es un documento notarial que recoge un contrato de carácter financiero, por ejemplo un préstamo o crédito, entre una entidad bancaria y un particular, ya sea persona física o empresa. Dichos contratos no requieren para su validez la firma del notario pero su intervención dota al contrato de fuerza ejecutiva si se diera un futuro incumplimiento.",
     "policiesDocu1": "Documento de identidad. ",
@@ -295,16 +270,47 @@
     "policiesDocu3": "Poder notarial o nombramiento del administrador.",
     "policiesDocu4": "Constitución de la sociedad.",
     "policiesDocu5": "Acta de titularidad real.",
-
     "ratificationsTitle": "Ratificaciones",
     "ratificationsDescription": "Si se va a firmar algún documento público en una notaría situada fuera de tu municipio o que está programada para un día en el que no podrás acudir, cabe la posibilidad de que otra persona firme en tu nombre como mandatario verbal y que la escritura quede pendiente de su posterior ratificación para que tenga plenos efectos. ",
     "ratificationsDocu1": "Documento de identidad",
     "ratificationsDocu2": "Copia simple de la escritura que se va a ratificar.",
-
     "manifestationsAndPresenceActsTitle": "Actas de manifestaciones y de presencia",
     "manifestationsAndPresenceActsDescription": "El notario, como fedatario público, puede dejar constancia de las manifestaciones que le soliciten. Por ejemplo, es habitual emplear las actas de manifestaciones para solicitud de visados de reagrupación familiar, como complemento a las cartas de invitación, para dar fe de vida, como prueba en juicio, o cualquier otro caso en el que el notario sea requerido. A su vez, el notario puede desplazarse al lugar donde se le requiera, siempre que esté en su zona de actuación, y dar fe de lo que allí se pueda observar, por ejemplo, fotos del estado de un inmueble. ",
-
     "signatureAuthenticationAndDocumentCopyingTitle": "Legitimación de firma y compulsa de documentos",
     "signatureAuthenticationAndDocumentCopyingDescription": "Si vas a firmar un documento privado, el notario puede dar fe de que efectivamente esa firma es tuya, a esto se le llama legitimación de firma.\n\nTambién se pueden hacer copias de documentos originales como títulos, DNI o Pasaporte, de tal modo que dichas copias, al ser en papel timbrado y firmadas y selladas por el notario, equivalen al original"
+  },
+  "privacyPolicy": {
+    "subtitle": "Protección de datos personales",
+    "firstSubIndex": "Responsable del tratamiento",
+    "firstUl1": "Titular: Juan Pérez García",
+    "firstUl2": "Denominación: Notaría Juan Pérez",
+    "firstUl3": "NIF: 47876833-Q",
+    "firstUl4": "Dirección: Calle Valdetorres de Jarama número 31, 28043 (Madrid)",
+    "firstUl5": "Correo electrónico: notaria@notariaperezgarcia.com",
+    "firstParagraph": "En cumplimiento de lo que dispone el REGLAMENTO UE 2016/679 GENERAL DE PROTECCIÓN DE DATOS (RGPD) y la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI), le informamos de que todos los datos personales que nos facilite a través de este sitio web, pasarán a formar parte de un fichero titularidad de Notaría Juan Pérez con la finalidad de prestar el servicio solicitado.",
+    "secondSubIndex": "Finalidad del tratamiento",
+    "secondParagraph1": "Los datos personales que nos remita a través de los formularios de este sitio web sólo se utilizarán para las siguientes finalidades:",
+    "secondUl1": "Gestión de su consulta;",
+    "secondUl2": "Envío de información, por vía electrónica o no electrónica, relacionada con su consulta y los servicios de la notaría;",
+    "secondUl3": "Servicio de atención al usuario, resolución de dudas, presentación de quejas o sugerencias.",
+    "secondParagraph2": "Los datos personales proporcionados se conservarán mientras no se solicite su supresión por el interesado.",
+    "thirdParagraph": "La base legal para el tratamiento de los datos es la legitimación por consentimiento del interesado para la finalidad principal de atención de la consulta que nos remita el usuario.",
+    "thirdSubIndex": "Legitimación del tratamiento",
+    "fourthSubIndex": "Destinatarios de cesiones o transferencias",
+    "fourthParagraph": "Sólo en el caso de que recibamos el encargo del usuario para la tramitación a través de nuestros servicios, sus datos podrán ser comunicados a entidades de gestión a las que encomendamos la tramitación de los documentos notariales ante las Administraciones Públicas.",
+    "fithSubIndex": "Derechos de las personas interesadas",
+    "fifthParagraph1": "Cualquier persona tiene derecho a obtener confirmación sobre si en Notaría Juan Pérez se tratan datos personales que le conciernan, o no.",
+    "fifthParagraph2": "Por otro lado, cualquier interesado podrá solicitar el ejercicio de los siguientes derechos ante Notaría Juan Pérez personalmente o por escrito a la dirección postal o correo electrónico del encabezamiento, previa verificación de su identidad:",
+    "fifthUl1": "Derecho de acceso: permite al interesado conocer y obtener información sobre sus datos de carácter personal sometidos a tratamiento.",
+    "fifthUl2": "Derecho de rectificación o supresión: permite corregir errores, modificar los datos que resulten ser inexactos o incompletos y garantizar la certeza de la información objeto del tratamiento.",
+    "fifthUl3": "Derecho de cancelación: permite que se supriman los datos que resulten ser inadecuados o excesivos.",
+    "fifthUl4": "Derecho de oposición: derecho del interesado a que no se lleve a cabo el tratamiento de sus datos de carácter personal o se cese en el mismo.",
+    "fifthUl5": "Limitación del tratamiento: conlleva el marcado de los datos personales conservados, con la finalidad de limitar su futuro tratamiento.",
+    "fifthUl6": "Portabilidad de los datos: facilitación de los datos objeto de tratamiento al interesado, a fin de que éste pueda transmitirlos a otro responsable, sin impedimentos.",
+    "fifthUl7": "Derecho a no ser objeto de decisiones individuales automatizadas (incluida la elaboración de perfiles): derecho a no ser objeto de una decisión basada en el tratamiento automatizado que produzca efectos o afecte significativamente.",
+    "fifthParagraph3": "El interesado puede, en cualquier momento, revocar el consentimiento previamente otorgado. En el caso de que revoque el consentimiento para almacenar y procesar sus datos, Notaría Juan Pérez no podrá proporcionarle determinados servicios.",
+    "fifthParagraph4": "En caso de desatención de alguno de los citados derechos, el interesado podrá interponer la correspondiente reclamación de tutela ante la Agencia Española de Protección de Datos.",
+    "fifthParagraph5": "La conservación de los datos quedará sujeta al plazo de prescripción de las diferentes obligaciones legales. En ningún caso se contempla por parte de Notaría Juan Pérez la toma de decisiones automatizadas para la elaboración de perfiles o la transferencia internacional a terceros países.",
+    "fifthParagraph6": "Notaría Juan Pérez se compromete al cumplimiento de su obligación de secreto de los datos de carácter personal y de su deber de tratarlos con confidencialidad, y adoptará, a estos efectos, las medidas necesarias para evitar su alteración, pérdida, tratamiento o acceso no autorizado."
   }
 }

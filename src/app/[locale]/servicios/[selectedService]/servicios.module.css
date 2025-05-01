@@ -1,29 +1,36 @@
 .imageCol {
-    text-align: center;
-    padding: 0.9375rem;
-    height: 37.5rem;
+  text-align: center;
+  padding: 0.9375rem;
+  height: 37.5rem;
 }
 
 .image {
-    border-radius: 0.25rem;
-    object-fit: cover;
+  border-radius: 0.25rem;
+  object-fit: cover;
 }
 
 .centerText {
-    text-align: center;
+  text-align: center;
 }
 
 .button {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .tag {
-    white-space: unset !important;
-    margin-top: 0.625rem;
+  white-space: unset !important;
+  margin-top: 0.625rem;
+}
+
+.documentsCard {
+  background-color: var(--brown-2);
+  border-radius: 0.625rem;
+  height: fit-content;
+  margin-top: 2.1875rem;
 }
 
 @media (max-width: 768px) {
-    .imageCol {
-        height: 250px;
-    }
+  .imageCol {
+    height: 250px;
+  }
 }

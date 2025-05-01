@@ -3,8 +3,11 @@ import { Col, Row, Typography } from "antd";
 import styles from "./footer.module.css";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("General");
+
   return (
     <Row className={styles.root} align="bottom" gutter={[0, 20]}>
       <Col xs={24} sm={12}>
@@ -19,14 +22,12 @@ const Footer = () => {
           </Col>
           <Col>
             <Link href="/politica-privacidad">
-              <Typography.Paragraph>
-                Términos y condiciones
-              </Typography.Paragraph>
+              <Typography.Paragraph>{t("privacyPolicy")}</Typography.Paragraph>
             </Link>
           </Col>
           <Col>
             <Link href="/aviso-legal">
-              <Typography.Paragraph>Aviso Legal</Typography.Paragraph>
+              <Typography.Paragraph>{t("legalNotice")}</Typography.Paragraph>
             </Link>
           </Col>
         </Row>

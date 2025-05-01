@@ -1,16 +1,19 @@
 "use client";
 import { Col, Divider, Row, Typography } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
+import { useTranslations } from "next-intl";
 
 const LegalNotice = () => {
+  const t = useTranslations("General");
+
   return (
     <>
       <BasicSection backgroundColor={"cream1"}>
         <Row justify="center">
           <Col xs={24} style={{ textAlign: "center" }}>
-            <Typography.Title>Aviso Legal</Typography.Title>
+            <Typography.Title>{t("legalNotice")}</Typography.Title>
           </Col>
-          <Col xs={24} sm={12}>
+          <Col xs={24} sm={24}>
             <p>
               GRUPO ÁTICO34, con CIF B87186177, dirección Paseo de la
               Castellana, 95, 15º, 28046 (Madrid) e inscrita en el Registro
