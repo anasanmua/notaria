@@ -17,7 +17,7 @@ const Footer = () => {
           </Col>
           <Col>
             <Link href="/cookies">
-              <Typography.Paragraph>Cookies</Typography.Paragraph>
+              <Typography.Paragraph>{t("cookies")}</Typography.Paragraph>
             </Link>
           </Col>
           <Col>
