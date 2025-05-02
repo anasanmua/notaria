@@ -18,7 +18,7 @@ const ServiceCard = ({
   href,
 }: ServiceCardProps) => {
   const t = useTranslations("Services");
-  const t2 = useTranslations("General");
+  const t2 = useTranslations("general");
   return (
     <Row className={styles.root}>
       <Col className={styles.icon}>

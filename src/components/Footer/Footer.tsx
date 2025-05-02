@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 const Footer = () => {
-  const t = useTranslations("General");
+  const t = useTranslations("general");
 
   return (
     <Row className={styles.root} align="bottom" gutter={[0, 20]}>

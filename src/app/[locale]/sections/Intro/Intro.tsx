@@ -11,7 +11,7 @@ import CallToActionButton from "@/components/CallToActionButton/CallToActionButt
 
 const Intro = () => {
   const t = useTranslations("Intro");
-  const t2 = useTranslations("General");
+  const t2 = useTranslations("general");
 
   return (
     <div className={styles.container}>

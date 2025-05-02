@@ -1,10 +1,11 @@
 "use client";
-import { Col, Row, Typography, Divider } from "antd";
+import Title from "antd/lib/typography/Title";
+import { Col, Row, Divider } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { useTranslations } from "next-intl";
 
 const Privacy = () => {
-  const t = useTranslations("General");
+  const t = useTranslations("general");
   const t2 = useTranslations("privacyPolicy");
 
   return (
@@ -12,11 +13,11 @@ const Privacy = () => {
       <BasicSection backgroundColor={"cream1"}>
         <Row justify="center">
           <Col xs={24} style={{ textAlign: "center" }}>
-            <Typography.Title>{t("privacyPolicy")}</Typography.Title>
+            <Title>{t("privacyPolicy")}</Title>
           </Col>
           <Col xs={24} sm={24}>
-            <Typography.Title level={3}>{t2("subtitle")}</Typography.Title>
-            <Typography.Title level={4}>{t2("firstSubIndex")}</Typography.Title>
+            <Title level={3}>{t2("subtitle")}</Title>
+            <Title level={4}>{t2("firstSubIndex")}</Title>
             <ul>
               <li>{t2("firstUl1")}</li>
               <li>{t2("firstUl2")}</li>
@@ -25,9 +26,7 @@ const Privacy = () => {
               <li>{t2("firstUl5")}</li>
             </ul>
             <p>{t2("firstParagraph")}</p>
-            <Typography.Title level={4}>
-              {t2("secondSubIndex")}{" "}
-            </Typography.Title>
+            <Title level={4}>{t2("secondSubIndex")} </Title>
             <p>{t2("secondParagraph1")}</p>
             <ul>
               <li>{t2("secondUl1")}</li>
@@ -35,13 +34,11 @@ const Privacy = () => {
               <li>{t2("secondUl3")}</li>
             </ul>
             <p>{t2("secondParagraph2")}</p>
-            <Typography.Title level={4}>{t2("thirdSubIndex")}</Typography.Title>
+            <Title level={4}>{t2("thirdSubIndex")}</Title>
             <p>{t2("thirdParagraph")}</p>
-            <Typography.Title level={4}>
-              {t2("fourthSubIndex")}
-            </Typography.Title>
+            <Title level={4}>{t2("fourthSubIndex")}</Title>
             <p>{t2("fourthParagraph")}</p>
-            <Typography.Title level={4}>{t2("fithSubIndex")}</Typography.Title>
+            <Title level={4}>{t2("fithSubIndex")}</Title>
             <p>{t2("fifthParagraph1")}</p>
             <p>{t2("fifthParagraph2")}</p>
 

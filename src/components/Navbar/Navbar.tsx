@@ -12,7 +12,7 @@ import { scrollToSection } from "@/utils/scroller";
 import CallToActionButton from "@/components/CallToActionButton/CallToActionButton";
 
 const NavBar: React.FC = () => {
-  const t = useTranslations("General");
+  const t = useTranslations("general");
   const [isDrawerVisible, setDrawerVisible] = useState(false);
   const pathname = usePathname();
   const anchorHidden =

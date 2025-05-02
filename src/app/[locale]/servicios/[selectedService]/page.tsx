@@ -18,7 +18,7 @@ import CallToActionButton from "@/components/CallToActionButton/CallToActionButt
 
 const Services = ({ params }: { params: { selectedService: string } }) => {
   const t = useTranslations("Service");
-  const t2 = useTranslations("General");
+  const t2 = useTranslations("general");
   const selectedService = params.selectedService;
   const tabArray = data[selectedService as keyof DataService];
 
