@@ -45,7 +45,7 @@ export default async function RootLayout({
       colorLink: "#7d6551",
       colorLinkHover: "#a18b6e",
       colorLinkActive: "#57443c",
-      fontSize: "16px",
+      fontSize: 16,
     },
     components: {
       Tabs: {
