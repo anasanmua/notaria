@@ -30,7 +30,7 @@ const Privacy = () => {
             <p>{t2("secondParagraph1")}</p>
             <ul>
               <li>{t2("secondUl1")}</li>
-              <li>{t2("secondUl1")}</li>
+              <li>{t2("secondUl2")}</li>
               <li>{t2("secondUl3")}</li>
             </ul>
             <p>{t2("secondParagraph2")}</p>
