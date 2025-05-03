@@ -4,22 +4,7 @@ body {
   font-family: "var(--font-plus-jakarta-sans)", sans-serif;
   margin: 0;
 }
+
 .ant-tabs-tab-active {
   background-color: var(--primary) !important;
 }
-
-.ant-typography a {
-  color: var(--brown-6);
-  text-decoration: underline;
-}
-
-.ant-typography a:hover {
-  color: var(--brown-4);
-  text-decoration: none;
-}
-
-
-
-
-
-

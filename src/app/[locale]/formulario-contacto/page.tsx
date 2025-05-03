@@ -8,7 +8,7 @@ import styles from "./formulario-contacto.module.css";
 
 // text-align on columns left?
 const Information = () => {
-  const t = useTranslations("General");
+  const t = useTranslations("general");
   const t2 = useTranslations("ContactForm");
 
   const defaultLayout = {
