@@ -1,5 +1,6 @@
-"use client";
-import { Col, Divider, Row, Typography } from "antd";
+import { Col, Divider, Row } from "antd";
+import Title from "antd/lib/typography/Title";
+
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { useTranslations } from "next-intl";
 
@@ -12,7 +13,7 @@ const LegalNotice = () => {
       <BasicSection backgroundColor={"cream1"}>
         <Row justify="center">
           <Col xs={24} style={{ textAlign: "center" }}>
-            <Typography.Title>{t("legalNotice")}</Typography.Title>
+            <Title>{t("legalNotice")}</Title>
           </Col>
           <Col xs={24} sm={24}>
             <p>{t2("intro")}</p>
@@ -20,24 +21,24 @@ const LegalNotice = () => {
             <p>{t2("address")}</p>
             <p>{t2("phone")}</p>
 
-            <Typography.Title level={4}>{t2("firstTitle")}</Typography.Title>
+            <Title level={4}>{t2("firstTitle")}</Title>
             <p>{t2("firstParagraph")}</p>
-            <Typography.Title level={4}>{t2("secondTitle")}</Typography.Title>
+            <Title level={4}>{t2("secondTitle")}</Title>
             <p>{t2("secondParagraph1")}</p>
             <p>{t2("secondParagraph2")}</p>
             <p>{t2("secondParagraph3")}</p>
             <p>{t2("secondParagraph4")}</p>
-            <Typography.Title level={4}>{t2("thirdTitle")}</Typography.Title>
+            <Title level={4}>{t2("thirdTitle")}</Title>
             <p>{t2("thirdParagraph1")}</p>
             <p>{t2("thirdParagraph2")}</p>
             <p>{t2("thirdParagraph3")}</p>
             <p>{t2("thirdParagraph4")}</p>
             <p>{t2("thirdParagraph5")}</p>
             <p>{t2("thirdParagraph6")}</p>
-            <Typography.Title level={4}>{t2("fourthTitle")}</Typography.Title>
+            <Title level={4}>{t2("fourthTitle")}</Title>
             <p>{t2("fourthParagraph1")}</p>
             <p>{t2("fourthParagraph2")}</p>
-            <Typography.Title level={4}>{t2("fifthTitle")}</Typography.Title>
+            <Title level={4}>{t2("fifthTitle")}</Title>
             <p>{t2("fifthParagraph1")}</p>
             <p>{t2("fifthParagraph2")}</p>
             <p>{t2("fifthParagraph3")}</p>

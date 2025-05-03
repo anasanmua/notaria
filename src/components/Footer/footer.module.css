@@ -1,25 +1,29 @@
 .root {
-    padding: 20px;
-    background-color: var(--cream-1);
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    border-top: 1px #d9d9d9 solid;
-    width: 100%;
+  padding: 20px;
+  background-color: var(--cream-1);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  border-top: 1px #d9d9d9 solid;
+  width: 100%;
 }
 
 .icon {
-    color: var(--primary);
-    border-radius: 8px;
-    border: 1px solid var(--brown-3);
-    padding: 5px;
-    margin-right: 5px;
+  color: var(--primary);
+  border-radius: 8px;
+  border: 1px solid var(--brown-3);
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.link :hover {
+  color: var(--brown-4);
 }
 
 @media (max-width: 400px) {
-    .stackCols {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-    }
+  .stackCols {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
 }

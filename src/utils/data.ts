@@ -451,3 +451,60 @@ export const dataCardServices = [
     href: "legitimacion",
   },
 ];
+
+export const teamData = [
+  {
+    name: "Marcos Fernández Ruiz",
+    jobTitle: "Oficial",
+    mail: "marcos.fernandez@notariaperezgarcia.com",
+    phone: "Ext. 101",
+  },
+  {
+    name: "Laura Martín Gómez",
+    jobTitle: "Oficial",
+    mail: "laura.martin@notariaperezgarcia.com",
+    phone: "Ext. 102",
+  },
+  {
+    name: "Antonio Sanz López",
+    jobTitle: "Oficial",
+    mail: "antonio.sanz@notariaperezgarcia.com",
+    phone: "Ext. 103",
+  },
+  {
+    name: "Sofía Delgado Pérez",
+    jobTitle: "Auxiliar Administrativa",
+    mail: "sofia.delgado@notariaperezgarcia.com",
+    phone: "Ext. 104",
+  },
+  {
+    name: "Javier Ríos Ortega",
+    jobTitle: "Auxiliar Administrativo",
+    mail: "javier.rios@notariaperezgarcia.com",
+    phone: "Ext. 105",
+  },
+  {
+    name: "Marta Navarro Torres",
+    jobTitle: "Responsable de Contabilidad",
+    mail: "marta.navarro@notariaperezgarcia.com",
+    phone: "Ext. 106",
+  },
+  {
+    name: "Elena Castro Vázquez",
+    jobTitle: "Recepcionista",
+    mail: "elena.castro@notariaperezgarcia.com",
+    phone: "Ext. 107",
+  },
+  {
+    name: "Carmen Gutiérrez Sánchez",
+    jobTitle: "Copista",
+    mail: "carmen.gutierrez@notariaperezgarcia.com",
+    phone: "Ext. 108",
+  },
+  {
+    name: "Pedro Iglesias Moreno",
+    jobTitle: "Copista",
+    mail: "pedro.iglesias@notariaperezgarcia.com",
+    phone: "Ext. 108",
+  },
+];

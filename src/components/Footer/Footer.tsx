@@ -16,17 +16,17 @@ const Footer = () => {
             <Typography.Paragraph>Notario 2024</Typography.Paragraph>
           </Col>
           <Col>
-            <Link href="/cookies">
+            <Link href="/cookies" className={styles.link}>
               <Typography.Paragraph>{t("cookies")}</Typography.Paragraph>
             </Link>
           </Col>
           <Col>
-            <Link href="/politica-privacidad">
+            <Link href="/politica-privacidad" className={styles.link}>
               <Typography.Paragraph>{t("privacyPolicy")}</Typography.Paragraph>
             </Link>
           </Col>
           <Col>
-            <Link href="/aviso-legal">
+            <Link href="/aviso-legal" className={styles.link}>
               <Typography.Paragraph>{t("legalNotice")}</Typography.Paragraph>
             </Link>
           </Col>

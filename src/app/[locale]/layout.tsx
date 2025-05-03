@@ -42,9 +42,9 @@ export default async function RootLayout({
     token: {
       colorPrimary: color.primary,
       fontFamily: `${plusJakartaSans.style.fontFamily}, sans-serif`,
-      colorLink: "#7d6551",
-      colorLinkHover: "#a18b6e",
-      colorLinkActive: "#57443c",
+      colorLink: color.brown6,
+      colorLinkHover: color.brown4,
+      colorLinkActive: color.brown8,
       fontSize: 16,
     },
     components: {

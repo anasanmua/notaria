@@ -1,4 +1,3 @@
-"use client";
 import Title from "antd/lib/typography/Title";
 import { Col, Row, Divider } from "antd";
 import BasicSection from "@/components/BasicSection/BasicSection";
