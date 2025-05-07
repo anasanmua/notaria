@@ -16,8 +16,6 @@ const Cookies = () => {
           <Col xs={12} sm={24}>
             <p>{t2("paragraph1")}</p>
             <p>{t2("paragraph2")}</p>
-            <Title level={4}>{t2("title1")}</Title>
-            <p>{t2("paragraph3")}</p>
           </Col>
         </Row>
       </BasicSection>

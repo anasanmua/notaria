@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
               <SquareSquare color="var(--primary)" />
             </Col>
             <Col>
-              <Typography>CARLOS RODRÍGUEZ-VIÑA CANCIO</Typography>
+              <Typography>Juan Pérez García</Typography>
             </Col>
           </Row>
         </Link>

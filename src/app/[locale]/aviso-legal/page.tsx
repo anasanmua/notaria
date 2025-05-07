@@ -42,6 +42,8 @@ const LegalNotice = () => {
             <p>{t2("fifthParagraph1")}</p>
             <p>{t2("fifthParagraph2")}</p>
             <p>{t2("fifthParagraph3")}</p>
+            <Title level={4}>{t2("sixthTitle")}</Title>
+            <p>{t2("sixthParagraph")}</p>
           </Col>
         </Row>
       </BasicSection>

@@ -16,7 +16,7 @@ const WorkerCard = ({ name, title, mail, phone }: WorkerCardProps) => {
     <Row gutter={[0, 16]}>
       <Row>
         <Col xs={24}>
-          <Typography.Title level={3} className={styles.title}>
+          <Typography.Title level={4} className={styles.title}>
             {name}
           </Typography.Title>
         </Col>

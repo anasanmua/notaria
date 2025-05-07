@@ -137,7 +137,9 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
         </Col>
         {item.documents && (
           <Col xs={24} sm={12} className={styles.documentsCard}>
-            <Title level={4}>{t2("documentsNeeded")}</Title>
+            <Title level={4} className={styles.documentsCardTitle}>
+              {t2("documentsNeeded")}
+            </Title>
             {item.hasAdditionalDocs && <Text>{t("mortgageWithProperty")}</Text>}
             <ul>
               {item.documents.map((doc, idx) => (
