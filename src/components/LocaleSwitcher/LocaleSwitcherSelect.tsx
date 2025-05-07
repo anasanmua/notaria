@@ -39,7 +39,7 @@ export default function LocaleSwitcherSelect({
         disabled={isPending}
         onChange={onSelectChange}
       >
-        {children}
+        <Select.Option> {children}</Select.Option>
       </Select>
     </label>
   );

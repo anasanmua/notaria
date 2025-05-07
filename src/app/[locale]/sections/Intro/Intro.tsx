@@ -19,9 +19,11 @@ const Intro = () => {
         className={styles.image}
         src={justice}
         alt="Justice"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="top center"
+        fill
+        style={{
+          objectFit: "cover",
+          objectPosition: "top center",
+        }}
         priority
       />
       <div className={styles.textOverlay}>
