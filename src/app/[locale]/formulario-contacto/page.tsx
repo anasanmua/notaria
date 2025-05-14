@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import { sendEmail, User } from "@/app/[locale]/formulario-contacto/MailSender";
 import styles from "./formulario-contacto.module.css";
 
-// text-align on columns left?
 const Information = () => {
   const t = useTranslations("general");
   const t2 = useTranslations("contactForm");
