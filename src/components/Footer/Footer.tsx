@@ -1,4 +1,4 @@
-import { Col, Row, Typography } from "antd";
+import { Col, Row } from "antd";
 import Paragraph from "antd/lib/typography/Paragraph";
 import styles from "./footer.module.css";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
