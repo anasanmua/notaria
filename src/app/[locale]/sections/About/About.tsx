@@ -9,7 +9,7 @@ import Paragraph from "antd/es/typography/Paragraph";
 import Text from "antd/lib/typography/Text";
 
 const About = (): JSX.Element => {
-  const t = useTranslations("About");
+  const t = useTranslations("about");
 
   return (
     <BasicSection backgroundColor="cream2" id="about">

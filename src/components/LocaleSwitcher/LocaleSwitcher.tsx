@@ -5,22 +5,21 @@ import Flag from "react-world-flags";
 import { Typography } from "antd";
 
 export default function LocaleSwitcher() {
-  const t = useTranslations("LocaleSwitcher");
+  const t = useTranslations("localeSwitcher");
   const locale = useLocale();
 
-  return (
-    <LocaleSwitcherSelect defaultValue={locale}>
-      {routing.locales.map((lang) => {
-        const flagCode = lang === "en" ? "gb" : lang;
-        return (
-          <option key={lang} value={lang}>
-            {/*<span>
-              <Flag code={flagCode} width={20} />{" "}
-            </span>*/}
-            <Typography.Text> {t(lang)}</Typography.Text>
-          </option>
-        );
-      })}
-    </LocaleSwitcherSelect>
-  );
+  const options = routing.locales.map((lang) => {
+    const flagCode = lang === "en" ? "gb" : lang;
+    return {
+      value: lang,
+      label: (
+        <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <Flag code={flagCode} style={{ width: 20 }} />
+          <Typography.Text>{t(lang)}</Typography.Text>
+        </span>
+      ),
+    };
+  });
+
+  return <LocaleSwitcherSelect defaultValue={locale} options={options} />;
 }

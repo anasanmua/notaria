@@ -9,7 +9,7 @@ import styles from "./formulario-contacto.module.css";
 // text-align on columns left?
 const Information = () => {
   const t = useTranslations("general");
-  const t2 = useTranslations("ContactForm");
+  const t2 = useTranslations("contactForm");
 
   const defaultLayout = {
     labelCol: { span: 4 },

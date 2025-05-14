@@ -10,7 +10,7 @@ import { scrollToSection } from "@/utils/scroller";
 import CallToActionButton from "@/components/CallToActionButton/CallToActionButton";
 
 const Intro = () => {
-  const t = useTranslations("Intro");
+  const t = useTranslations("intro");
   const t2 = useTranslations("general");
 
   return (

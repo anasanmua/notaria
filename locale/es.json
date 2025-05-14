@@ -18,22 +18,21 @@
     "legalNotice": "Aviso legal",
     "cookies": "Política de cookies"
   },
-  "LocaleSwitcher": {
+  "localeSwitcher": {
     "en": "Inglés",
     "es": "Español"
   },
-  "Intro": {
+  "intro": {
     "title": "Tu notaría en el barrio de Hortaleza. ",
     "description": "Explora nuestros servicios y no dudes en ponerte en contacto."
   },
-  "About": {
-    "title": "Lorem",
+  "about": {
     "subtitle": "Por ello, cuando vayas a elegir a un notario, que sea por la calidad de sus servicios.",
     "item1": "Seguridad jurídica",
     "item2": "Experiencia",
     "item3": "Asesoramiento gratuito"
   },
-  "Services": {
+  "services": {
     "notarialPowerTitle": "Poderes",
     "notarialPowerDescription": "Faculta a un tercero para que pueda actuar en tu nombre.",
     "testamentaryTitle": "Sucesiones",
@@ -59,11 +58,11 @@
     "signatureLegitimationTitle": "Legitimaciones y compulsa",
     "signatureLegitimationDescription": "Acredita que eres el firmante de un documento o que la copia que entregues es igual que su original."
   },
-  "ContactForm": {
+  "contactForm": {
     "contactWay": "¿Cómo prefiere que le contactemos?",
     "howCanWeHelp": "¿Cómo le podemos ayudar?"
   },
-  "Service": {
+  "service": {
     "generalTitle": "General",
     "generalDescription": "Poder amplio para que puedan representarte en la mayoría de negocios jurídicos tales como compraventas, herencias, administración de fincas, administración de cuentas bancarias, representación ante las administraciones públicas, etc. \nCabe la posibilidad de prever que pueda seguir utilizándose aunque hubiera una situación de incapacidad. En este caso, conviene (aunque no es imprescindible) traer la partida de nacimiento del poderdante, ya que la notaría notificará al <registroCivil> Registro Civil </registroCivil> el otorgamiento de este tipo de poderes.",
     "generalDocu1": "Documento de identidad del poderdante y del apoderado.",
