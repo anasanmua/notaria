@@ -4,16 +4,14 @@ import { useParams } from "next/navigation";
 import { ChangeEvent, ReactNode, useTransition } from "react";
 import { Locale, usePathname, useRouter } from "@/i18n/routing";
 import { Select } from "antd";
+import { Option } from "@/components/LocaleSwitcher/LocaleSwitcher";
 
 type Props = {
-  children: ReactNode;
   defaultValue: string;
+  options: Option[];
 };
 
-export default function LocaleSwitcherSelect({
-  children,
-  defaultValue,
-}: Props) {
+export default function LocaleSwitcherSelect({ defaultValue, options }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
@@ -38,9 +36,8 @@ export default function LocaleSwitcherSelect({
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
-      >
-        {children}
-      </Select>
+        options={options}
+      />
     </label>
   );
 }

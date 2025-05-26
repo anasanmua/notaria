@@ -1,5 +1,5 @@
-"use client";
-import { Col, Row, Typography } from "antd";
+import { Col, Row } from "antd";
+import Paragraph from "antd/lib/typography/Paragraph";
 import styles from "./footer.module.css";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import Link from "next/link";
@@ -13,21 +13,21 @@ const Footer = () => {
       <Col xs={24} sm={12}>
         <Row justify="space-evenly" className={styles.stackCols}>
           <Col>
-            <Typography.Paragraph>Notario 2024</Typography.Paragraph>
+            <Paragraph>Notario 2024</Paragraph>
           </Col>
           <Col>
             <Link href="/cookies" className={styles.link}>
-              <Typography.Paragraph>{t("cookies")}</Typography.Paragraph>
+              <Paragraph>{t("cookies")}</Paragraph>
             </Link>
           </Col>
           <Col>
             <Link href="/politica-privacidad" className={styles.link}>
-              <Typography.Paragraph>{t("privacyPolicy")}</Typography.Paragraph>
+              <Paragraph>{t("privacyPolicy")}</Paragraph>
             </Link>
           </Col>
           <Col>
             <Link href="/aviso-legal" className={styles.link}>
-              <Typography.Paragraph>{t("legalNotice")}</Typography.Paragraph>
+              <Paragraph>{t("legalNotice")}</Paragraph>
             </Link>
           </Col>
         </Row>

@@ -18,22 +18,21 @@
     "legalNotice": "Aviso legal",
     "cookies": "Política de cookies"
   },
-  "LocaleSwitcher": {
+  "localeSwitcher": {
     "en": "Inglés",
     "es": "Español"
   },
-  "Intro": {
+  "intro": {
     "title": "Tu notaría en el barrio de Hortaleza. ",
     "description": "Explora nuestros servicios y no dudes en ponerte en contacto."
   },
-  "About": {
-    "title": "Lorem",
+  "about": {
     "subtitle": "Por ello, cuando vayas a elegir a un notario, que sea por la calidad de sus servicios.",
     "item1": "Seguridad jurídica",
     "item2": "Experiencia",
     "item3": "Asesoramiento gratuito"
   },
-  "Services": {
+  "services": {
     "notarialPowerTitle": "Poderes",
     "notarialPowerDescription": "Faculta a un tercero para que pueda actuar en tu nombre.",
     "testamentaryTitle": "Sucesiones",
@@ -59,11 +58,11 @@
     "signatureLegitimationTitle": "Legitimaciones y compulsa",
     "signatureLegitimationDescription": "Acredita que eres el firmante de un documento o que la copia que entregues es igual que su original."
   },
-  "ContactForm": {
+  "contactForm": {
     "contactWay": "¿Cómo prefiere que le contactemos?",
     "howCanWeHelp": "¿Cómo le podemos ayudar?"
   },
-  "Service": {
+  "service": {
     "generalTitle": "General",
     "generalDescription": "Poder amplio para que puedan representarte en la mayoría de negocios jurídicos tales como compraventas, herencias, administración de fincas, administración de cuentas bancarias, representación ante las administraciones públicas, etc. \nCabe la posibilidad de prever que pueda seguir utilizándose aunque hubiera una situación de incapacidad. En este caso, conviene (aunque no es imprescindible) traer la partida de nacimiento del poderdante, ya que la notaría notificará al <registroCivil> Registro Civil </registroCivil> el otorgamiento de este tipo de poderes.",
     "generalDocu1": "Documento de identidad del poderdante y del apoderado.",
@@ -92,7 +91,7 @@
     "heirsDeclarationTitle": "Declaración de herederos",
     "heirsDeclarationDescription": "Cuando la persona fallecida no otorgó testamento, entonces hay que realizar una declaración de herederos para determinar quiénes son (de los familiares más cercanos) y que, posteriormente, se adjudiquen los bienes.",
     "heirsDeclarationDocu1": "Documento de identidad del fallecido o certificado de empadronamiento.",
-    "heirsDeclarationDocu2": "<defuncion> Certificado de defunción.</defuncion>",
+    "heirsDeclarationDocu2": "<defuncion>Certificado de defunción.</defuncion>",
     "heirsDeclarationDocu3": "<voluntades>Certificado de últimas voluntades.</voluntades>",
     "heirsDeclarationDocu4": "Libro de familia o, en su defecto, <matrimonio>certificado de matrimonio </matrimonio>(si hay viudo/a) y partidas de nacimiento de los hijos.",
     "heirsDeclarationDocu5": "Si no hay descendientes ni ascendientes, será necesario el libro de familia de los padres o, en su defecto, las correspondientes partidas de nacimiento de los hermanos.",
@@ -101,7 +100,7 @@
     "heirsDeclarationDocu8": "Dos testigos que no sean familia o puedan tener interés en la herencia.",
     "inheritanceTitle": "Herencia",
     "inheritanceDescription": "Si ya conocemos quiénes son los herederos del fallecido (por testamento o por declaración de herederos), el siguiente paso es aceptar la herencia y adjudicar los bienes, de tal modo que se modifique su titularidad y pasen a formar parte del patrimonio de cada heredero. En este sentido, te asesoramos para que, cumpliendo con los requisitos legales y la voluntad del testador, se realice la partición de manera satisfactoria para todos los herederos.\nTen en cuenta que el reparto de la herencia se puede llevar a cabo en notaría siempre que haya acuerdo entre todos o, en su defecto, con el nombramiento de un contador-partidor dativo si lo requiere la mitad de los herederos.\n\n.",
-    "inheritanceDocu1": "<defuncion> Certificado de defunción.</defuncion>",
+    "inheritanceDocu1": "<defuncion>Certificado de defunción.</defuncion>",
     "inheritanceDocu2": "<voluntades>Certificado de últimas voluntades</voluntades> y <fallecimiento>certificado de cobertura por fallecimiento.</fallecimiento>",
     "inheritanceDocu3": "Copia autorizada del testamento o, en su caso, de la declaración de herederos.",
     "inheritanceDocu4": "Documento de identidad de los herederos.",
@@ -113,14 +112,14 @@
     "inheritanceRenunciationTitle": "Renuncia de herencia",
     "inheritanceRenunciationDescription": "Si quieres apartarte de una herencia es necesario que renuncies en escritura pública. La renuncia pura y simple no tiene consecuencias fiscales para el renunciante, si bien, la renuncia a favor de un tercero se entiende como una donación. También es fundamental revisar el testamento del fallecido, si lo hay, para tener en cuenta las sustituciones que pudieran haberse previsto.",
     "inheritanceRenunciationDocu1": "Documento de identidad del renunciante.",
-    "inheritanceRenunciationDocu2": "<defuncion> Certificado de defunción.</defuncion>",
+    "inheritanceRenunciationDocu2": "<defuncion>Certificado de defunción.</defuncion>",
     "inheritanceRenunciationDocu3": "<voluntades>Certificado de últimas voluntades.</voluntades>",
     "inheritanceRenunciationDocu4": "Copia del testamento (si procede).",
-    "marriageContractsTitle": "Capitulaciones matrimoniales",
+    "marriageContractsTitle": "Matrimoniales",
     "marriageContractsDescription": "Los cónyuges pueden acordar, tanto antes como después del matrimonio, el régimen económico que regirá su relación. Con carácter general, aunque existen normas especiales regionales, si no se dice, el régimen es el de sociedad de gananciales, por el cual, todos los bienes adquiridos con anterioridad al matrimonio son de la sociedad de gananciales, no individuales de cada uno, salvo lo adquirido por herencia o donación que tiene carácter privativo. Si quieres establecer otro régimen es necesario firmar en documento público unas capitulaciones matrimoniales en las que se pacte la separación de bienes y, posteriormente, que se inscriban en el Registro Civil.",
     "marriageContractsDocu1": "Documento de identidad de ambos.",
     "marriageContractsDocu2": "<matrimonio>Certificado de matrimonio</matrimonio> o Libro de Familia (si procede).",
-    "marriageProcedureTitle": "Expediente matrimonial y celebración del matrimonio",
+    "marriageProcedureTitle": "Expediente y celebración",
     "marriageProcedureDescription": "Los matrimonios se pueden celebrar en notaría y se llevan a cabo en dos actos. El primero es el expediente matrimonial, en el cual se valora si los contrayentes son aptos para casarse de acuerdo con la normativa española. Para este acto la elección de notario no es libre sino que se hace a través del <colegioNotarial> Colegio Notarial.</colegioNotarial> Una vez cerrado el expediente de manera favorable, el siguiente paso es la celebración del matrimonio que se puede hacer en la misma notaría donde se firmó el expediente, en otra, en el ayuntamiento, etc. según la elección de los contrayentes.",
     "marriageProcedureDocu1": "Documento de identidad de ambos.",
     "marriageProcedureDocu2": "Documento de identidad de dos testigos.",
@@ -130,7 +129,7 @@
     "marriageProcedureDocu6": "Certificado de soltería (caso de extranjeros).",
     "marriageProcedureDocu7": "Indicar régimen económico matrimonial: gananciales o separación de bienes.",
     "marriageProcedureDocu8": "Indicar lugar de celebración del matrimonio.",
-    "divorceTitle": "Divorcio y liquidación de la sociedad de gananciales",
+    "divorceTitle": "Divorcio y liquidación",
     "divorceDescription": "El divorcio se puede realizar notarialmente cuando no haya hijos menores y los cónyuges actúen de mutuo acuerdo. En ese caso, tendrán que acudir primero a un abogado que elabore un convenio regulador de las consecuencias personales y patrimoniales de la ruptura. Si hay bienes en común, el divorcio puede ir aparejado a la liquidación de la sociedad de gananciales.",
     "divorceTax": "***IMPUESTOS: La escritura de liquidación de la sociedad de gananciales está sujeta pero exenta al pago del <actos>Impuesto de Actos Jurídicos Documentados</actos>. El plazo es de 30 días hábiles desde la firma de la escritura notarial, es decir, sin contar fines de semana y festivos.",
     "divorceDocu1": "Documento de identidad de ambos.",
@@ -138,7 +137,7 @@
     "divorceDocu3": "<empadronamiento>Certificado de empadronamiento.</empadronamiento>",
     "divorceDocu4": "Convenio regulador.",
     "divorceDocu5": "En el caso de liquidación de la sociedad de gananciales, inventario de bienes, títulos de propiedad, valoración de los bienes y regla de reparto.",
-    "marriageContributionTitle": "Aportación a la sociedad de gananciales",
+    "marriageContributionTitle": "Aportación de gananciales",
     "marriageContributionDescription": "Los cónyuges pueden aportar bienes privativos a la sociedad de gananciales y, además, ello no da lugar al pago de impuestos al momento de realizar la aportación. El cónyuge que aporta un bien a la sociedad decide si renuncia al derecho de reembolso, que consiste en que le sea devuelto el bien aportado o valor del mismo al momento de liquidarse la sociedad de gananciales.",
     "marriageContributionDocu1": "Documento de identidad de ambos.",
     "marriageContributionDocu2": "<matrimonio>Certificado de matrimonio</matrimonio> o Libro de Familia.",
@@ -254,7 +253,7 @@
     "realOwnershipDocu2": "Escritura de constitución de la sociedad.",
     "realOwnershipDocu3": "Escritura de nombramiento de cargo o poder.",
     "realOwnershipDocu4": "Datos de identificación de los titulares reales.",
-    "postConstitutionActionsTitle": "Otras actuaciones posteriores a la constitución",
+    "postConstitutionActionsTitle": "Otras actuaciones",
     "postConstitutionActionsDescription": "Una vez creada la sociedad, esta constitución inicial puede ir sufriendo cambios que se lleven a cabo en escritura pública como un CAMBIO DE DOMICILIO SOCIAL, NOMBRAMIENTO O CESE DE CARGOS, APODERAMIENTOS, AMPLIACIONES O REDUCCIONES DE CAPITAL.",
     "postConstitutionActionsDocu1": "La documentación necesaria puede variar en función de cada caso, ponte en contacto con nosotros y te informamos.",
     "nationalityOathTitle": "Juras de nacionalidad",
@@ -339,12 +338,12 @@
     "fifthTitle": "Política de privacidad y protección de datos",
     "fifthParagraph1": "En virtud de lo dispuesto en el Reglamento General de Protección de Datos (RGPD), Reglamento UE 2016/679, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de los mismos, y la Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD) se informa al USUARIO que todos los datos recabados mediante los diferentes formularios que aparecen en la web serán incorporados a un fichero, creado y mantenido bajo la responsabilidad de JUAN GARCÍA PÉREZ con el fin de gestionar el envío de la información que soliciten, pudiendo elaborarse, de ser necesario, un perfil comercial, en base a la información facilitada. No se tomarán decisiones automatizadas en base a dicho perfil. Los datos personales proporcionados se conservarán mientras se mantenga la relación mercantil, en su caso, y no se solicite su supresión por el interesado.",
     "fifthParagraph2": "Para ello, JUAN GARCÍA PÉREZ solicitará el consentimiento del interesado a través del formulario de recogida de datos para el tratamiento de los mismos y la oferta prospectiva de productos y servicios, estando el USUARIO legitimado para retirar dicho consentimiento en cualquier momento, así como a ejercer sus derechos de acceso, rectificación, portabilidad y supresión de sus datos, y a presentar una reclamación ante la autoridad de control, si considera que el tratamiento no se ajusta a la normativa vigente.",
-    "fifthParagraph3": "Los contenidos de la página web están dirigidos a personas mayores de edad, no se pretende obtener datos de personas menores de edad, y cuando tenga conocimiento de que existen en su fichero datos de carácter personal de un menor, procederá de inmediato a cancelar dichos datos."
+    "fifthParagraph3": "Los contenidos de la página web están dirigidos a personas mayores de edad, no se pretende obtener datos de personas menores de edad, y cuando tenga conocimiento de que existen en su fichero datos de carácter personal de un menor, procederá de inmediato a cancelar dichos datos.",
+    "sixthTitle": "Legislación aplicable y jurisdicción",
+    "sixthParagraph": "La relación con el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales que corresponda conforme a derecho."
   },
   "cookies": {
     "paragraph1": "Este sitio web puede utilizar cookies técnicas (pequeños archivos de información que el servidor envía al ordenador de quien accede a la página) para llevar a cabo determinadas funciones que son consideradas imprescindibles para el correcto funcionamiento y visualización del sitio. Las cookies utilizadas tienen, en todo caso, carácter temporal, con la única finalidad de hacer más eficaz la navegación, y desaparecen al terminar la sesión del usuario. En ningún caso, estas cookies proporcionan por sí mismas datos de carácter personal y no se utilizarán para la recogida de los mismos. Este sitio web no instalará cookies prescindibles sin el consentimiento previo del usuario.",
-    "paragraph2": "El USUARIO tiene la posibilidad de configurar su navegador para ser alertado de la recepción de cookies y para impedir su instalación en su equipo. Por favor, consulte las instrucciones de su navegador para ampliar esta información.",
-    "title1": "Legislación aplicable y jurisdicción",
-    "paragraph3": "La relación con el USUARIO se regirá por la normativa española vigente y cualquier controversia se someterá a los Juzgados y tribunales que corresponda conforme a derecho."
+    "paragraph2": "El USUARIO tiene la posibilidad de configurar su navegador para ser alertado de la recepción de cookies y para impedir su instalación en su equipo. Por favor, consulte las instrucciones de su navegador para ampliar esta información."
   }
 }

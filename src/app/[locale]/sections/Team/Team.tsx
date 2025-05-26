@@ -5,7 +5,7 @@ import Paragraph from "antd/es/typography/Paragraph";
 import Image from "next/image";
 import WorkerCard from "@/components/WorkerCard/WorkerCard";
 import BasicSection from "@/components/BasicSection/BasicSection";
-import justice from "@/../public/images/justice.jpg";
+import notario from "@/../public/images/notario.jpg";
 import styles from "./team.module.css";
 import IconText from "@/components/IconText/IconText";
 import { Mail } from "lucide-react";
@@ -19,17 +19,16 @@ const Team = () => {
         <Col xs={24} sm={24} md={8} lg={8}>
           <Image
             className={styles.img}
-            src={justice}
+            src={notario}
             fill
             priority
             alt="justice image"
           />
         </Col>
         <Col xs={24} sm={24} md={16} lg={16}>
-          <Paragraph>
+          <Title level={3}>
             Juan Pérez García – Notario del Ilustre Colegio de Madrid
-          </Paragraph>
-          <Title level={2}>Notario en Hortaleza</Title>
+          </Title>
           <Paragraph>
             Nacido en Madrid, Juan Pérez García cuenta con una sólida
             trayectoria en el ámbito notarial. Licenciado en Derecho por la
@@ -54,7 +53,7 @@ const Team = () => {
           </span>
         </Col>
       </Row>
-      <Title>Nuestro equipo</Title>
+      <Title level={3}>Nuestro equipo</Title>
       <Paragraph>
         En nuestra notaría contamos con un equipo de profesionales altamente
         cualificados a tu disposición.

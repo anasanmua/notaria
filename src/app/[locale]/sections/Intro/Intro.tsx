@@ -10,7 +10,7 @@ import { scrollToSection } from "@/utils/scroller";
 import CallToActionButton from "@/components/CallToActionButton/CallToActionButton";
 
 const Intro = () => {
-  const t = useTranslations("Intro");
+  const t = useTranslations("intro");
   const t2 = useTranslations("general");
 
   return (
@@ -19,9 +19,11 @@ const Intro = () => {
         className={styles.image}
         src={justice}
         alt="Justice"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="top center"
+        fill
+        style={{
+          objectFit: "cover",
+          objectPosition: "top center",
+        }}
         priority
       />
       <div className={styles.textOverlay}>

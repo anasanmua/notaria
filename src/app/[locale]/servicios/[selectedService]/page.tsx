@@ -1,20 +1,22 @@
 "use client";
-import { Button, Col, Row, Tabs, Tag } from "antd";
+import { Col, Row, Tabs, Tag } from "antd";
 import Title from "antd/lib/typography/Title";
 import Text from "antd/lib/typography/Text";
 import BasicSection from "@/components/BasicSection/BasicSection";
 import { data, DataService, Service } from "@/utils/data";
-import { RichTranslationValues, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Head from "next/head";
 import { getEmoji } from "@/utils/emojiFunction";
-import Link from "next/link";
 import { ExclamationCircleOutlined } from "@ant-design/icons";
 import styles from "./servicios.module.css";
 import Paragraph from "antd/lib/typography/Paragraph";
-import { ReactNode } from "react";
 import { capitalizeFirstLetter } from "@/utils/stringUtils";
 import CallToActionButton from "@/components/CallToActionButton/CallToActionButton";
+import {
+  richTextLinksDescription,
+  richTextLinksDocuments,
+} from "@/utils/rickLinks";
 
 const Services = ({ params }: { params: { selectedService: string } }) => {
   const t = useTranslations("Service");
@@ -32,81 +34,6 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
 
   const imageUrl = getImage(selectedService);
 
-  const richTextLinks: RichTranslationValues = {
-    registroCivil: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://sede.mjusticia.gob.es/es/tramites/certificado-nacimiento"
-      >
-        {chunks}
-      </Link>
-    ),
-    colegioNotarial: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://madrid.notariado.org/portal/legalizacion-y-apostillas"
-      >
-        {chunks}
-      </Link>
-    ),
-    ministerioAsuntos: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Legalizaciones/Servicio-de-legalizaciones.aspx"
-      >
-        {chunks}
-      </Link>
-    ),
-    impuestoSucesiones: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://www.comunidad.madrid/servicios/atencion-contribuyente/impuesto-sucesiones"
-      >
-        {chunks}
-      </Link>
-    ),
-    patrimoniales: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://www.comunidad.madrid/servicios/atencion-contribuyente/transmisiones-patrimoniales-onerosas"
-      >
-        {chunks}
-      </Link>
-    ),
-    terrenos: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://agenciatributaria.madrid.es/portales/contribuyente/es/Tramites/Plusvalia-Autoliquidacion/?vgnextoid=6258ef82e1bed010VgnVCM1000000b205a0aRCRD&vgnextchannel=97d608f9be116810VgnVCM1000001d4a900aRCRD"
-      >
-        {chunks}
-      </Link>
-    ),
-    donaciones: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://www.comunidad.madrid/servicios/atencion-contribuyente/donaciones"
-      >
-        {chunks}
-      </Link>
-    ),
-    actos: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://www.comunidad.madrid/servicios/atencion-contribuyente/actos-juridicos-documentados"
-      >
-        {chunks}
-      </Link>
-    ),
-    societarias: (chunks: ReactNode) => (
-      <Link
-        target="_blank"
-        href="https://www.comunidad.madrid/servicios/atencion-contribuyente/operaciones-societarias"
-      >
-        {chunks}
-      </Link>
-    ),
-  };
-
   const tabs = tabArray?.map((item: Service) => ({
     key: item.type,
     label: t(item.type),
@@ -115,7 +42,7 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
         <Col xs={24} sm={12}>
           <Title level={4}>{t2("description")}</Title>
           <Paragraph style={{ textAlign: "justify" }}>
-            {t.rich(item.description, richTextLinks)}
+            {t.rich(item.description, richTextLinksDescription)}
           </Paragraph>
           {item.tax && (
             <Paragraph>
@@ -124,7 +51,7 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
                 icon={<ExclamationCircleOutlined />}
                 color="gold"
               >
-                {t.rich(item.tax, richTextLinks)}
+                {t.rich(item.tax, richTextLinksDescription)}
               </Tag>
             </Paragraph>
           )}
@@ -137,7 +64,9 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
         </Col>
         {item.documents && (
           <Col xs={24} sm={12} className={styles.documentsCard}>
-            <Title level={4}>{t2("documentsNeeded")}</Title>
+            <Title level={4} className={styles.documentsCardTitle}>
+              {t2("documentsNeeded")}
+            </Title>
             {item.hasAdditionalDocs && <Text>{t("mortgageWithProperty")}</Text>}
             <ul>
               {item.documents.map((doc, idx) => (
@@ -145,58 +74,7 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
                   <span style={{ marginRight: "10px" }}>
                     {getEmoji(t(doc))}
                   </span>
-                  <Text>
-                    {t.rich(doc, {
-                      empadronamiento: (chunks) => (
-                        <Link
-                          target="_blank"
-                          href="https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=23ccdd9d6baed010VgnVCM2000000c205a0aRCRD&vgnextchannel=5388a38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default"
-                        >
-                          {chunks}
-                        </Link>
-                      ),
-                      defuncion: (chunks) => (
-                        <Link
-                          target="_blank"
-                          href="https://sede.mjusticia.gob.es/es/tramites/certificado-defuncion"
-                        >
-                          {chunks}
-                        </Link>
-                      ),
-                      matrimonio: (chunks) => (
-                        <Link
-                          target="_blank"
-                          href="https://sede.mjusticia.gob.es/es/tramites/certificado-matrimonio"
-                        >
-                          {chunks}
-                        </Link>
-                      ),
-                      voluntades: (chunks) => (
-                        <Link
-                          target="_blank"
-                          href="https://sede.mjusticia.gob.es/es/tramites/certificado-actos-ultima"
-                        >
-                          {chunks}
-                        </Link>
-                      ),
-                      fallecimiento: (chunks) => (
-                        <Link
-                          target="_blank"
-                          href="https://www.mjusticia.gob.es/es/ciudadania/tramite?k=solicitud-certificado-contratos-seguros-cobertura-fallecimiento-online"
-                        >
-                          {chunks}
-                        </Link>
-                      ),
-                      partidas: (chunks) => (
-                        <Link
-                          target="_blank"
-                          href="https://sede.mjusticia.gob.es/es/tramites/certificado-nacimiento"
-                        >
-                          {chunks}
-                        </Link>
-                      ),
-                    })}
-                  </Text>
+                  <Text>{t.rich(doc, richTextLinksDocuments)}</Text>
                 </li>
               ))}
             </ul>
@@ -229,6 +107,8 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
               fill
               priority
               alt={selectedService}
+              placeholder="blur"
+              blurDataURL="/images/contract.jpg"
             />
           </Col>
           <Col xs={24}>

@@ -29,6 +29,10 @@
   margin-top: 2.1875rem;
 }
 
+.documentsCardTitle {
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
   .imageCol {
     height: 250px;
