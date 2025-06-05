@@ -19,7 +19,7 @@ import {
 } from "@/utils/rickLinks";
 
 const Services = ({ params }: { params: { selectedService: string } }) => {
-  const t = useTranslations("Service");
+  const t = useTranslations("service");
   const t2 = useTranslations("general");
   const selectedService = params.selectedService;
   const tabArray = data[selectedService as keyof DataService];
@@ -117,7 +117,11 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
             </Title>
           </Col>
           <Col xs={24}>
-            <Tabs centered type="card" items={tabs} />
+            <Tabs
+              type="card"
+              items={tabs}
+              style={{ justifyContent: "start" }}
+            />
           </Col>
           <Col className={styles.centerText} xs={24}>
             <CallToActionButton

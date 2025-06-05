@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
-import { Anchor, Typography, Row, Col, Button, Drawer } from "antd";
-import { Menu, SquareSquare } from "lucide-react";
+import { Anchor, Typography, Row, Col, Drawer, Grid } from "antd";
+import { Menu, SquareSquare, Phone } from "lucide-react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { useState } from "react";
@@ -15,6 +15,10 @@ const NavBar: React.FC = () => {
   const t = useTranslations("general");
   const [isDrawerVisible, setDrawerVisible] = useState(false);
   const pathname = usePathname();
+  const { useBreakpoint } = Grid;
+  const screens = useBreakpoint();
+  const isMobile = screens.xs;
+
   const anchorHidden =
     pathname === "/en" || pathname === "/es" ? "" : styles.anchorHidden;
 
@@ -68,7 +72,7 @@ const NavBar: React.FC = () => {
 
       <Col className={styles.contactDropdownArea}>
         <CallToActionButton onClick={() => scrollToSection("contact")}>
-          {t("contact")}
+          {isMobile ? <Phone color="var(--primary)" /> : t("contact")}
         </CallToActionButton>
         <span className={styles.languageSelector}>
           <LocaleSwitcher />

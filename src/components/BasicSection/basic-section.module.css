@@ -9,3 +9,10 @@
 .cream2 {
   background-color: var(--cream-2);
 }
+
+
+@media (max-width: 600px) {
+  .root {
+    padding: 25px;
+  }
+}

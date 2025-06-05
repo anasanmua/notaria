@@ -50,8 +50,12 @@
 }
 
 @media (max-width: 600px) {
-  .textOverlay {
-    padding: 50px;
+  .textContainer {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .colorWhite {

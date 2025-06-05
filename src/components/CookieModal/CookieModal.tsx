@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Modal, Button, Typography, Space, Checkbox } from "antd";
 import type { CheckboxChangeEvent } from "antd/es/checkbox";
-
-const { Text, Title } = Typography;
+import { Grid } from "antd";
 
 interface CookieSettings {
   essential: boolean;
@@ -18,6 +17,13 @@ const CookieConsent: React.FC = () => {
     analytics: false,
     marketing: false,
   });
+
+  const { Text, Title } = Typography;
+
+  const { useBreakpoint } = Grid;
+
+  const screens = useBreakpoint();
+  const isMobile = screens.xs;
 
   useEffect(() => {
     // Check if user has already given consent
