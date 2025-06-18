@@ -53,4 +53,8 @@
   .marginBottom {
     margin-bottom: 20px;
   }
+
+  .drawer {
+    height: 250px !important;
+  }
 }

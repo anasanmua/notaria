@@ -93,6 +93,7 @@ const Services = ({ params }: { params: { selectedService: string } }) => {
     ),
   }));
 
+  console.log(tabs, "tabs");
   return (
     <>
       <Head>

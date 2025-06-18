@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: grid;
+  }
+}

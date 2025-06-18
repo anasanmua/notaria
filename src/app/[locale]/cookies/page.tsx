@@ -13,7 +13,7 @@ const Cookies = () => {
           <Col xs={24} style={{ textAlign: "center" }}>
             <Title>{t("cookies")}</Title>
           </Col>
-          <Col xs={12} sm={24}>
+          <Col xs={24}>
             <p>{t2("paragraph1")}</p>
             <p>{t2("paragraph2")}</p>
           </Col>

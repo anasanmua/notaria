@@ -10,16 +10,16 @@ body {
 }
 
 .ant-typography a {
-  color: var(--brown-6);
-  text-decoration: underline;
+  color: var(--brown-6) !important;
+  text-decoration: underline !important;
 }
 
 .ant-typography a:hover {
-  color: var(--brown-4);
-  text-decoration: none;
+  color: var(--brown-4) !important;
+  text-decoration: none !important;
 }
 
 .ant-typography a:visited {
-  color: var(--brown-8);
-  text-decoration: none;
+  color: var(--brown-8) !important;
+  text-decoration: none !important;
 }

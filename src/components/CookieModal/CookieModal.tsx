@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Modal, Button, Typography, Space, Checkbox } from "antd";
 import type { CheckboxChangeEvent } from "antd/es/checkbox";
 import { Grid } from "antd";
+import styles from "./cookie-modal.module.css";
 
 interface CookieSettings {
   essential: boolean;
@@ -23,10 +24,8 @@ const CookieConsent: React.FC = () => {
   const { useBreakpoint } = Grid;
 
   const screens = useBreakpoint();
-  const isMobile = screens.xs;
 
   useEffect(() => {
-    // Check if user has already given consent
     const hasConsent = localStorage.getItem("cookieConsent");
     if (!hasConsent) {
       setIsVisible(true);
@@ -77,15 +76,19 @@ const CookieConsent: React.FC = () => {
       closable={false}
       maskClosable={false}
       footer={[
-        <Button key="decline" onClick={handleDeclineAll}>
-          Decline All
-        </Button>,
-        <Button key="save" type="default" onClick={handleSavePreferences}>
-          Save Preferences
-        </Button>,
-        <Button key="accept" type="primary" onClick={handleAcceptAll}>
-          Accept All
-        </Button>,
+        <div key={"key"} className={styles.footer}>
+          <Button key="decline" onClick={handleDeclineAll}>
+            Decline All
+          </Button>
+
+          <Button key="save" type="default" onClick={handleSavePreferences}>
+            Save Preferences
+          </Button>
+
+          <Button key="accept" type="primary" onClick={handleAcceptAll}>
+            Accept All
+          </Button>
+        </div>,
       ]}
       width={600}
     >

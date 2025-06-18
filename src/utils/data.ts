@@ -81,11 +81,6 @@ export const data: DataService = {
         "heirsDeclarationDocu1",
         "heirsDeclarationDocu2",
         "heirsDeclarationDocu3",
-        "heirsDeclarationDocu4",
-        "heirsDeclarationDocu5",
-        "heirsDeclarationDocu6",
-        "heirsDeclarationDocu7",
-        "heirsDeclarationDocu8",
       ],
     },
     {

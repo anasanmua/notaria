@@ -14,7 +14,7 @@ const Privacy = () => {
           <Col xs={24} style={{ textAlign: "center" }}>
             <Title>{t("privacyPolicy")}</Title>
           </Col>
-          <Col xs={24} sm={24}>
+          <Col xs={24}>
             <Title level={3}>{t2("subtitle")}</Title>
             <Title level={4}>{t2("firstSubIndex")}</Title>
             <ul>

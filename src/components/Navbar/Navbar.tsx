@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
   const screens = useBreakpoint();
   const isMobile = screens.xs;
 
-  const anchorHidden =
+  const notMainPage =
     pathname === "/en" || pathname === "/es" ? "" : styles.anchorHidden;
 
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -44,7 +44,7 @@ const NavBar: React.FC = () => {
           </Row>
         </Link>
       </Col>
-      <Col className={classNames(styles.anchorMenu, anchorHidden)}>
+      <Col className={classNames(styles.anchorMenu, notMainPage)}>
         <Anchor
           // @ts-ignore
           onClick={handleAnchorClick}
@@ -78,18 +78,15 @@ const NavBar: React.FC = () => {
           <LocaleSwitcher />
         </span>
       </Col>
-      <Col className={styles.burgerIcon}>
-        <Menu
-          onClick={toggleDrawer}
-          style={{ fontSize: "24px", cursor: "pointer" }}
-          color="var(--primary)"
-        />
+      <Col className={classNames(styles.burgerIcon, notMainPage)}>
+        <Menu onClick={toggleDrawer} />
       </Col>
       <Drawer
         title="Menu"
         placement="right"
         onClose={toggleDrawer}
         open={isDrawerVisible}
+        className={styles.drawer}
       >
         <Anchor
           // @ts-ignore
